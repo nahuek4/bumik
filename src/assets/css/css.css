@@ -1,0 +1,457 @@
+/* IMPORTS */
+
+@import url("../fonts/gilroy/stylesheet.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    height: 4em;
+    background-color: #1e1e1e;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: white;
+}
+
+.navLinks {
+    display: flex;
+}
+
+.navToggle {
+    color: white;
+}
+
+.navItem {
+    list-style: none;
+    padding: 2em;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1015px) {
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 5em;
+        left: -110%;
+        opacity: 1;
+        transition: all .5s ease-out;
+        color: white;
+    }
+
+    .navLinks.active {
+        background: #2D2D2C;
+        left: 0px;
+        opacity: 1;
+        transition: all .5s ease;
+        z-index: 1;
+        color: white;
+    }
+
+    .navLink {
+        padding: 1.5em;
+        width: 100%;
+        display: table;
+        color: white;
+    }
+}
+
+/* HEADER INICIO */
+
+.header {
+    display: flex;
+    background-image: url("../img/banners/bannerInicio.png");
+    height: 46.875em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    color: #FBFAF6;
+    flex-direction: column;
+    font-size: 0.938em;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+.textHeader {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: .5em;
+    margin-bottom: 1.4em;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 36.563em;
+}
+
+
+.servicios {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin-bottom: 3em;
+}
+
+.servicios {
+    width: 12rem;
+    height: auto;
+    color: #FBFAF6;
+}
+
+.servicios .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #EAFC88;
+    border-radius: 1.625rem;
+}
+
+.servicios .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #1e1e1e;
+}
+
+.servicios .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.servicios .circle .icon::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #1e1e1e;
+    border-right: 0.125rem solid #1e1e1e;
+    transform: rotate(45deg);
+}
+
+.servicios .serviceText {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #FBFAF6;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.servicios:hover .circle {
+    width: 100%;
+}
+
+.servicios:hover .circle .icon {
+    background: #1e1e1e;
+    transform: translate(1rem, 0);
+}
+
+.servicios:hover .serviceText {
+    color: #1e1e1e;
+}
+
+/* SECTION INICIO */
+
+.section {
+    display: flex;
+    height: 14.063em;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBFAF6;
+    font-size: 2em;
+}
+
+
+/* ABOUT INICIO */
+
+.nosotros {
+
+    flex-direction: column;
+    text-align: center;
+    height: 83.625em;
+    color: #FBFAF6;
+    background-color: #1e1e1e;
+}
+
+.nosotrosContain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about {
+    padding-top: 2em;
+    font-weight: 500;
+}
+
+.about h1 {
+    font-size: 3.5em;
+}
+
+.about h1 span {
+    color: #EDB5F7;
+}
+
+.imgs {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgnahue {
+    margin-right: 8em;
+}
+
+.imgs img {
+    width: 21.875em;
+}
+
+.perfiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.perfilNahue p {
+    color: #EDB5F7;
+}
+
+.perfilNahue {
+    padding-right: 6em;
+}
+
+.perfilMili {
+    padding-left: 6em;
+}
+
+.perfilMili p {
+    color: #EDB5F7;
+}
+
+.borderboxText {
+    display: flex;
+    align-items: center;
+    border: solid 2px #2D2D2C;
+    width: fit-content;
+    padding: 1.3em;
+}
+
+
+.text h2 {
+    font-size: 3em;
+}
+
+.text p {
+    font-size: 1.625em;
+    padding: .6em;
+}
+
+.pI {
+    font-style: italic;
+}
+
+/* BANNER INICIO */
+
+.bannerI {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5em;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bannerText {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #EAFC88;
+    color: #1e1e1e;
+    font-size: 0.875em;
+    text-align: left;
+    height: auto;
+    width: 100%;
+    padding: 3em;
+    /* Aumentado el espacio lateral */
+}
+
+.investigacion,
+.desarrollo,
+.resultado {
+    padding-right: 15em;
+}
+
+.investigacion h1,
+.desarrollo h1,
+.resultado h1 {
+    font-size: 5em;
+}
+
+.investigacion h2,
+.desarrollo h2,
+.resultado h2 {
+    font-size: 3em;
+}
+
+.investigacion p,
+.desarrollo p,
+.resultado p {
+    width: 20em;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+/* Reglas de medios para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+    .bannerText {
+        padding: 0.5em;
+        /* Espaciado más pequeño para dispositivos más pequeños */
+    }
+
+    .investigacion,
+    .desarrollo,
+    .resultado {
+        padding: 0;
+        /* Eliminar el relleno lateral en dispositivos más pequeños */
+    }
+
+    .investigacion h1,
+    .desarrollo h1,
+    .resultado h1,
+    .investigacion h2,
+    .desarrollo h2,
+    .resultado h2,
+    .investigacion p,
+    .desarrollo p,
+    .resultado p {
+        font-size: 1em;
+        /* Tamaño de fuente más pequeño para dispositivos más pequeños */
+    }
+}
+
+/* SERVICES INICIO */
+
+.serviceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'gilroy';
+}
+
+.servicesContain {
+    background-color: #1e1e1e;
+    padding-top: 2.5em;
+}
+
+.serviciosText {
+    font-size: 1.5em;
+}
+
+.serviciosText span {
+    color: #EAFC88;
+}
+
+.serviciosText p {
+    margin-top: 0.3em;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.boxBorder {
+    border: 1px solid #404040;
+}
+
+.serviceBox {
+    height: auto;
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    width: 25em;
+}
+
+.serviceBox img {
+    width: 6.25em;
+}
+
+.liServices {
+    color: #EAFC88;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.serviceBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.serviceBox ul li {
+    padding: 0.8em;
+}
+
+.serviceBox ul li p {
+    font-size: 1em;
+}
+
+/* Reglas de medios para dispositivos más pequeños */
+@media screen and (max-width: 768px) {
+    .serviceBox {
+        width: 90%;
+    }
+}

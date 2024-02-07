@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "servicio": "Identidades visuales",
+        "descripcion": "Una marca es más que solo un logotipo. \n Creamos una identidad sólida que refleje tus valores y personalidad \n para que conecte con tu audiencia de manera efectiva",
+        "imagen": "1.png"
+    },
+    {
+        "id": 2,
+        "servicio": "Diseño Web",
+        "descripcion": "Desarrollamos el conjunto de elementos que necesita tu marca. Logotipo, paleta de colores, tipografía, texturas y más.",
+        "imagen": "2.png"
+    },
+    {
+        "id": 3,
+        "servicio": "Desarrollo Web",
+        "descripcion": "Diseñamos tu sitio web 100% responsive y profesional para que se ajuste automáticamente a cualquier dispositivo.",
+        "imagen": "3.png"
+    },
+    {
+        "id": 4,
+        "servicio": "Social Media",
+        "descripcion": "Creamos paquetes personalizados para que tus redes sociales  impacten visualmente y aumenten su presencia digital",
+        "imagen": "4.png"
+    },
+    {
+        "id": 5,
+        "servicio": "Packaging & Papelería",
+        "descripcion": "Combinamos creatividad y funcionalidad para presentar tu producto de manera atractiva, que destaque y capte la atención de tus consumidores.",
+        "imagen": "5.png"
+    },
+    {
+        "id": 6,
+        "servicio": "Gestión de RR. SS.",
+        "descripcion": "Elaboramos un plan de contenido en redes sociales de calidad para ayudarte a ganar más seguidores y llegar a más personas.",
+        "imagen": "6.png"
+    }
+]
