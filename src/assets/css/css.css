@@ -82,10 +82,12 @@
 .header {
     display: flex;
     background-image: url("../img/banners/bannerInicio.png");
-    height: 46.875em;
+    background-position: center;
+    height: 55.875em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 
 .logo {
@@ -123,9 +125,6 @@
     font-size: inherit;
     font-family: inherit;
     margin-bottom: 3em;
-}
-
-.servicios {
     width: 12rem;
     height: auto;
     color: #FBFAF6;
@@ -200,23 +199,9 @@
     color: #1e1e1e;
 }
 
-/* SECTION INICIO */
-
-.section {
-    display: flex;
-    height: 14.063em;
-    align-items: center;
-    justify-content: center;
-    background-color: #FBFAF6;
-    font-size: 2em;
-}
-
-
 /* ABOUT INICIO */
 
 .nosotros {
-
-    flex-direction: column;
     text-align: center;
     height: 83.625em;
     color: #FBFAF6;
@@ -255,7 +240,9 @@
 }
 
 .imgs img {
+    margin-top: 1.5em;
     width: 21.875em;
+    border-radius: 13%;
 }
 
 .perfiles {
@@ -263,8 +250,8 @@
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
-    padding-right: 2em;
     padding-bottom: 2em;
+    margin-top: 1em;
 }
 
 .perfilNahue p {
@@ -314,6 +301,7 @@
     margin-top: 5em;
     align-items: center;
     flex-direction: column;
+    background-color: #1e1e1e;
 }
 
 .bannerText {
@@ -389,28 +377,32 @@
 
 .serviceContainer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    background-color: #1e1e1e;
+    flex-wrap: wrap;
     font-family: 'gilroy';
 }
 
+
 .servicesContain {
-    background-color: #1e1e1e;
     padding-top: 2.5em;
+    max-width: 1430px;
 }
 
 .serviciosText {
     font-size: 1.5em;
+    margin-top: 1.6em;
 }
+
 
 .serviciosText span {
     color: #EAFC88;
 }
 
 .serviciosText p {
-    margin-top: 0.3em;
+    margin-top: .8em;
     font-size: 1.2em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .boxBorder {
@@ -449,9 +441,17 @@
     font-size: 1em;
 }
 
-/* Reglas de medios para dispositivos más pequeños */
-@media screen and (max-width: 768px) {
-    .serviceBox {
-        width: 90%;
-    }
+.botonServicios {
+    color: #1E1E1E;
+    background-color: #EAFC88;
+    border: none;
+    font-size: 1.3em;
+    padding: 1em 2.1em;
+    margin-top: 3em;
+    border-radius: 10%;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+    align-items: center;
+    margin-bottom: 2em;
 }

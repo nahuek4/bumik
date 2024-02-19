@@ -1,6 +1,7 @@
 import React from 'react'
 import logob from '../../assets/img/logos/logob.png'
-import Section from './Section'
+import About from './About'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -13,15 +14,17 @@ const Header = () => {
                 </div>
 
                 <div className="buttonHeader">
-                    <button className="servicios">
-                        <span className="circle" aria-hidden="true">
-                            <span className="icon"></span>
-                        </span>
-                        <span className="serviceText">Servicios</span>
-                    </button>
+                    <Link to="/servicios">
+                        <button className="servicios">
+                            <span className="circle" aria-hidden="true">
+                                <span className="icon"></span>
+                            </span>
+                            <span className="serviceText">Servicios</span>
+                        </button>
+                    </Link>
                 </div>
             </div>
-            <Section />
+            <About />
         </div>
     )
 }
