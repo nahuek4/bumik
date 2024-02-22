@@ -1,25 +1,27 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { useState, useEffect } from 'react';
+import { getImages } from '../../services/getServices';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import popOutMili from "../../assets/img/fotos/popOutMili.png";
-import popOutNahue from "../../assets/img/fotos/popOutNahue.png";
-import icon from "../../assets/icons/1.png";
-import icon2 from "../../assets/icons/2.png"
+
 
 const Works = () => {
-    const imagenes = [
-        popOutMili,
-        popOutNahue,
-        icon,
-        icon2
-    ];
+    const [datos, setDatos] = useState([]);
 
+    useEffect(() => {
+        const fetchData = () => {
+            const data = getImages();
+            setDatos(data);
+        };
+
+        fetchData();
+    }, []);
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         adaptiveHeight: true,
         adaptiveWidth: true,
@@ -38,7 +40,7 @@ const Works = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    initialSlide: 1 // Añade esto para mejorar la experiencia inicial en dispositivos pequeños
+                    initialSlide: 1
                 }
             },
             {
@@ -59,9 +61,9 @@ const Works = () => {
                 </div>
                 <div className="slider">
                     <Slider {...settings} className='sliderSettings'>
-                        {imagenes.map((image, index) => (
+                        {datos.map((image, index) => (
                             <div key={index} className='imagenSliderItem'>
-                                <div className="imgItem"><img src={image} alt="" /></div>
+                                <div className="imgItem"><img src={image.imagen} alt={image.marca} /></div>
                             </div>
                         ))}
                     </Slider>

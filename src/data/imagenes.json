@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "marca": "decoturner",
+        "imagen": "../../assets/img/sliders/sliderInicio/decoturner.png"
+    },
+    {
+        "id": 2,
+        "marca": "innocenti",
+        "imagen": "../assets/img/sliders/sliderInicio/innocenti.png"
+    },
+    {
+        "id": 3,
+        "marca": "justgo",
+        "imagen": "../assets/img/sliders/sliderInicio/justgo.png"
+    },
+    {
+        "id": 4,
+        "marca": "kidspoint",
+        "imagen": "../assets/img/sliders/sliderInicio/kidspoint.png"
+    },
+    {
+        "id": 5,
+        "marca": "martinoanello",
+        "imagen": "../assets/img/sliders/sliderInicio/martinoanello.png"
+    },
+    {
+        "id": 6,
+        "marca": "raimbowcompania",
+        "imagen": "../assets/img/sliders/sliderInicio/raimbowcompania.png"
+    },
+    {
+        "id": 7,
+        "marca": "soyzhu",
+        "imagen": "../assets/img/sliders/sliderInicio/soyzhu.png"
+    },
+    {
+        "id": 8,
+        "marca": "taicca",
+        "imagen": "../assets/img/sliders/sliderInicio/taic.png"
+    }
+]

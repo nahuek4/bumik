@@ -471,7 +471,7 @@
 
 .carousel {
     width: 70vw;
-    max-width: fit-content;
+    margin: 0 auto;
 }
 
 /* Slick dots, moverlos para abajo*/
@@ -501,12 +501,19 @@
     font-size: 25px;
 }
 
-.imgItem {
+.imagenSliderItem {
     width: 100%;
-    position: relative;
-    right: 0;
+    box-sizing: border-box;
+    /* Asegura que el ancho incluye el relleno y el borde */
 }
 
 .imagenSliderItem img {
-    width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Evita cualquier espacio adicional debajo de la imagen */
+}
+
+.slick-slide>div {
+    margin: 0 1em;
 }
