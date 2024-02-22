@@ -199,9 +199,19 @@
     color: #1e1e1e;
 }
 
+
+/*About @media */
+
+@media screen and (max-width: 1024px) {
+    .imgs {
+        flex-direction: column;
+    }
+}
+
 /* ABOUT INICIO */
 
 .nosotros {
+
     text-align: center;
     height: 83.625em;
     color: #FBFAF6;
@@ -218,6 +228,7 @@
 .about {
     padding-top: 2em;
     font-weight: 500;
+    margin-bottom: -2em;
 }
 
 .about h1 {
@@ -228,42 +239,31 @@
     color: #EDB5F7;
 }
 
-.imgs {
-    margin: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imgnahue {
-    margin-right: 8em;
-}
-
-.imgs img {
-    margin-top: 1.5em;
-    width: 21.875em;
-    border-radius: 13%;
-}
 
 .perfiles {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
+    margin: 1em;
     padding-bottom: 2em;
     margin-top: 1em;
+}
+
+.perfilNahue {
+    padding: 4em 4em 0;
 }
 
 .perfilNahue p {
     color: #EDB5F7;
 }
 
-.perfilNahue {
-    padding-right: 6em;
+.perfiles>div>div>img {
+    margin-bottom: 1.5em;
 }
 
 .perfilMili {
-    padding-left: 6em;
+    padding: 4em 4em 0;
 }
 
 .perfilMili p {
@@ -375,6 +375,11 @@
 
 /* SERVICES INICIO */
 
+.serviceContflex {
+    display: flex;
+    flex-direction: column;
+}
+
 .serviceContainer {
     display: flex;
     justify-content: center;
@@ -454,4 +459,54 @@
     font-weight: 600;
     align-items: center;
     margin-bottom: 2em;
+}
+
+/* SLIDER CONTAINER */
+
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    width: 70vw;
+    max-width: fit-content;
+}
+
+/* Slick dots, moverlos para abajo*/
+
+.slick-dots {
+    transform: translateY(1em);
+    color: #FBFAF6 !important;
+}
+
+
+/* Color del slick dot activo*/
+
+.slick-dots li.slick-active button:before {
+    color: White !important;
+}
+
+/* Color de los slick dots */
+
+.slick-dots li button::before {
+    color: #FBFAF6;
+}
+
+/* Modificar flechas react slick */
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 25px;
+}
+
+.imgItem {
+    width: 100%;
+    position: relative;
+    right: 0;
+}
+
+.imagenSliderItem img {
+    width: 350px;
 }
