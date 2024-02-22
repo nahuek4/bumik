@@ -7,14 +7,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'gilroy';
-    box-sizing: border-box;
 }
 
-*::before,
-*::after {
-    box-sizing: border-box;
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+
+html,
+body {
+    height: 100%;
+}
 
 /* NAVBAR */
 
@@ -75,6 +80,56 @@
         display: table;
         color: white;
     }
+}
+
+/* FOOTER */
+
+.footerContainer {
+    margin-top: auto;
+}
+
+.footer {
+    min-height: 70em;
+    background-color: #1E1E1E;
+    margin-top: auto;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 3em;
+    margin-top: 4em;
+    font-size: 2em;
+    text-align: left;
+}
+
+.footerText h1 {
+    margin-bottom: .35em;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 4em;
+    font-size: 2em;
+    margin-top: 5em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: #FBFAF6;
+    margin-bottom: 1em;
+}
+
+.contacts {
+    display: flex;
+    position: absolute;
+    bottom: 0;
 }
 
 /* HEADER INICIO */
@@ -248,6 +303,10 @@
     margin: 1em;
     padding-bottom: 2em;
     margin-top: 1em;
+}
+
+.perfiles>div>div>img {
+    border-radius: 50px;
 }
 
 .perfilNahue {
@@ -465,8 +524,12 @@
 
 .sliderContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 50em;
+    margin-bottom: 5em;
+    margin-top: 18em;
 }
 
 .carousel {
@@ -503,7 +566,6 @@
 
 .imagenSliderItem {
     width: 100%;
-    box-sizing: border-box;
     /* Asegura que el ancho incluye el relleno y el borde */
 }
 
@@ -511,9 +573,23 @@
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 30px;
     /* Evita cualquier espacio adicional debajo de la imagen */
 }
 
 .slick-slide>div {
     margin: 0 1em;
+}
+
+.tituloCarousel {
+    font-size: 1.5em;
+    margin: 2em 0em 2.3em;
+}
+
+.tituloCarousel span {
+    color: #EDB5F7;
+}
+
+.tituloCarousel p {
+    margin-top: .7em;
 }

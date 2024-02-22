@@ -6,6 +6,7 @@ import Portfolio from "../pages/Portfolio";
 import Services from "../pages/Services";
 import About from "../pages/About";
 import Layout from "./Layout";
+import Errornotfound from "../services/Errornotfound";
 
 const Router = () => (
     <BrowserRouter>
@@ -16,6 +17,7 @@ const Router = () => (
                 <Route path="/contacto" element={<Contact />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/nosotros" element={<About />} />
+                <Route exact path="*" element={<Errornotfound />} />
             </Route>
         </Routes>
     </BrowserRouter>

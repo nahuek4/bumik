@@ -4,7 +4,7 @@ import Header from '../componentes/Inicio/Header'
 const Init = () => {
     return (
         <div>
-            <Header></Header>
+            <Header />
         </div>
     )
 }
