@@ -132,6 +132,7 @@ body {
     display: flex;
     background-image: url("../img/banners/bannerInicio.png");
     background-position: center;
+    background-size: cover;
     height: 55.875em;
     align-items: center;
     justify-content: center;
@@ -296,6 +297,7 @@ body {
     margin-bottom: 1em;
     padding-bottom: 2em;
     margin-top: 1em;
+    gap: 5em;
     flex-wrap: wrap;
 }
 
@@ -303,24 +305,17 @@ body {
     border-radius: 50px;
 }
 
-.perfilNahue {
-    padding: 4em 4em 0;
-}
-
 .perfilNahue p {
     color: #EDB5F7;
 }
 
-.perfiles>div>div>img {
-    margin-bottom: 1.5em;
-}
-
-.perfilMili {
-    padding: 4em 4em 0;
-}
-
 .perfilMili p {
     color: #EDB5F7;
+}
+
+.perfiles>div>div>img {
+    margin-top: 3em;
+    margin-bottom: 1.5em;
 }
 
 .borderboxText {
