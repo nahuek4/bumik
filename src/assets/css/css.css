@@ -9,17 +9,17 @@
     font-family: 'gilroy';
 }
 
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 .app {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-
-html,
-body {
-    height: 100%;
-}
 
 /* NAVBAR */
 
@@ -93,6 +93,7 @@ body {
     display: flex;
     height: 40em;
     justify-content: space-evenly;
+    width: 100vw;
 }
 
 .footerText {
@@ -292,7 +293,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
-    margin: 1em;
+    margin-bottom: 1em;
     padding-bottom: 2em;
     margin-top: 1em;
 }
