@@ -4,7 +4,6 @@ import Contact from "../pages/Contact";
 import Init from "../pages/Init";
 import Portfolio from "../pages/Portfolio";
 import Services from "../pages/Services";
-import About from "../pages/About";
 import Layout from "./Layout";
 import Errornotfound from "../services/Errornotfound";
 
@@ -16,7 +15,6 @@ const Router = () => (
                 <Route path="/servicios" element={<Services />} />
                 <Route path="/contacto" element={<Contact />} />
                 <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/nosotros" element={<About />} />
                 <Route exact path="*" element={<Errornotfound />} />
             </Route>
         </Routes>

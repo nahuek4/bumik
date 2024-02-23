@@ -16,14 +16,14 @@ const Footer = () => {
                     <Link to="/portfolio">PROYECTOS</Link>
                     <Link to="/contacto">CONTACTO</Link>
                 </div>
-                <div className="contacts">
-                    <p>New Business/Contrataciones:</p>
-                    <span>estudiobumik@gmail.com</span>
-                    <p>Whatsapp:</p>
-                    <span>+54 9 1121878975</span>
-                    <p>Instagram:</p>
-                    <span>@estudiobumik</span>
-                </div>
+            </div>
+            <div className="contacts">
+                <p>New Business/Contrataciones:</p>
+                <span>estudiobumik@gmail.com</span>
+                <p>Whatsapp:</p>
+                <span>+54 9 1121878975</span>
+                <p>Instagram:</p>
+                <span>@estudiobumik</span>
             </div>
         </div>
     )

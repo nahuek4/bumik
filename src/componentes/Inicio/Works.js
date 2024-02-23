@@ -55,24 +55,27 @@ const Works = () => {
     };
 
     return (
-        <div className='sliderContainer'>
-            <div className="carousel">
-                <div className="tituloCarousel">
-                    <h1>Nuestros <span>trabajos</span></h1>
-                    <p>¡Conocé algunos de los proyectos de los que fuimos parte!</p>
-                </div>
-                <div className="slider">
-                    <Slider {...settings} className='sliderSettings'>
-                        {datos.map((image, index) => (
-                            <div key={index} className='imagenSliderItem'>
-                                <div className="imgItem"><img src={require(`../../assets/img/sliders/sliderInicio/${image.imagen}`)} alt={image.marca} /></div>
-                            </div>
-                        ))}
-                    </Slider>
+        <div>
+            <div className='sliderContainer'>
+                <div className="carousel">
+                    <div className="tituloCarousel">
+                        <h1>Nuestros <span>trabajos</span></h1>
+                        <p>¡Conocé algunos de los proyectos de los que fuimos parte!</p>
+                    </div>
+                    <div className="slider">
+                        <Slider {...settings} className='sliderSettings'>
+                            {datos.map((image, index) => (
+                                <div key={index} className='imagenSliderItem'>
+                                    <div className="imgItem"><img src={require(`../../assets/img/sliders/sliderInicio/${image.imagen}`)} alt={image.marca} /></div>
+                                </div>
+                            ))}
+                        </Slider>
+                    </div>
                 </div>
             </div>
             <Footer />
         </div>
+
     );
 };
 
