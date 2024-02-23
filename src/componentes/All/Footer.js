@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <div className='footerContainer'>
             <div className="footer">
@@ -18,14 +19,23 @@ const Footer = () => {
                 </div>
             </div>
             <div className="contacts">
-                <p>New Business/Contrataciones:</p>
-                <span>estudiobumik@gmail.com</span>
-                <p>Whatsapp:</p>
-                <span>+54 9 1121878975</span>
-                <p>Instagram:</p>
-                <span>@estudiobumik</span>
+                <div className="business">
+                    <p>New Business/Contrataciones:</p>
+                    <a href="mailto:estudiobumik@gmail.com" target='_blank' rel="noreferrer"><span>estudiobumik@gmail.com</span></a>
+                </div>
+                <div className="whatsapp">
+                    <p>Whatsapp:</p>
+                    <a href='https:/wa.me/+5491121878975' target="_blank" rel="noreferrer"><span>+54 9 1121878975</span></a>
+                </div>
+                <div className="instagram">
+                    <p>Instagram:</p>
+                    <a href="https://www.instagram.com/estudiobumik/" target='_blank' rel="noreferrer"><span>@estudiobumik</span></a>
+                </div>
             </div>
-        </div>
+            <div className="derechosbumik">
+                <p>&copy; {currentYear} Estudio Bumik</p>
+            </div>
+        </div >
     )
 }
 
