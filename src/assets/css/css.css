@@ -296,6 +296,7 @@ body {
     margin-bottom: 1em;
     padding-bottom: 2em;
     margin-top: 1em;
+    flex-wrap: wrap;
 }
 
 .perfiles>div>div>img {
