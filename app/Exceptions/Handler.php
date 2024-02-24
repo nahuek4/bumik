@@ -47,4 +47,12 @@ class Handler extends ExceptionHandler
             //
         });
     }
+    public function report(Throwable $exception)
+    {
+        if ($exception instanceof \Exception) {
+            \Log::error($exception->getMessage());
+        }
+
+        parent::report($exception);
+    }
 }

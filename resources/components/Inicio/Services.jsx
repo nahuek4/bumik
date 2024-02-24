@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { getServices } from '../../services/getServices';
 import Works from './Works';
+
 const Services = () => {
     const [datos, setDatos] = useState([]);
 
     useEffect(() => {
-        const fetchData = () => {
-            const data = getServices();
+        const fetchData = async () => {
+            const data = await getServices();
             setDatos(data);
         };
 
