@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <div className='footerContainer'>
+        <footer className='footerContainer'>
             <div className="footer">
                 <div className="footerText">
                     <h1>FROM</h1>
                     <h1>ARGENTINA</h1>
-                    <h1 className='spanColor'>WORLDWIDE</h1>
+                    <h1 className='spanRosa'>WORLDWIDE</h1>
                 </div>
                 <div className="footerLinks">
                     <Link to="/">INICIO</Link>
@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="derechosbumik">
                 <p>&copy; {currentYear} Estudio Bumik</p>
             </div>
-        </div >
+        </footer >
     )
 }
 

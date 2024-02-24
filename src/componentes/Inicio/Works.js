@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { getImages } from '../../services/getServices';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Footer from '../All/Footer';
 
 
 const Works = () => {
@@ -59,7 +58,7 @@ const Works = () => {
             <div className='sliderContainer'>
                 <div className="carousel">
                     <div className="tituloCarousel">
-                        <h1>Nuestros <span>trabajos</span></h1>
+                        <h1>Nuestros <span className='spanRosa'>trabajos</span></h1>
                         <p>¡Conocé algunos de los proyectos de los que fuimos parte!</p>
                     </div>
                     <div className="slider">
@@ -73,7 +72,6 @@ const Works = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
 
     );

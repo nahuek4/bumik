@@ -19,7 +19,7 @@ const Services = () => {
             <div className="serviceBackground">
                 <div className='servicesContain'>
                     <div className="serviciosText">
-                        <h1>Nuestros <span>Servicios</span></h1>
+                        <h1>Nuestros <span className='spanVerde'>Servicios</span></h1>
                         <p>What we do</p>
                     </div>
                     <div className='serviciosGen'>

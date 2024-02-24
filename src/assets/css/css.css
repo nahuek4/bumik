@@ -20,6 +20,14 @@ body {
     flex-direction: column;
 }
 
+.spanVerde {
+    color: #EAFC88;
+}
+
+.spanRosa {
+    color: #EDB5F7;
+}
+
 
 /* NAVBAR */
 
@@ -90,10 +98,11 @@ body {
 }
 
 .footer {
+    color: #FBFAF6;
     display: flex;
     justify-content: space-evenly;
     width: 100vw;
-    margin-top: 10em;
+    padding-top: 10em;
 }
 
 .footerText {
@@ -104,9 +113,6 @@ body {
     margin-right: 14em;
 }
 
-.spanColor {
-    color: #EDB5F7;
-}
 
 .footerText h1 {
     margin-bottom: .35em;
@@ -128,6 +134,7 @@ body {
 }
 
 .contacts {
+    color: #FBFAF6;
     display: flex;
     text-align: left;
     justify-content: space-evenly;
@@ -146,8 +153,10 @@ body {
 }
 
 .derechosbumik {
+    display: flex;
+    justify-content: center;
     color: #7B7A6A;
-    margin-bottom: 5em;
+    padding-bottom: 5em;
 }
 
 /* HEADER INICIO */
@@ -235,7 +244,7 @@ body {
 .servicios .circle .icon::before {
     position: absolute;
     content: '';
-    top: -0.25rem;
+    top: -0.3rem;
     right: 0.0625rem;
     width: 0.625rem;
     height: 0.625rem;
@@ -306,10 +315,6 @@ body {
 
 .about h1 {
     font-size: 3em;
-}
-
-.about h1 span {
-    color: #EDB5F7;
 }
 
 .about p {
@@ -458,9 +463,6 @@ body {
 }
 
 
-.serviciosText span {
-    color: #EAFC88;
-}
 
 .serviciosText p {
     margin-top: 1em;
@@ -582,10 +584,48 @@ body {
     margin: -2em 0em 3.5em;
 }
 
-.tituloCarousel span {
-    color: #EDB5F7;
-}
-
 .tituloCarousel p {
     margin-top: 1em;
 }
+
+/* SERVICIOS */
+
+/* HEADER SERVICIOS*/
+
+.headerServiceContain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    color: #FBFAF6;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.tituloServicios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.tituloServicios h1 {
+    font-size: 3em;
+}
+
+.tituloServicios p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.textServicios {
+    margin-top: 1em;
+}
+
+.textServicios p {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* SERVICIOS SERVICIOS */
