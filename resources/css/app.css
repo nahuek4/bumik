@@ -1,0 +1,631 @@
+/* IMPORTS */
+
+@import url("../assets/fonts/gilroy/stylesheet.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.spanVerde {
+    color: #EAFC88;
+}
+
+.spanRosa {
+    color: #EDB5F7;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    height: 4em;
+    background-color: #1e1e1e;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: white;
+}
+
+.navLinks {
+    display: flex;
+}
+
+.navToggle {
+    color: white;
+}
+
+.navItem {
+    list-style: none;
+    padding: 2em;
+}
+
+.navItem a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1015px) {
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 5em;
+        left: -110%;
+        opacity: 1;
+        transition: all .5s ease-out;
+        color: white;
+    }
+
+    .navLinks.active {
+        background: #2D2D2C;
+        left: 0px;
+        opacity: 1;
+        transition: all .5s ease;
+        z-index: 1;
+        color: white;
+    }
+
+    .navLink {
+        padding: 1.5em;
+        width: 100%;
+        display: table;
+        color: white;
+    }
+}
+
+/* FOOTER */
+
+.footerContainer {
+    height: auto;
+    background-color: #1E1E1E;
+}
+
+.footer {
+    color: #FBFAF6;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    padding-top: 10em;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    text-align: left;
+    margin-right: 14em;
+}
+
+
+.footerText h1 {
+    margin-bottom: .35em;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: #FBFAF6;
+    margin-bottom: 1.5em;
+}
+
+.contacts {
+    color: #FBFAF6;
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    margin-top: 5em;
+    margin-bottom: 10em;
+    font-size: 1.2em;
+}
+
+.contacts>div>a {
+    text-decoration: none;
+    color: #FBFAF6;
+}
+
+.whatsapp {
+    padding-right: 7em;
+}
+
+.derechosbumik {
+    display: flex;
+    justify-content: center;
+    color: #7B7A6A;
+    padding-bottom: 5em;
+}
+
+/* HEADER INICIO */
+
+.header {
+    display: flex;
+    background-image: url("../assets/img/banners/bannerInicio.png");
+    background-position: center;
+    background-size: cover;
+    height: 55.875em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.logo {
+    display: flex;
+    color: #FBFAF6;
+    flex-direction: column;
+    font-size: 0.938em;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+.textHeader {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: .5em;
+    margin-bottom: 1.4em;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 36.563em;
+}
+
+
+.servicios {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin-bottom: 3em;
+    width: 12rem;
+    height: auto;
+    color: #FBFAF6;
+}
+
+.servicios .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #EAFC88;
+    border-radius: 1.625rem;
+}
+
+.servicios .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #1e1e1e;
+}
+
+.servicios .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.servicios .circle .icon::before {
+    position: absolute;
+    content: '';
+    top: -0.3rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #1e1e1e;
+    border-right: 0.125rem solid #1e1e1e;
+    transform: rotate(45deg);
+}
+
+.servicios .serviceText {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #FBFAF6;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.servicios:hover .circle {
+    width: 100%;
+}
+
+.servicios:hover .circle .icon {
+    background: #1e1e1e;
+    transform: translate(1rem, 0);
+}
+
+.servicios:hover .serviceText {
+    color: #1e1e1e;
+}
+
+
+/*About @media */
+
+@media screen and (max-width: 1024px) {
+    .imgs {
+        flex-direction: column;
+    }
+}
+
+/* ABOUT INICIO */
+
+.nosotros {
+
+    text-align: center;
+    color: #FBFAF6;
+    background-color: #1e1e1e;
+}
+
+.nosotrosContain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about {
+    padding-top: 2em;
+    font-weight: 500;
+    margin-bottom: -2em;
+}
+
+.about h1 {
+    font-size: 3em;
+}
+
+.about p {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+.perfiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    padding-bottom: 2em;
+    margin-top: 1em;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+.perfiles>div>div>img {
+    border-radius: 50px;
+}
+
+.perfilNahue p {
+    color: #EDB5F7;
+}
+
+.perfilMili p {
+    color: #EDB5F7;
+}
+
+.perfiles>div>div>img {
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+
+.borderboxText {
+    display: flex;
+    align-items: center;
+    border: solid 2px #2D2D2C;
+    width: fit-content;
+    padding: 1.3em;
+}
+
+
+.text h2 {
+    font-size: 3em;
+}
+
+.text p {
+    font-size: 1.625em;
+    padding: .6em;
+}
+
+.pI {
+    font-style: italic;
+}
+
+/* BANNER INICIO */
+
+.bannerI {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5em;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    width: 100vw;
+}
+
+.bannerText {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EAFC88;
+    color: #1e1e1e;
+    font-size: 0.875em;
+    text-align: left;
+    height: auto;
+    width: 100%;
+    padding: 3em;
+    /* Aumentado el espacio lateral */
+}
+
+
+.investigacion h1,
+.desarrollo h1,
+.resultado h1 {
+    font-size: 5em;
+}
+
+.investigacion h2,
+.desarrollo h2,
+.resultado h2 {
+    font-size: 3em;
+}
+
+.investigacion p,
+.desarrollo p,
+.resultado p {
+    width: 20em;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+
+
+/* SERVICES INICIO */
+
+.serviceContflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceBackground {
+    display: flex;
+    justify-content: center;
+}
+
+.serviceContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+    flex-wrap: wrap;
+    font-family: 'gilroy';
+}
+
+.serviceComp {
+    width: 100vw;
+}
+
+.servicesContain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1400px;
+    padding-top: 2.5em;
+    margin-bottom: 10em;
+}
+
+.serviciosText {
+    font-size: 1.5em;
+    margin-top: 1.6em;
+}
+
+
+
+.serviciosText p {
+    margin-top: 1em;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.boxBorder {
+    border: 1px solid #404040;
+}
+
+.serviceBox {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    width: 25em;
+}
+
+.serviceBox img {
+    width: 6.25em;
+}
+
+.liServices {
+    color: #EAFC88;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.serviceBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.serviceBox ul li {
+    padding: 0.8em;
+}
+
+.serviceBox ul li p {
+    font-size: 1em;
+}
+
+.botonServicios {
+    color: #1E1E1E;
+    background-color: #EAFC88;
+    border: none;
+    font-size: 1.3em;
+    padding: 1em 2.1em;
+    margin-top: 5em;
+    margin-bottom: -4em;
+    border-radius: 10%;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+    align-items: center;
+}
+
+/* SLIDER CONTAINER */
+
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+/* Slick dots, moverlos para abajo*/
+
+.slick-dots {
+    transform: translateY(3.5em);
+    color: #FBFAF6 !important;
+}
+
+
+/* Color del slick dot activo*/
+
+.slick-dots li.slick-active button:before {
+    color: White !important;
+}
+
+/* Color de los slick dots */
+
+.slick-dots li button::before {
+    color: #FBFAF6;
+}
+
+/* Modificar flechas react slick */
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 25px;
+}
+
+.imagenSliderItem {
+    width: 100%;
+    /* Asegura que el ancho incluye el relleno y el borde */
+}
+
+.imagenSliderItem img {
+    width: 95%;
+    height: auto;
+    display: block;
+    border-radius: 30px;
+
+    /* Evita cualquier espacio adicional debajo de la imagen */
+}
+
+.slick-slide>div {
+    margin: 0 1em;
+}
+
+.tituloCarousel {
+    font-size: 1.5em;
+    margin: -2em 0em 3.5em;
+}
+
+.tituloCarousel p {
+    margin-top: 1em;
+}
+
+/* SERVICIOS */
+
+/* HEADER SERVICIOS*/
+
+.headerServiceContain {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    color: #FBFAF6;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.tituloServicios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.tituloServicios h1 {
+    font-size: 3em;
+}
+
+.tituloServicios p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.textServicios {
+    margin-top: 1em;
+}
+
+.textServicios p {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* SERVICIOS SERVICIOS */
