@@ -58,7 +58,7 @@ const Works = () => {
             <div className='sliderContainer'>
                 <div className="carousel">
                     <div className="tituloCarousel">
-                        <h1>Nuestros <span>trabajos</span></h1>
+                        <h1>Nuestros <span className='spanRosa'>Trabajos</span></h1>
                         <p>¡Conocé algunos de los proyectos de los que fuimos parte!</p>
                     </div>
                     <div className="slider">
