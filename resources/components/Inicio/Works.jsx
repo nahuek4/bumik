@@ -1,7 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick';
 import { useState, useEffect } from 'react';
-import { getImages } from '../../services/getServices';
+import { getMarcas } from '../../services/getServices';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -10,8 +10,8 @@ const Works = () => {
     const [datos, setDatos] = useState([]);
 
     useEffect(() => {
-        const fetchData = () => {
-            const data = getImages();
+        const fetchData = async () => {
+            const data = await getMarcas();
             setDatos(data);
         };
 
