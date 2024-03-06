@@ -10,7 +10,7 @@
     
 
     @viteReactRefresh
-    @vite('resources/js/app.jsx')
+    @vite('resources/js/App.jsx')
     @vite('resources/components/Pages/Contact.jsx')
     <div id="app"></div>
 

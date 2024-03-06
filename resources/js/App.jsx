@@ -13,6 +13,6 @@ const App = () => {
 }
 
 export default App;
-if(document.getElementById('app')){
-    createRoot(document.getElementById('app')).render(<App/>)
+if (document.getElementById('app')) {
+  createRoot(document.getElementById('app')).render(<App />)
 }
