@@ -7,6 +7,6 @@
 </head>
 <body>
     <div id="app"></div>
-    <script src="{{ mix('js/App.jsx') }}"></script>
+    @vite('resources/js/App.jsx')
 </body>
 </html>
