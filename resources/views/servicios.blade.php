@@ -6,7 +6,8 @@
     <title>Servicios</title>
 </head>
 <body>
-    <div id="app"></div>
+    @viteReactRefresh
     @vite('resources/js/App.jsx')
+    <div id="app"></div>
 </body>
 </html>
