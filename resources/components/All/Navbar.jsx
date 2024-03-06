@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className='navbar'>
             <div className="navMenu">
                 <ul className={click ? 'navLinks active' : 'navLinks'}>
-                    <li className='navItem'><NavLink className="navLink" to="/" onClick={handleClick}>iNIcio o o o</NavLink></li>
+                    <li className='navItem'><NavLink className="navLink" to="/" onClick={handleClick}>Inicio</NavLink></li>
                     <li className='navItem'><NavLink className="navLink" to="/servicios" onClick={handleClick}>Servicios</NavLink></li>
                     <li className='navItem'><NavLink className="navLink" to="/portfolio" onClick={handleClick}>Proyectos</NavLink></li>
                     <li className='navItem'><NavLink className="navLink" to="/contacto" onClick={handleClick}>Contacto</NavLink></li>
