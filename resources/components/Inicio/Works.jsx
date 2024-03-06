@@ -65,7 +65,7 @@ const Works = () => {
                         <Slider {...settings} className='sliderSettings'>
                             {datos.map((image, index) => (
                                 <div key={index} className='imagenSliderItem'>
-                                    <div className="imgItem"><img src={`../../assets/img/sliders/sliderInicio/${image.imagen}`} alt={image.marca} /></div>
+                                    <div className="imgItem"><img src={`assets/img/sliders/sliderInicio/${image.imagen}`} alt={image.marca} /></div>
                                 </div>
                             ))}
                         </Slider>

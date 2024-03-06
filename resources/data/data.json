@@ -1,26 +1,44 @@
 [
     {
         "id": 1,
-        "servicio": "Identidades visuales",
-        "descripcion": "Una marca es más que solo un logotipo. \n Creamos una identidad sólida que refleje tus valores y personalidad \n para que conecte con tu audiencia de manera efectiva",
-        "imagen": "1.png"
+        "titulo": "Pack Básico",
+        "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit similique inventore corrupti officiis quas consectetur quaerat excepturi delectus itaque unde dolore, commodi voluptates eos maiores ducimus mollitia, illo incidunt rem officia sit animi, obcaecati non saepe! Consectetur ipsa, quidem animi ratione praesentium a error aliquam maiores in totam! Ad eaque, itaque deserunt maiores ipsam dolorem dignissimos aliquid nihil. Necessitatibus laboriosam reiciendis, blanditiis molestiae distinctio cupiditate placeat perspiciatis, totam nulla voluptatum libero pariatur accusamus mollitia sequi et odio in aspernatur eligendi odit quaerat quo autem debitis cumque! Dolores reiciendis sunt nam tempore obcaecati consequuntur quia, sint aliquam numquam dolorum nobis.",
+        "tipo": "branding"
     },
     {
         "id": 2,
-        "servicio": "Diseño Web",
-        "descripcion": "Desarrollamos el conjunto de elementos que necesita tu marca. Logotipo, paleta de colores, tipografía, texturas y más.",
-        "imagen": "2.png"
+        "titulo": "Pack Deluxe",
+        "descripcion": "           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit similique inventore corrupti officiis quas consectetur quaerat excepturi delectus itaque unde dolore, commodi voluptates eos maiores ducimus mollitia, illo incidunt rem officia sit animi, obcaecati non saepe! Consectetur ipsa, quidem animi ratione praesentium a error aliquam maiores in totam! Ad eaque, itaque deserunt maiores ipsam dolorem dignissimos aliquid nihil. Necessitatibus laboriosam reiciendis, blanditiis molestiae distinctio cupiditate placeat perspiciatis, totam nulla voluptatum libero pariatur accusamus mollitia sequi et odio in aspernatur eligendi odit quaerat quo autem debitis cumque! Dolores reiciendis sunt nam tempore obcaecati consequuntur quia, sint aliquam numquam dolorum nobis.",
+        "tipo": "branding"
     },
     {
         "id": 3,
-        "servicio": "Social Media",
-        "descripcion": "Creamos paquetes personalizados para que tus redes sociales  impacten visualmente y aumenten su presencia digital",
-        "imagen": "4.png"
+        "titulo": "Pack Premium",
+        "descripcion": "           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit similique inventore corrupti officiis quas consectetur quaerat excepturi delectus itaque unde dolore, commodi voluptates eos maiores ducimus mollitia, illo incidunt rem officia sit animi, obcaecati non saepe! Consectetur ipsa, quidem animi ratione praesentium a error aliquam maiores in totam! Ad eaque, itaque deserunt maiores ipsam dolorem dignissimos aliquid nihil. Necessitatibus laboriosam reiciendis, blanditiis molestiae distinctio cupiditate placeat perspiciatis, totam nulla voluptatum libero pariatur accusamus mollitia sequi et odio in aspernatur eligendi odit quaerat quo autem debitis cumque! Dolores reiciendis sunt nam tempore obcaecati consequuntur quia, sint aliquam numquam dolorum nobis.",
+        "tipo": "branding"
     },
     {
         "id": 4,
-        "servicio": "Packaging & Papelería",
-        "descripcion": "Combinamos creatividad y funcionalidad para presentar tu producto de manera atractiva, que destaque y capte la atención de tus consumidores.",
-        "imagen": "5.png"
+        "titulo": "Landing",
+        "descripcion": "           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit similique inventore corrupti officiis quas consectetur quaerat excepturi delectus itaque unde dolore, commodi voluptates eos maiores ducimus mollitia, illo incidunt rem officia sit animi, obcaecati non saepe! Consectetur ipsa, quidem animi ratione praesentium a error aliquam maiores in totam! Ad eaque, itaque deserunt maiores ipsam dolorem dignissimos aliquid nihil. Necessitatibus laboriosam reiciendis, blanditiis molestiae distinctio cupiditate placeat perspiciatis, totam nulla voluptatum libero pariatur accusamus mollitia sequi et odio in aspernatur eligendi odit quaerat quo autem debitis cumque! Dolores reiciendis sunt nam tempore obcaecati consequuntur quia, sint aliquam numquam dolorum nobis.",
+        "tipo": "desarrollo"
+    },
+    {
+        "id": 5,
+        "titulo": "Institucional",
+        "descripcion": "",
+        "tipo": "desarrollo"
+    },
+    {
+        "id": 6,
+        "titulo": "E-commerce",
+        "descripcion": "",
+        "tipo": "desarrollo"
+    },
+    {
+        "id": 7,
+        "titulo": "Portfolio",
+        "descripcion": "hola",
+        "tipo": "desarrollo"
     }
 ]
