@@ -6,15 +6,9 @@ export default defineConfig({
         react(),
         laravel({
             input: [
-<<<<<<< HEAD
                 'resources/css/app.css',
                 'resources/js/App.jsx'
             ],
-=======
-                '/resources/css/app.css',
-                '/resources/js/app.jsx'
-                ],
->>>>>>> 6e64d95af7f03a8bd378d962248da6db67d624cc
             refresh: true,
         }),
     ],
