@@ -928,8 +928,8 @@ body {
 
 .form label {
     text-align: left;
-    margin-top: .5em;
-    margin-bottom: .1em;
+    margin-top: .8em;
+    margin-bottom: .25em;
 }
 
 .form input {
@@ -938,7 +938,7 @@ body {
     height: 45px;
 }
 
-.formMensaje {
+.formMensaje input {
     height: 80px;
 }
 
