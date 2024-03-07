@@ -718,7 +718,7 @@ body {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 5em;
+        top: 4em;
         left: -110%;
         opacity: 1;
         transition: all .5s ease-out;
