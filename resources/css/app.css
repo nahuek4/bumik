@@ -857,6 +857,7 @@ body {
     background-color: #1E1E1E;
     align-items: center;
     color: #FBFAF6;
+    margin-top: 5em;
 }
 
 .tituloContainerHeaderProyecto h1 {
@@ -880,6 +881,7 @@ body {
 }
 
 .headerContactTitulo {
+    margin-top: 5em;
     color: #FBFAF6;
 }
 
@@ -887,8 +889,11 @@ body {
     font-size: 3em;
 }
 
-.headerContactTitulo p {
+.headerTextP {
     margin-top: 1em;
+}
+
+.headerContactTitulo p {
     font-size: 1.5em;
 }
 
@@ -902,6 +907,7 @@ body {
     align-items: center;
     background-color: #1E1E1E;
     color: #FBFAF6;
+    font-size: 1.5em;
 }
 
 .formContain {
@@ -911,6 +917,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 3em;
 }
 
 .form {
@@ -919,6 +926,6 @@ body {
 }
 
 .form label {
-    margin-top: 1em;
+    margin-top: .5em;
     margin-bottom: 1em;
 }
