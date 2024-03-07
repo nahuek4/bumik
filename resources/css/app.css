@@ -722,7 +722,7 @@ body {
         left: -110%;
         opacity: 1;
         transition: all .5s ease-out;
-        color: white;
+        color: #FBFAF6;
     }
 
     .navLinks.active {
@@ -731,24 +731,26 @@ body {
         opacity: 1;
         transition: all .5s ease;
         z-index: 1;
-        color: white;
+        color: #FBFAF6;
     }
 
     .navLink {
         padding: 1.5em;
         width: 100%;
         display: table;
-        color: white;
+        color: #FBFAF6;
     }
+
     .navbar {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         text-transform: uppercase;
         font-size: 1.1em;
-        color: white;
+        color: #FBFAF6;
     }
-    .navToggle{
+
+    .navToggle {
         display: block;
         margin-right: 5%;
         font-size: 1.7em;
@@ -820,33 +822,47 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .serviceBox{
+    .serviceBox {
         width: 18em;
     }
+
     .investigacion p,
     .desarrollo p,
-    .resultado p{
+    .resultado p {
         font-size: 1.2em;
     }
-    .footerText{
+
+    .footerText {
         font-size: 1.7em;
     }
-    .textHeader{
+
+    .textHeader {
         font-size: 1.1em;
     }
 }
 
 @media screen and (max-width: 300px) {
-    .bannerText{
+    .bannerText {
         width: inherit;
     }
 }
+
 /* PROYECTOS HEADER */
 
 .headerProyectoContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     background-color: #1E1E1E;
     align-items: center;
+    color: #FBFAF6;
+}
+
+.tituloContainerHeaderProyecto h1 {
+    font-size: 1.5em;
+}
+
+.tituloContainerHeaderProyecto p {
+    font-size: 1.3em;
 }
