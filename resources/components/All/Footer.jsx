@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
             <div className="contacts">
                 <div className="business">
-                    <p>New Business/Contrataciones:</p>
+                    <p>Email de contacto:</p>
                     <a href="mailto:estudiobumik@gmail.com" target='_blank' rel="noreferrer"><span>estudiobumik@gmail.com</span></a>
                 </div>
                 <div className="whatsapp">
