@@ -898,4 +898,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #1E1E1E;
+    color: #FBFAF6;
+}
+
+.formContain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
