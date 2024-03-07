@@ -650,6 +650,10 @@ body {
     max-width: 1500px;
 }
 
+.item {
+    color: #FBFAF6;
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -665,9 +669,9 @@ body {
 
 .columns h2 {
     font-size: 2em;
-    color: #F7F3ED;
+    color: #FBFAF6;
     margin-bottom: .3em;
-    border-bottom: solid 1px #FBFAF6;
+    border-bottom: solid 1px #F7F3ED;
     width: 100%;
     padding-bottom: .2em;
 }
