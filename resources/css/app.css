@@ -82,7 +82,7 @@ body {
     flex-direction: column;
     font-size: 2em;
     text-align: left;
-    margin-right: 14em;
+    margin-right: 4em;
 }
 
 
@@ -745,5 +745,11 @@ body {
     }
     .contacts{
         justify-content: center;
+    }
+    .footerText{
+        margin: 0;
+    }
+    .footerLinks{
+        margin-top: 2em;
     }
 }
