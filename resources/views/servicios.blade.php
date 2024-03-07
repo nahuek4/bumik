@@ -6,7 +6,8 @@
     <title>Servicios</title>
 </head>
 <body>
+    @viteReactRefresh
+    @vite('resources/js/App.jsx')
     <div id="app"></div>
-    <script src="{{ mix('js/App.jsx') }}"></script>
 </body>
 </html>
