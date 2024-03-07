@@ -14,10 +14,14 @@ const Form = () => {
                     })}>
                         <div className="formNombreApellido">
                             {/* nombre */}
-                            <label htmlFor="nombre">Nombre</label>
+                            <div className="labelNombre">
+                                <label htmlFor="nombre">Nombre</label>
+                            </div>
                             <input type="text" {...register("nombre")} />
                             {/* Apellido */}
-                            <label htmlFor="apellido">Apellido</label>
+                            <div className="labelApellido">
+                                <label htmlFor="apellido">Apellido</label>
+                            </div>
                             <input type="text" {...register("apellido")} />
                         </div>
                         {/* Email */}

@@ -857,7 +857,7 @@ body {
     background-color: #1E1E1E;
     align-items: center;
     color: #FBFAF6;
-    margin-top: 5em;
+    padding-top: 5em;
 }
 
 .tituloContainerHeaderProyecto h1 {
@@ -926,6 +926,7 @@ body {
 }
 
 .form label {
+    text-align: left;
     margin-top: .5em;
     margin-bottom: 1em;
 }
