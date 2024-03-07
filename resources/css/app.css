@@ -748,8 +748,10 @@ body {
     }
     .footerText{
         margin: 0;
+        align-items: center;
     }
     .footerLinks{
         margin-top: 2em;
+        align-items: center;
     }
 }
