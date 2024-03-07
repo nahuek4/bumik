@@ -20,25 +20,25 @@
     {
         "id": 4,
         "titulo": "Landing",
-        "descripcion": "           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit similique inventore corrupti officiis quas consectetur quaerat excepturi delectus itaque unde dolore, commodi voluptates eos maiores ducimus mollitia, illo incidunt rem officia sit animi, obcaecati non saepe! Consectetur ipsa, quidem animi ratione praesentium a error aliquam maiores in totam! Ad eaque, itaque deserunt maiores ipsam dolorem dignissimos aliquid nihil. Necessitatibus laboriosam reiciendis, blanditiis molestiae distinctio cupiditate placeat perspiciatis, totam nulla voluptatum libero pariatur accusamus mollitia sequi et odio in aspernatur eligendi odit quaerat quo autem debitis cumque! Dolores reiciendis sunt nam tempore obcaecati consequuntur quia, sint aliquam numquam dolorum nobis.",
+        "descripcion": "Ideal para formularios de captación de clientes o incluso para cerrar ventas.La característica fundamental de una landing-page es que el usuario accederá a ella solamente a través de un link específico, por eso también se convierte en una opción magnífica si el presupuesto es acotado, o mientras se desarrolla el sitio web definitivo ",
         "tipo": "desarrollo"
     },
     {
         "id": 5,
         "titulo": "Institucional",
-        "descripcion": "",
+        "descripcion": "El tipo de sitio web por excelencia. Consta de un home o página principal más 3 secciones. (Por ejemplo: Nosotros, Servicios y Contacto).También se incluye la opción de contar con una sección auto administrable, que es ideal para poder crear un blog y tener la libertad de poder actualizarlo, sin depender de nadie ni pagar de más.",
         "tipo": "desarrollo"
     },
     {
         "id": 6,
         "titulo": "E-commerce",
-        "descripcion": "",
+        "descripcion": "Al sitio institucional, se le suma la sección de venta.Es la opción indicada sobre todo si vendes productos físicos, aunque es igual de indispensable si ofreces servicios digitales.Es ideal para automatizar procesos de ventas sin dedicar tiempo ni esfuerzo de más, y ahorrando comisiones de plataformas de terceros. ",
         "tipo": "desarrollo"
     },
     {
         "id": 7,
         "titulo": "Portfolio",
-        "descripcion": "hola",
+        "descripcion": "Si lo que buscas es mostrar tus trabajos de manera profesional, ésta es la opción indicada. Puede incluir otras secciones como un home o página principal, Nosotros, Servicios y Contacto.Ideal para profesionales del diseño, arquitectura, fotografía e ilustración.Decide qué mostrar, cómo hacerlo y actualízalo siempre que lo necesites.",
         "tipo": "desarrollo"
     }
 ]
