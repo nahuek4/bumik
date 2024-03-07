@@ -814,8 +814,16 @@ body {
     .resultado p{
         font-size: 1.2em;
     }
+    .footerText{
+        font-size: 1.7em;
+    }
 }
 
+@media screen and (max-width: 300px) {
+    .bannerText{
+        width: inherit;
+    }
+}
 /* PROYECTOS HEADER */
 
 .headerProyectoContainer {
