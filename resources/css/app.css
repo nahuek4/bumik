@@ -740,8 +740,18 @@ body {
         display: table;
         color: white;
     }
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        color: white;
+    }
     .navToggle{
         display: block;
+        margin-right: 5%;
+        font-size: 1.7em;
     }
 }
 
