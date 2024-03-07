@@ -737,34 +737,45 @@ body {
         color: white;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .footer{
+    .footer {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .contacts{
+
+    .contacts {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .footerText{
+
+    .footerText {
         margin: 0;
         align-items: center;
     }
-    .footerLinks{
+
+    .footerLinks {
         margin-top: 2em;
         align-items: center;
     }
-    .whatsapp{
+
+    .whatsapp {
         padding: 0;
     }
-    .contacts > div{
+
+    .contacts>div {
         margin-bottom: 1em;
     }
-    .business{
+
+    .business {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .serviceBox {
+        width: 15em;
     }
 }
