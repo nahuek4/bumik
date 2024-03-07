@@ -744,6 +744,7 @@ body {
         align-items: center;
     }
     .contacts{
+        flex-direction: column;
         justify-content: center;
     }
     .footerText{
@@ -753,5 +754,8 @@ body {
     .footerLinks{
         margin-top: 2em;
         align-items: center;
+    }
+    .whatsapp{
+        padding: 0;
     }
 }
