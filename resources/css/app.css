@@ -935,7 +935,11 @@ body {
 .form input {
     border: solid 1px #707070;
     background-color: #1E1E1E;
-    padding: 80px;
+    height: 30px;
+}
+
+.form input:last-child {
+    height: 80px;
 }
 
 .formNombreApellido {
@@ -945,9 +949,11 @@ body {
 .labelNombre {
     display: flex;
     flex-direction: column;
+    width: 48%;
 }
 
 .labelApellido {
     display: flex;
     flex-direction: column;
+    width: 48%;
 }
