@@ -758,4 +758,12 @@ body {
     .whatsapp{
         padding: 0;
     }
+    .contacts > div{
+        margin-bottom: 1em;
+    }
+    .business{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
