@@ -16,13 +16,13 @@ const Form = () => {
                             {/* nombre */}
                             <div className="labelNombre">
                                 <label htmlFor="nombre">Nombre</label>
+                                <input type="text" {...register("nombre")} />
                             </div>
-                            <input type="text" {...register("nombre")} />
                             {/* Apellido */}
                             <div className="labelApellido">
                                 <label htmlFor="apellido">Apellido</label>
+                                <input type="text" {...register("apellido")} />
                             </div>
-                            <input type="text" {...register("apellido")} />
                         </div>
                         {/* Email */}
                         <label htmlFor="email">Correo electrónico</label>
@@ -33,7 +33,7 @@ const Form = () => {
                         {/* Mensaje */}
                         <label htmlFor="mensaje">Mensaje</label>
                         <input type="text" {...register("mensaje")} />
-                        <button>Enviar</button>
+                        <button className='buttonForm'>Enviar</button>
                     </form>
                 </div>
             </div>
