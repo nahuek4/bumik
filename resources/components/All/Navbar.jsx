@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import "../../css/app.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,8 +9,6 @@ const Navbar = () => {
 
     const handleClick = () => setClick(!click);
 
-    const bars = <FontAwesomeIcon icon={faBars} />
-    const xmark = <FontAwesomeIcon icon={faXmark} />
     return (
         <div className='navbar'>
             <div className="navMenu">
@@ -22,7 +20,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navToggle" onClick={handleClick}>
-                <i className={click ? xmark : bars}></i>
+                <Fragment>
+                {click ? <FontAwesomeIcon icon={faXmark}/> : <FontAwesomeIcon icon={faBars} />} 
+                </Fragment>
             </div>
         </div>
     )
