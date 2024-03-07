@@ -805,7 +805,16 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {}
+@media screen and (max-width: 500px) {
+    .serviceBox{
+        width: 18em;
+    }
+    .investigacion p,
+    .desarrollo p,
+    .resultado p{
+        font-size: 1.2em;
+    }
+}
 
 /* PROYECTOS HEADER */
 
