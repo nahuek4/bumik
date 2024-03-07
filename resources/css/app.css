@@ -287,9 +287,9 @@ body {
 
 /*About @media */
 
-@media screen and (max-width: 1024px) {
-    .imgs {
-        flex-direction: column;
+@media screen and (max-width: 600px) {
+    .imgnahue>img {
+        max-width: 1em;
     }
 }
 
@@ -338,6 +338,10 @@ body {
 
 .perfiles>div>div>img {
     border-radius: 50px;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+    max-width: 90%;
+    width: 23em;
 }
 
 .perfilNahue p {
@@ -346,11 +350,6 @@ body {
 
 .perfilMili p {
     color: #EDB5F7;
-}
-
-.perfiles>div>div>img {
-    margin-top: 3em;
-    margin-bottom: 1.5em;
 }
 
 .borderboxText {
@@ -645,7 +644,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2em;
 }
 
 .serviceServicioimg {
@@ -696,9 +694,22 @@ body {
     width: 100%;
 }
 
-.item {
-    color: #FBFAF6;
+.columns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
+
+.columns h2 {
+    font-size: 2em;
+    color: #F7F3ED;
+    margin-bottom: .3em;
+    border-bottom: solid 1px #FBFAF6;
+    width: 100%;
+    padding-bottom: .2em;
+}
+
 
 .tittle {
     display: flex;
@@ -708,6 +719,7 @@ body {
     color: #FBFAF6;
     font-size: 1em;
     border-bottom: 1px solid #F7F3ED;
+    padding-bottom: .3em;
 }
 
 .tittle span {

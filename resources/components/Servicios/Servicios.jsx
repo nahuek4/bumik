@@ -75,8 +75,7 @@ const Servicios = () => {
                         </div>
                         <div className="mostrarMas">
                             <div className="column">
-                                {datosTipo("desarrollo",)}
-
+                                {datosTipo("desarrollo")}
                             </div>
                         </div>
                     </div>
@@ -95,7 +94,13 @@ const Servicios = () => {
                         </div>
                         <div className="mostrarMas">
                             <div className="column">
-
+                                <div className="columns">
+                                    <h2>Posteos/ historias mensuales</h2>
+                                    <h2>Diseño de feed</h2>
+                                    <h2>Plantillas editables</h2>
+                                    <h2>Edición de fotografías</h2>
+                                    <h2>Reels/Edición de videos</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -113,10 +118,23 @@ const Servicios = () => {
                         </div>
                         <div className="mostrarMas">
                             <div className="column">
+                                <div className="columns">
+                                    <h2>Tarjetas personales</h2>
+                                    <h2>Etiquetas de producto</h2>
+                                    <h2>Stickers</h2>
+                                    <h2>Patterns</h2>
+                                    <h2>Cajas</h2>
+                                    <h2>Menús</h2>
+                                    <h2>Invivitaciones</h2>
+                                    <h2>Y más</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="botonService">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZL63YOXJUQ2Ee7VYszlfoi8bPjeuZvujjGCmt-j_ewmTi5A/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button className='botonServicios'>¡Cotizá tu proyecto!</button></a>
             </div>
         </div>
     )
