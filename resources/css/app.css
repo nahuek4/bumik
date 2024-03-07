@@ -876,6 +876,7 @@ body {
     justify-content: center;
     align-self: center;
     text-align: center;
+    background-color: #1E1E1E;
 }
 
 .headerContactTitulo {
@@ -887,6 +888,7 @@ body {
 }
 
 .headerContactTitulo p {
+    margin-top: 1em;
     font-size: 1.5em;
 }
 
@@ -903,9 +905,20 @@ body {
 }
 
 .formContain {
+    width: 1400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }

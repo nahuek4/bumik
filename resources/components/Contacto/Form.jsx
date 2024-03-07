@@ -9,15 +9,17 @@ const Form = () => {
         <div>
             <div className="formContainer">
                 <div className="formContain">
-                    <form onSubmit={handleSubmit((data) => {
+                    <form className="form" onSubmit={handleSubmit((data) => {
                         console.log(data);
                     })}>
-                        {/* nombre */}
-                        <label htmlFor="nombre">Nombre</label>
-                        <input type="text" {...register("nombre")} />
-                        {/* Apellido */}
-                        <label htmlFor="apellido">Apellido</label>
-                        <input type="text" {...register("apellido")} />
+                        <div className="formNombreApellido">
+                            {/* nombre */}
+                            <label htmlFor="nombre">Nombre</label>
+                            <input type="text" {...register("nombre")} />
+                            {/* Apellido */}
+                            <label htmlFor="apellido">Apellido</label>
+                            <input type="text" {...register("apellido")} />
+                        </div>
                         {/* Email */}
                         <label htmlFor="email">Correo electrónico</label>
                         <input type="text" {...register("email")} />
