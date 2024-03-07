@@ -806,3 +806,13 @@ body {
 }
 
 @media screen and (max-width: 500px) {}
+
+/* PROYECTOS HEADER */
+
+.headerProyectoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1E1E1E;
+    align-items: center;
+}
