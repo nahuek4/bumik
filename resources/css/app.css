@@ -785,3 +785,19 @@ body {
         font-size: 0.75em;
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .bannerText {
+        flex-direction: column;
+    }
+
+    .bannerText>div {
+        margin-bottom: .5em;
+    }
+
+    .investigacion p,
+    .desarrollo p,
+    .resultado p {
+        font-size: 1.6em;
+    }
+}
