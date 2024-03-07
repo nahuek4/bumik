@@ -911,7 +911,7 @@ body {
 }
 
 .formContain {
-    width: 600px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -938,8 +938,10 @@ body {
 
 .labelNombre {
     display: flex;
+    flex-direction: column;
 }
 
 .labelApellido {
     display: flex;
+    flex-direction: column;
 }
