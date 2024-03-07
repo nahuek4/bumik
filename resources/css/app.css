@@ -779,3 +779,9 @@ body {
         width: 20em;
     }
 }
+
+@media screen and (max-width: 1300px) {
+    .bannerText {
+        font-size: 0.75em;
+    }
+}
