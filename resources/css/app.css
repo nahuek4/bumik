@@ -703,7 +703,6 @@ body {
 }
 
 .content.show {
-    margin-bottom: 1em;
     margin-top: 1em;
     height: auto;
     max-height: 9999px;
