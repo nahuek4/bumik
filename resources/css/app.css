@@ -911,7 +911,7 @@ body {
 }
 
 .formContain {
-    width: 1400px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -923,10 +923,23 @@ body {
 .form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .form label {
     text-align: left;
     margin-top: .5em;
-    margin-bottom: 1em;
+    margin-bottom: .1em;
+}
+
+.formNombreApellido {
+    display: flex;
+}
+
+.labelNombre {
+    display: flex;
+}
+
+.labelApellido {
+    display: flex;
 }
