@@ -25,15 +25,17 @@ const Form = () => {
                             </div>
                         </div>
                         {/* Email */}
-                        <label htmlFor="email">Correo electrónico</label>
-                        <input type="email" {...register("email")} />
-                        {/* Telefono */}
-                        <label htmlFor="telefono">Telefono</label>
-                        <input type="tel" {...register("telefono")} />
-                        {/* Mensaje */}
-                        <label htmlFor="mensaje">Mensaje</label>
-                        <input height="200px" type="text" {...register("mensaje")} />
-                        <button className='buttonForm'>Enviar</button>
+                        <div className="formResto">
+                            <label htmlFor="email">Correo electrónico</label>
+                            <input type="email" {...register("email")} />
+                            {/* Telefono */}
+                            <label htmlFor="telefono">Telefono</label>
+                            <input type="tel" {...register("telefono")} />
+                            {/* Mensaje */}
+                            <label htmlFor="mensaje">Mensaje</label>
+                            <input height="200px" type="text" {...register("mensaje")} />
+                            <button className='buttonForm'>Enviar</button>
+                        </div>
                     </form>
                 </div>
             </div>
