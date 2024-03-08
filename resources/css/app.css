@@ -975,4 +975,8 @@ body {
 .textButton {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    background-color: #1E1E1E;
 }
