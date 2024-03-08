@@ -940,10 +940,6 @@ body {
     font-size: 1.3em;
 }
 
-.form input:last-child {
-    height: 200px;
-}
-
 .formNombreApellido {
     display: flex;
     justify-content: space-between;
@@ -969,4 +965,5 @@ body {
     border-radius: 25px;
     color: #1E1E1E;
     border: none;
+    cursor: pointer;
 }
