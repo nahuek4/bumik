@@ -2,9 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 
 const FAQ = () => {
-    const [datos, setDatos] = useState([]);
     const [selected, setSelected] = useState(null);
-
+    let i = null;
     const toggle = (i) => {
         if (selected === i) {
             return setSelected(null);
