@@ -37,6 +37,14 @@ const Form = () => {
                     </form>
                 </div>
             </div>
+            <div className="textButton">
+                <p>¿Tenes alguna consulta de cómo podrías llevar Tu proyecto adelante?
+                    Envíanos un mensaje a estudiobumik@gmail.com o completá el formulario
+                    y te responderemos a la brevedad.</p>
+                <div className="botonService">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZL63YOXJUQ2Ee7VYszlfoi8bPjeuZvujjGCmt-j_ewmTi5A/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button className='botonServicios'>¡Cotizá tu proyecto!</button></a>
+                </div>
+            </div>
         </div>
     )
 }
