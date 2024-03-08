@@ -1,8 +1,11 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { getDesplegable } from '../../services/getServices';
 
 const FAQ = () => {
+    const [datos, setDatos] = useState([]);
     const [selected, setSelected] = useState(null);
+
     let i = null;
     const toggle = (i) => {
         if (selected === i) {
@@ -11,6 +14,30 @@ const FAQ = () => {
 
         setSelected(i);
     }
+
+    function datosTipo(tipo) {
+        return datos.filter(item => item.tipo === tipo).map((item, i) => {
+            return (
+                <div className="item" key={i}>
+                    <div className="tittle" onClick={() => toggle(i)}>
+                        <div className="vacio"></div>
+                        <h1>{item.titulo}</h1>
+                        <span>{selected === i ? '-' : '+'}</span>
+                    </div>
+                    <div className={selected === i ? "content show" : "content"}><p>{item.descripcion}</p></div>
+                </div>
+            );
+        });
+    }
+
+    useEffect(() => {
+        const fetchData = () => {
+            const data = getDesplegable();
+            setDatos(data);
+        };
+
+        fetchData();
+    }, []);
     return (
         <div>
             <div className="faqContainerComp">
@@ -19,30 +46,7 @@ const FAQ = () => {
                         <h1>Preguntas <span className='spanRosa'>Frecuentes</span></h1>
                         <p>FAQS Generales</p>
                     </div>
-                    <div className="tittle" onClick={() => toggle(i)}>
-                        <div className="vacio"></div>
-                        <h1>¿Puedo diseñar solo el logo de mi marca?</h1>
-                        <span>{selected === i ? '-' : '+'}</span>
-                    </div>
-                    <div className={selected === i ? "content show" : "content"}><p>hola</p></div>
-                    <div className="tittle" onClick={() => toggle(i)}>
-                        <div className="vacio"></div>
-                        <h1>¿Cuáles son los métodos de pago de los servicios?</h1>
-                        <span>{selected === i ? '-' : '+'}</span>
-                    </div>
-                    <div className={selected === i ? "content show" : "content"}><p>Hola</p></div>
-                    <div className="tittle" onClick={() => toggle(i)}>
-                        <div className="vacio"></div>
-                        <h1>¿Cuánto demora del proceso de Branding?</h1>
-                        <span>{selected === i ? '-' : '+'}</span>
-                    </div>
-                    <div className={selected === i ? "content show" : "content"}><p>hola</p></div>
-                    <div className="tittle" onClick={() => toggle(i)}>
-                        <div className="vacio"></div>
-                        <h1>¿En donde dan servicio?</h1>
-                        <span>{selected === i ? '-' : '+'}</span>
-                    </div>
-                    <div className={selected === i ? "content show" : "content"}><p>hola</p></div>
+                    {datosTipo()}
                 </div>
             </div>
         </div >
