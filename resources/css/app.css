@@ -940,7 +940,7 @@ body {
     font-size: 1.3em;
 }
 
-.form input:last-child {
+form input:last-child {
     height: 200px;
 }
 
