@@ -978,5 +978,15 @@ body {
     justify-content: center;
     align-self: center;
     text-align: center;
+    color: #FBFAF6;
     background-color: #1E1E1E;
+    margin-top: 3em;
+}
+
+.textButton p {
+    font-size: 1.5em;
+}
+
+.textButton div {
+    margin-top: -3em;
 }
