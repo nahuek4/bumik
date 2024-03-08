@@ -29,7 +29,7 @@ const Form = () => {
                         <input type="email" {...register("email")} />
                         {/* Telefono */}
                         <label htmlFor="telefono">Telefono</label>
-                        <input type="text" {...register("telefono")} />
+                        <input type="tel" {...register("telefono")} />
                         {/* Mensaje */}
                         <label htmlFor="mensaje">Mensaje</label>
                         <input height="200px" type="text" {...register("mensaje")} />

@@ -940,6 +940,10 @@ body {
     font-size: 1.3em;
 }
 
+.form input:last-child {
+    height: 200px;
+}
+
 .formNombreApellido {
     display: flex;
     justify-content: space-between;
