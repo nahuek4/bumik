@@ -46,7 +46,7 @@ const FAQ = () => {
                         <h1>Preguntas <span className='spanRosa'>Frecuentes</span></h1>
                         <p>FAQS Generales</p>
                     </div>
-                    {datosTipo()}
+                    {datosTipo("branding")}
                 </div>
             </div>
         </div >
