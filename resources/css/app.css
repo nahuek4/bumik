@@ -980,7 +980,7 @@ body {
     text-align: center;
     color: #FBFAF6;
     background-color: #1E1E1E;
-    margin-top: 3em;
+    padding-top: 4em;
 }
 
 .textButton p {
@@ -988,5 +988,5 @@ body {
 }
 
 .textButton div {
-    margin-top: -3em;
+    margin-top: -2em;
 }
