@@ -25,7 +25,7 @@ const FAQ = () => {
                             <h1>¿Puedo diseñar solo el logo de mi marca?</h1>
                             <span>{selected === i ? '-' : '+'}</span>
                         </div>
-                        <div className={selected === i ? "content show" : "content"}><p>{item.descripcion}</p></div>
+                        <div className={selected === i ? "content show" : "content"}><p>Hola</p></div>
                     </div>
                     <div className="item">
                         <div className="tittle" onClick={() => toggle(i)}>
@@ -33,7 +33,7 @@ const FAQ = () => {
                             <h1>¿Cuáles son los métodos de pago de los servicios?</h1>
                             <span>{selected === i ? '-' : '+'}</span>
                         </div>
-                        <div className={selected === i ? "content show" : "content"}><p>{item.descripcion}</p></div>
+                        <div className={selected === i ? "content show" : "content"}><p>Hola</p></div>
                     </div>
                     <div className="item">
                         <div className="tittle" onClick={() => toggle(i)}>
@@ -41,7 +41,7 @@ const FAQ = () => {
                             <h1>¿Cuánto demora del proceso de Branding?</h1>
                             <span>{selected === i ? '-' : '+'}</span>
                         </div>
-                        <div className={selected === i ? "content show" : "content"}><p>{item.descripcion}</p></div>
+                        <div className={selected === i ? "content show" : "content"}><p>Hola</p></div>
                     </div>
                     <div className="item">
                         <div className="tittle" onClick={() => toggle(i)}>
@@ -49,7 +49,7 @@ const FAQ = () => {
                             <h1>¿En donde dan servicio?</h1>
                             <span>{selected === i ? '-' : '+'}</span>
                         </div>
-                        <div className={selected === i ? "content show" : "content"}><p>{item.descripcion}</p></div>
+                        <div className={selected === i ? "content show" : "content"}><p>Hola</p></div>
                     </div>
                 </div>
             </div>
