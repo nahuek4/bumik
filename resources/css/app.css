@@ -938,11 +938,6 @@ body {
     height: 55px;
 }
 
-.formMensaje input {
-    height: 180px;
-    margin-bottom: 2em;
-}
-
 .formNombreApellido {
     display: flex;
     justify-content: space-between;
@@ -958,4 +953,12 @@ body {
     display: flex;
     flex-direction: column;
     width: 48%;
+}
+
+.buttonForm {
+    margin-top: 2em;
+    padding: .5em;
+    color: #EAFC88;
+    font-size: 1.3em;
+    border-radius: 40px;
 }
