@@ -26,7 +26,7 @@ const Form = () => {
                         </div>
                         {/* Email */}
                         <label htmlFor="email">Correo electrónico</label>
-                        <input type="text" {...register("email")} />
+                        <input type="email" {...register("email")} />
                         {/* Telefono */}
                         <label htmlFor="telefono">Telefono</label>
                         <input type="text" {...register("telefono")} />
