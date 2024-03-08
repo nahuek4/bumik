@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import FAQ from './FAQ';
 
 const Form = () => {
     const { register, handleSubmit } = useForm();
@@ -45,6 +46,7 @@ const Form = () => {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZL63YOXJUQ2Ee7VYszlfoi8bPjeuZvujjGCmt-j_ewmTi5A/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button className='botonServicios'>¡Cotizá tu proyecto!</button></a>
                 </div>
             </div>
+            <FAQ />
         </div>
     )
 }
