@@ -1002,3 +1002,15 @@ body {
     padding-top: 6em;
     color: #FBFAF6;
 }
+
+.tittleFaq {
+    margin-bottom: 2em;
+}
+
+.tittleFaq h1 {
+    font-size: 3em;
+}
+
+.tittleFaq p {
+    font-size: 1.5em;
+}
