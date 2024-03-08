@@ -1,5 +1,5 @@
 import React from 'react'
-import logob from '../../assets/img/logos/logob.png'
+import logob from '../../assets/img/logos/logopB.webp'
 import About from './About'
 import { Link } from 'react-router-dom'
 

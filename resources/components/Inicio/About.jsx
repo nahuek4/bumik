@@ -1,6 +1,6 @@
 import React from 'react'
-import Nahue from '../../assets/img/fotos/popOutNahue.png'
-import Mili from '../../assets/img/fotos/popOutMili.png'
+import Nahue from '../../assets/img/fotos/popOutNahue.webp'
+import Mili from '../../assets/img/fotos/popOutMili.webp'
 import Banner from './Banner'
 
 const About = () => {
