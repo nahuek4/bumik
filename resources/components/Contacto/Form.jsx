@@ -32,7 +32,7 @@ const Form = () => {
                         <input type="tel" {...register("telefono")} />
                         {/* Mensaje */}
                         <label htmlFor="mensaje">Mensaje</label>
-                        <input style="height: 200px;" type="text" {...register("mensaje")} />
+                        <input type="text" {...register("mensaje")} />
                         <button className='buttonForm'>Enviar</button>
                     </form>
                 </div>
