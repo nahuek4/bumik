@@ -935,11 +935,11 @@ body {
 .form input {
     border: solid 1px #707070;
     background-color: #1E1E1E;
-    height: 45px;
+    height: 60px;
 }
 
-.formMensaje input {
-    height: 80px;
+.formMensaje {
+    height: 180px;
 }
 
 .formNombreApellido {
