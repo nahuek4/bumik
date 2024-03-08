@@ -980,7 +980,7 @@ body {
     text-align: center;
     color: #FBFAF6;
     background-color: #1E1E1E;
-    padding-top: 4em;
+    padding-top: 5em;
 }
 
 .textButton p {
@@ -988,5 +988,15 @@ body {
 }
 
 .textButton div {
-    margin-top: -2em;
+    margin-top: -1em;
+}
+
+/* CONTACTO FAQ */
+
+.faqContainerComp {
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
