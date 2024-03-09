@@ -876,10 +876,6 @@ body {
         font-size: 1em;
     }
 
-    .logoBumik {
-        background: url("../assets/img/logos/logob.webp");
-    }
-
     .investigacion p,
     .desarrollo p,
     .resultado p {
