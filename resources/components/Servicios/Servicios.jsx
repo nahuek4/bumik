@@ -21,7 +21,7 @@ const Servicios = () => {
                     <div className="tittle" onClick={() => toggle(i)}>
                         <div className="vacio"></div>
                         <h1>{item.titulo}</h1>
-                        <span>{selected === i ? '-' : '+'}</span>
+                        <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
                     </div>
                     <div className={selected === i ? "content show" : "content"}><p>{item.descripcion}</p></div>
                 </div>
