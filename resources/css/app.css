@@ -899,6 +899,10 @@ body {
 }
 
 @media screen and (max-width: 300px) {
+    .serviceBox {
+        width: 15em;
+    }
+
     .bannerText {
         width: inherit;
     }
