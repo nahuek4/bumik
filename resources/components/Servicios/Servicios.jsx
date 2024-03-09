@@ -125,7 +125,7 @@ const Servicios = () => {
                                     <h2>Patterns</h2>
                                     <h2>Cajas</h2>
                                     <h2>Menús</h2>
-                                    <h2>Invivitaciones</h2>
+                                    <h2>Invitaciones</h2>
                                     <h2>Y más</h2>
                                 </div>
                             </div>
