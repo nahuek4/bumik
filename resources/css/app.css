@@ -708,6 +708,11 @@ body {
 }
 
 /* MEDIA QUERYS */
+@media screen and (max-width: 1400px) {
+    .serviceServicioimg {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1300px) {
     .bannerText {
