@@ -877,6 +877,10 @@ body {
     .tittle {
         font-size: .8em;
     }
+
+    .columns h2 {
+        font-size: 1.6em;
+    }
 }
 
 @media screen and (max-width: 300px) {
