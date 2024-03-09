@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logopB from '../../assets/img/logos/logopB.webp'
 import logob from '../../assets/img/logos/logob.webp'
 import About from './About'
