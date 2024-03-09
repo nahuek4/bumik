@@ -821,9 +821,15 @@ body {
     .serviceBox {
         width: 20em;
     }
+
+    .tituloServicio h1 {
+        font-size: 2.5em;
+    }
+
+    .tituloServicio p {
+        font-size: 1.1em;
+    }
 }
-
-
 
 @media screen and (max-width: 500px) {
     .serviceBox {
