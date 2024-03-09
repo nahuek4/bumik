@@ -609,9 +609,6 @@ body {
     align-items: center;
 }
 
-.serviceServicioimg {
-    max-height: 600px;
-}
 
 .serviceServicioimg img {
     border-radius: 25px;
@@ -647,9 +644,6 @@ body {
     margin: 3em;
 }
 
-.serviciosContain {
-    max-width: 1500px;
-}
 
 .item {
     color: #FBFAF6;
