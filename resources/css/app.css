@@ -868,6 +868,10 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+    .logoBumik {
+        width: 24em;
+    }
+
     .serviceBox {
         width: 18em;
     }
