@@ -872,6 +872,12 @@ body {
 
     .footerLinks {
         font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    .contacts {
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
 
     .textHeader {
