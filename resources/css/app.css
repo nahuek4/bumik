@@ -563,7 +563,7 @@ body {
     background-color: #1E1E1E;
     color: #FBFAF6;
     padding-top: 5em;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
 }
 
 .tituloServicios {
@@ -829,6 +829,10 @@ body {
         width: 20em;
     }
 
+    .tituloServicios {
+        font-size: 2.5em;
+    }
+
     .tituloServicio h1 {
         font-size: 2.5em;
     }
@@ -836,6 +840,11 @@ body {
     .tituloServicio p {
         font-size: 1.1em;
     }
+
+    .headerServiceContain {
+        padding-bottom: 1.5em;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
