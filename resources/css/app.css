@@ -803,6 +803,10 @@ body {
         margin-top: 3.5em;
     }
 
+    .perfiles {
+        gap: 2em;
+    }
+
     .contacts {
         display: flex;
         flex-direction: column;
@@ -866,6 +870,10 @@ body {
 @media screen and (max-width: 500px) {
     .serviceBox {
         width: 18em;
+    }
+
+    .serviceText {
+        font-size: 1em;
     }
 
     .investigacion p,
