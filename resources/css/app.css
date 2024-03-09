@@ -831,7 +831,6 @@ body {
 
     .tituloServicios h1 {
         font-size: 2.5em;
-        padding: 0px 1em;
     }
 
     .tituloServicio h1 {
@@ -866,11 +865,23 @@ body {
     .textHeader {
         font-size: 1.1em;
     }
+
+    .tituloServicios h1 {
+        font-size: 2.2em;
+    }
+
+    .tituloServicio h1 {
+        font-size: 2.2em;
+    }
 }
 
 @media screen and (max-width: 300px) {
     .bannerText {
         width: inherit;
+    }
+
+    .footerText {
+        font-size: 1.5em;
     }
 }
 
