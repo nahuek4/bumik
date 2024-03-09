@@ -795,6 +795,10 @@ body {
         align-items: center;
     }
 
+    .logo {
+        margin-top: -10em;
+    }
+
     .botonServicios {
         margin-top: 3.5em;
     }
@@ -886,7 +890,7 @@ body {
     }
 
     .textHeader {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .tituloServicios h1 {
