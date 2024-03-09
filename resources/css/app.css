@@ -590,6 +590,7 @@ body {
 .textServicios p {
     font-size: 1.3em;
     text-align: center;
+    line-height: 1em;
 }
 
 /* SERVICIOS SERVICIOS */
@@ -783,6 +784,7 @@ body {
     .textServicios {
         padding: 1em;
     }
+
 }
 
 @media screen and (max-width: 768px) {
