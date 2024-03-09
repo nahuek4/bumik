@@ -95,7 +95,7 @@ const Servicios = () => {
                         <div className="mostrarMas">
                             <div className="column">
                                 <div className="columns">
-                                    <h2>Posteos/ historias mensuales</h2>
+                                    <h2>Posteos/historias mensuales</h2>
                                     <h2>Diseño de feed</h2>
                                     <h2>Plantillas editables</h2>
                                     <h2>Edición de fotografías</h2>
