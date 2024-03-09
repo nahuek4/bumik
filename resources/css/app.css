@@ -758,10 +758,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-        background-image: url("../assets/img/logos/logob.webp");
-    }
-
     .footer {
         display: flex;
         flex-direction: column;
