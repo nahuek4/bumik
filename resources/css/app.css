@@ -644,6 +644,9 @@ body {
     margin: 3em;
 }
 
+.serviciosContain {
+    max-width: 1300px;
+}
 
 .item {
     color: #FBFAF6;
@@ -705,6 +708,28 @@ body {
 }
 
 /* MEDIA QUERYS */
+
+@media screen and (max-width: 1300px) {
+    .bannerText {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .bannerText {
+        flex-direction: column;
+    }
+
+    .bannerText>div {
+        margin-bottom: .5em;
+    }
+
+    .investigacion p,
+    .desarrollo p,
+    .resultado p {
+        font-size: 1.6em;
+    }
+}
 
 @media screen and (max-width: 1015px) {
     .navLinks {
@@ -793,27 +818,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .bannerText {
-        font-size: 0.75em;
-    }
-}
 
-@media screen and (max-width: 1100px) {
-    .bannerText {
-        flex-direction: column;
-    }
-
-    .bannerText>div {
-        margin-bottom: .5em;
-    }
-
-    .investigacion p,
-    .desarrollo p,
-    .resultado p {
-        font-size: 1.6em;
-    }
-}
 
 @media screen and (max-width: 500px) {
     .serviceBox {
