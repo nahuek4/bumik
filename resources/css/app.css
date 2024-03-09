@@ -590,7 +590,8 @@ body {
 .textServicios p {
     font-size: 1.3em;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.3em;
+    line-break: auto;
 }
 
 /* SERVICIOS SERVICIOS */
