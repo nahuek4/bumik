@@ -877,7 +877,7 @@ body {
     }
 
     .logoBumik {
-        src: url("../assets/img/logos/logob.webp");
+        background: url("../assets/img/logos/logob.webp");
     }
 
     .investigacion p,
