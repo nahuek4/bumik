@@ -42,7 +42,7 @@ const Servicios = () => {
             <div className="serviciosContain">
                 <div className="serviceServicio">
                     <div className="serviceServicioimg">
-                        <div className=""><img src="assets/img/fotos/innocenti.png" alt="innocenti logo" /></div>
+                        <div className=""><img src="assets/img/fotos/innocenti.webp" alt="innocenti logo" /></div>
                     </div>
                     <div className="containerData">
                         <div className="tituloServicio">
@@ -63,7 +63,7 @@ const Servicios = () => {
             <div className="serviciosContain">
                 <div className="serviceServicio">
                     <div className="serviceServicioimg">
-                        <div className=""><img src="/assets/img/fotos/pcmuestra.png" alt="pc muestra" /></div>
+                        <div className=""><img src="/assets/img/fotos/pcmuestra.webp" alt="pc muestra" /></div>
                     </div>
                     <div className="containerData">
                         <div className="tituloServicio">
@@ -84,7 +84,7 @@ const Servicios = () => {
             <div className="serviciosContain">
                 <div className="serviceServicio">
                     <div className="serviceServicioimg">
-                        <div className=""><img src="/assets/img/fotos/celulares.png" alt="celulares muestra" /></div>
+                        <div className=""><img src="/assets/img/fotos/celulares.webp" alt="celulares muestra" /></div>
                     </div>
                     <div className="containerData">
                         <div className="tituloServicio">
@@ -109,7 +109,7 @@ const Servicios = () => {
             <div className="serviciosContain">
                 <div className="serviceServicio">
                     <div className="serviceServicioimg">
-                        <div className=""><img src="/assets/img/fotos/mateq.png" alt="mateq packaging" /></div>
+                        <div className=""><img src="/assets/img/fotos/mateq.webp" alt="mateq packaging" /></div>
                     </div>
                     <div className="containerData">
                         <div className="tituloServicio">
