@@ -26,16 +26,8 @@ const Paginacion = () => {
                 onPageChange={(event) => setPage(event.selected)}
                 breakLabel="..."
                 pageCount={Math.ceil(data.length / n)}
-                previousLabel={
-                    <IconContext.Provider value={{ color: "#B8C1CC", size: "36px" }}>
-                        <AiFillLeftCircle />
-                    </IconContext.Provider>
-                }
-                nextLabel={
-                    <IconContext.Provider value={{ color: "#B8C1CC", size: "36px" }}>
-                        <AiFillRightCircle />
-                    </IconContext.Provider>
-                }
+                previousLabel="<- previous"
+                nextLabel="-> next"
             />
         </div>
     );
