@@ -4,7 +4,7 @@ import { getProyectos } from '../../services/getServices'
 import Paginacion from './Paginacion';
 
 
-const Gallery = (datos) => {
+const Gallery = () => {
     const [datos, setDatos] = useState([]);
     const [pagina, setPagina] = useState(1);
     const [porPagina, setPorPagina] = useState(4);
@@ -30,7 +30,7 @@ const Gallery = (datos) => {
                         </div>
                     ))}
                 </div>
-                <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} />
+                <Paginacion datos={datos} />
             </div>
         </div>
     )
