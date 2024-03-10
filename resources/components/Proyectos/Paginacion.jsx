@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ReactPaginate from 'react-paginate';
 import { getProyectos } from '../../services/getServices';
 
-const Paginacion = ({ datos }) => {
+const Paginacion = () => {
     const [datos, setDatos] = useState([]);
     const [page, setPage] = useState(0);
     const [filterData, setFilterData] = useState();

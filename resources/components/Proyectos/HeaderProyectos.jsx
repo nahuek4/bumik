@@ -1,5 +1,5 @@
 import React from 'react'
-import Gallery from './Gallery';
+import Paginacion from './Paginacion';
 
 const HeaderProyectos = () => {
     return (
@@ -10,7 +10,7 @@ const HeaderProyectos = () => {
                     <p>¡Conocé algunos de los proyectos de los que fuimos parte!</p>
                 </div>
             </div>
-            <Gallery />
+            <Paginacion />
         </div>
     )
 }
