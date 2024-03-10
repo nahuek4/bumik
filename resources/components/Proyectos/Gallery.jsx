@@ -7,7 +7,7 @@ import Paginacion from './Paginacion';
 const Gallery = () => {
     const [datos, setDatos] = useState([]);
     const [pagina, setPagina] = useState(1);
-    const [porPagina, setPorPagina] = useState(6);
+    const [porPagina, setPorPagina] = useState(4);
 
     const maximo = datos.length / porPagina;
 
