@@ -34,6 +34,9 @@ const Paginacion = ({ datos }) => {
                     ))}
                 </div>
             </div>
+            <ul>
+                {filterData && filterData.map((item, index) => <li>Item #{item}</li>)}
+            </ul>
             <ReactPaginate
                 containerClassName={"pagination"}
                 activeClassName={"active"}
