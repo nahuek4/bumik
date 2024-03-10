@@ -979,6 +979,8 @@ body {
     flex-direction: column;
     background-color: #1E1E1E;
     color: #FBFAF6;
+    justify-content: center;
+    align-items: center;
 }
 
 .galleryContain {
@@ -987,10 +989,11 @@ body {
     justify-content: center;
     align-self: center;
     gap: 3em;
+    max-width: 1000px;
 }
 
-.galleryItem {
-    width: 25em;
+.galleryItem img {
+    width: 35em;
 }
 
 
