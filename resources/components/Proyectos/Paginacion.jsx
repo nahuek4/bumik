@@ -4,7 +4,7 @@ import { getProyectos } from '../../services/getServices';
 
 const Paginacion = () => {
     const [datos, setDatos] = useState([]);
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(1);
     const [filterData, setFilterData] = useState();
     const n = 4;
 
