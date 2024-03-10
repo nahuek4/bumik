@@ -24,10 +24,10 @@ const Paginacion = () => {
     }, [page]);
 
     return (
-        <div className="App">
+        <div>
             <div className="galleryContainComp">
                 <div className="galleryContain">
-                    {filterData && filterData.map((image, index) => (
+                    {filterData.map((image, index) => (
                         <div key={index} className='galleryItem'>
                             <img src={`assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
                         </div>

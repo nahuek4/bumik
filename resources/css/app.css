@@ -1009,7 +1009,7 @@ body {
 }
 
 .active {
-    border: #EDB5F7;
+    border: solid 1px #EDB5F7;
     border-radius: 30px;
 }
 
