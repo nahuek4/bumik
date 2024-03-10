@@ -1007,6 +1007,11 @@ body {
     color: #FBFAF6;
 }
 
+.active {
+    border: #EDB5F7;
+    border-radius: 30px;
+}
+
 .page-item {
     list-style: none;
     padding: 2px 12px;
