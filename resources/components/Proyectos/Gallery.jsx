@@ -1,13 +1,18 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { getProyectos } from '../../services/getServices';
+import { getProyectos } from '../../services/getServices'
+
 
 const Gallery = () => {
     const [datos, setDatos] = useState([]);
 
     useEffect(() => {
-        const data = getProyectos();
-        setDatos(data);
+        const fetchData = async () => {
+            const data = await getProyectos();
+            setDatos(data);
+        };
+
+        fetchData();
     }, []);
 
     return (
@@ -16,7 +21,7 @@ const Gallery = () => {
                 <div className="galleryContain">
                     {datos.map((image, index) => (
                         <div key={index} className='galleryItem'>
-                            <div className="galleryItemImg"><img src={`assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} /></div>
+                            <img src={`../..assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
                         </div>
                     ))}
                 </div>
