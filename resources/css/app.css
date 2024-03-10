@@ -1010,7 +1010,6 @@ body {
 .page-item {
     list-style: none;
     padding: 2px 12px;
-    height: 30em;
     display: flex;
     justify-content: center;
     align-items: center;
