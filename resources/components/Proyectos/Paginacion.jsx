@@ -6,7 +6,7 @@ const Paginacion = () => {
     const [datos, setDatos] = useState([]);
     const [page, setPage] = useState(0);
     const [filterData, setFilterData] = useState();
-    const n = 3;
+    const n = 4;
 
     useEffect(() => {
         const fetchData = async () => {
