@@ -21,7 +21,7 @@ const Gallery = () => {
                 <div className="galleryContain">
                     {datos.map((image, index) => (
                         <div key={index} className='galleryItem'>
-                            <div className="galleryItemImg"><img src={`assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} /></div>
+                            <img src={`assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
                         </div>
                     ))}
                 </div>
