@@ -25,7 +25,7 @@ const Paginacion = ({ datos }) => {
                 pageClassName={"page-item"}
                 onPageChange={(event) => setPage(event.selected)}
                 breakLabel="..."
-                pageCount={Math.ceil(data.length / n)}
+                pageCount={Math.ceil(datos.length / n)}
                 previousLabel="<- previous"
                 nextLabel="-> next"
             />
