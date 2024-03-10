@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { getProyectos } from '../../services/getServices';
+import { getProyectos } from '../../services/getServices'
+
 
 const Gallery = () => {
     const [datos, setDatos] = useState([]);
