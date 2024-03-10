@@ -9,34 +9,31 @@ const Paginacion = () => {
     const n = 3;
 
     useEffect(() => {
-        setFilterData(
-            datos.filter((item, index) => {
-                return (index >= page * n) & (index < (page + 1) * n);
-            })
-        );
-
         const fetchData = async () => {
             const data = await getProyectos();
             setDatos(data);
         };
 
         fetchData();
+
+        setFilterData(
+            datos.filter((item, index) => {
+                return (index >= page * n) & (index < (page + 1) * n);
+            })
+        );
     }, [page]);
 
     return (
         <div className="App">
             <div className="galleryContainComp">
                 <div className="galleryContain">
-                    {datos.map((image, index) => (
-                        <div key={index} className='galleryItem'>
+                    <ul>
+                        {filterData && filterData.map((item, index) => <div key={index} className='galleryItem'>
                             <img src={`assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
-                        </div>
-                    ))}
+                        </div>)}
+                    </ul>
                 </div>
             </div>
-            <ul>
-                {filterData && filterData.map((item, index) => <li>Item #{item}</li>)}
-            </ul>
             <ReactPaginate
                 containerClassName={"pagination"}
                 activeClassName={"active"}
