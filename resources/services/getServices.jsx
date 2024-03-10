@@ -1,4 +1,5 @@
 import datos from "../data/data.json"
+import proyectos from "../data/proyectos.json"
 
 export const getServices = async () => {
     const response = await fetch('/api/icons');
@@ -16,3 +17,7 @@ export const getMarcas = async () => {
 export const getDesplegable = () => {
     return datos;
 };
+
+export const getProyectos = () => {
+    return proyectos;
+}
