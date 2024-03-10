@@ -1005,6 +1005,7 @@ body {
     justify-content: center;
     align-self: center;
     color: #FBFAF6;
+    cursor: pointer;
 }
 
 .active {
