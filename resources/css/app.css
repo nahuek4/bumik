@@ -972,6 +972,21 @@ body {
     font-size: 1.5em;
 }
 
+/* PROYECTOS GALLERY */
+
+.galleryContainComp {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    color: #FBFAF6;
+}
+
+.galleryContain {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* CONTACTO HEADER */
 
 .headerContactContainer {
