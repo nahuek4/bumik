@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ReactPaginate from 'react-paginate';
 import { getProyectos } from '../../services/getServices';
-import Paginacion from './Paginacion';
 
 const Paginacion = ({ datos }) => {
     const [datos, setDatos] = useState([]);
