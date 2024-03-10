@@ -27,11 +27,9 @@ const Paginacion = () => {
         <div className="App">
             <div className="galleryContainComp">
                 <div className="galleryContain">
-                    <ul>
-                        {filterData && filterData.map((image, index) => <div key={index} className='galleryItem'>
-                            <img src={`assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
-                        </div>)}
-                    </ul>
+                    {filterData && filterData.map((image, index) => <div key={index} className='galleryItem'>
+                        <img src={`assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
+                    </div>)}
                 </div>
             </div>
             <ReactPaginate
