@@ -9,7 +9,7 @@ const Paginacion = () => {
         return datos.filter((item, index) => {
             return (index >= page * n) & (index < (page + 1) * n);
         })
-    }, [datos, page])
+    }, [page])
     const n = 4;
 
     useEffect(() => {
