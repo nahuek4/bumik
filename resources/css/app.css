@@ -988,7 +988,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-self: center;
-    gap: 3em;
+    gap: 5em;
     max-width: 1400px;
     margin-top: 5em;
 }
