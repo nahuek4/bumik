@@ -983,7 +983,6 @@ body {
 
 .galleryContain {
     display: flex;
-    flex-wrap: wrap;
 }
 
 
