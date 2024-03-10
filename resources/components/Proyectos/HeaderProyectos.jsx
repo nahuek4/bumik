@@ -1,4 +1,5 @@
 import React from 'react'
+import Gallery from './Gallery';
 
 const HeaderProyectos = () => {
     return (
@@ -9,6 +10,7 @@ const HeaderProyectos = () => {
                     <p>¡Conocé algunos de los proyectos de los que fuimos parte!</p>
                 </div>
             </div>
+            <Gallery />
         </div>
     )
 }
