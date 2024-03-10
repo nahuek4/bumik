@@ -995,6 +995,7 @@ body {
 
 .galleryItem img {
     width: 35em;
+    border-radius: 20px;
 }
 
 
