@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IconsController;
 use App\Http\Controllers\MarcasController;
+use App\Http\Controllers\ProyectosController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::get('icons', [IconsController::class, 'getIcons']);
 Route::get('marcas', [MarcasController::class, 'getMarcas']);
+Route::get('proyectos', [ProyectosController::class, 'getProyectos']);

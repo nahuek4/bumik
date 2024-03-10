@@ -14,10 +14,12 @@ export const getMarcas = async () => {
 };
 
 
+export const getProyectos = async () => {
+    const response = await fetch('/api/proyectos');
+    const data = await response.json();
+    return data;
+};
+
 export const getDesplegable = () => {
     return datos;
 };
-
-export const getProyectos = () => {
-    return proyectos;
-}
