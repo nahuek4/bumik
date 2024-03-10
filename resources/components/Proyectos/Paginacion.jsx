@@ -21,7 +21,7 @@ const Paginacion = () => {
                 return (index >= page * n) & (index < (page + 1) * n);
             })
         );
-    }, [items, page]);
+    }, [datos, page]);
 
     return (
         <div className="App">
