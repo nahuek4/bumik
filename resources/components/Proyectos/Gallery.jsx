@@ -29,8 +29,8 @@ const Gallery = () => {
                             <img src={`assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
                         </div>
                     ))}
-                    <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} />
                 </div>
+                <Paginacion pagina={pagina} setPagina={setPagina} maximo={maximo} />
             </div>
         </div>
     )
