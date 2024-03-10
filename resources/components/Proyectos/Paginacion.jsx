@@ -34,7 +34,6 @@ const Paginacion = ({ datos }) => {
                         </div>
                     ))}
                 </div>
-                <Paginacion datos={datos} />
             </div>
             <ReactPaginate
                 containerClassName={"pagination"}
