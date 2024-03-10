@@ -24,7 +24,7 @@ const Gallery = () => {
         <div>
             <div className="galleryContainComp">
                 <div className="galleryContain">
-                    {datos.slice((pagina - 1) * porPagina, (pagina - 1) * porPagina + porPagina).map((image, index) => (
+                    {datos.map((image, index) => (
                         <div key={index} className='galleryItem'>
                             <img src={`assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
                         </div>
