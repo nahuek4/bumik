@@ -989,7 +989,8 @@ body {
     justify-content: center;
     align-self: center;
     gap: 3em;
-    max-width: 1000px;
+    max-width: 1400px;
+    margin-top: 5em;
 }
 
 .galleryItem img {
