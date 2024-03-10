@@ -1,15 +1,11 @@
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useState, useEffect } from 'react'
 import ReactPaginate from 'react-paginate';
 import { getProyectos } from '../../services/getServices';
 
 const Paginacion = () => {
     const [datos, setDatos] = useState([]);
     const [page, setPage] = useState(0);
-    const filterData = useMemo(() => {
-        return datos.filter((item, index) => {
-            return (index >= page * n) & (index < (page + 1) * n);
-        })
-    }, [page])
+    const [filterData, setFilterData] = useState(0);
     const n = 4;
 
     useEffect(() => {
@@ -19,7 +15,13 @@ const Paginacion = () => {
         };
 
         fetchData();
-    });
+
+        setFilterData(
+            datos.filter((item, index) => {
+                return (index >= page * n) & (index < (page + 1) * n);
+            })
+        );
+    }, [page]);
 
     return (
         <div className="App">
