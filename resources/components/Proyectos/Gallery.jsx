@@ -1,13 +1,13 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { getProyectos, getServices } from '../../services/getServices';
+import { getProyectos } from '../../services/getServices';
 
 const Gallery = () => {
     const [datos, setDatos] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
-            const data = await getServices();
+            const data = await getProyectos();
             setDatos(data);
         };
 
