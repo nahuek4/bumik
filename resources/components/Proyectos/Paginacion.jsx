@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import ReactPaginate from 'react-paginate';
 
-const Paginacion = () => {
+const Paginacion = ({ datos }) => {
     const [page, setPage] = useState(0);
     const [filterData, setFilterData] = useState();
     const n = 3;
 
     useEffect(() => {
         setFilterData(
-            data.filter((item, index) => {
+            datos.filter((item, index) => {
                 return (index >= page * n) & (index < (page + 1) * n);
             })
         );

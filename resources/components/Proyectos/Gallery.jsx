@@ -4,7 +4,7 @@ import { getProyectos } from '../../services/getServices'
 import Paginacion from './Paginacion';
 
 
-const Gallery = () => {
+const Gallery = (datos) => {
     const [datos, setDatos] = useState([]);
     const [pagina, setPagina] = useState(1);
     const [porPagina, setPorPagina] = useState(4);
