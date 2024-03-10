@@ -998,6 +998,22 @@ body {
     border-radius: 35px;
 }
 
+.pagination {
+    display: flex;
+    background-color: #1E1E1E;
+}
+
+.page-item {
+    list-style: none;
+    padding: 2px 12px;
+    height: 31.5px;
+    width: 31.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
 
 /* CONTACTO HEADER */
 
