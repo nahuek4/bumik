@@ -1008,19 +1008,11 @@ body {
     cursor: pointer;
 }
 
-.active {
+.activePaginate {
     border: solid 1px #EDB5F7;
     border-radius: 30px;
 }
 
-.page-item {
-    list-style: none;
-    padding: 2px 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2px;
-}
 
 
 /* CONTACTO HEADER */

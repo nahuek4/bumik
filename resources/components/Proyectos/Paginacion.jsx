@@ -36,7 +36,7 @@ const Paginacion = () => {
             </div>
             <ReactPaginate
                 containerClassName={"pagination"}
-                activeClassName={"active"}
+                activeClassName={"activePaginate"}
                 pageClassName={"page-item"}
                 onPageChange={(event) => setPage(event.selected)}
                 breakLabel="..."
