@@ -1006,6 +1006,7 @@ body {
     align-self: center;
     color: #FBFAF6;
     cursor: pointer;
+    list-style: none;
 }
 
 .activePaginate {
@@ -1165,3 +1166,4 @@ body {
     font-size: 1.5em;
     margin-bottom: 1em;
 }
+
