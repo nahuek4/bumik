@@ -1009,6 +1009,11 @@ body {
     list-style: none;
 }
 
+.pagination li{
+    margin-right: 5px;
+    padding: 0.6em;
+}
+
 .activePaginate {
     border: solid 1px #EDB5F7;
     border-radius: 30px;
