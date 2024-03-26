@@ -12,15 +12,15 @@ const Paginacion = () => {
         const fetchData = async () => {
             const data = await getProyectos();
             setDatos(data);
+
+            setFilterData(
+                datos.filter((item, index) => {
+                    return (index >= page * n) & (index < (page + 1) * n);
+                })
+            );
         };
 
         fetchData();
-
-        setFilterData(
-            datos.filter((item, index) => {
-                return (index >= page * n) & (index < (page + 1) * n);
-            })
-        );
     }, [page]);
 
     return (
