@@ -41,10 +41,9 @@ const Paginacion = () => {
                 activeClassName={"activePaginate"}
                 pageClassName={"page-item"}
                 onPageChange={(event) => setPage(event.selected)}
-                breakLabel="..."
                 pageCount={Math.ceil(datos.length / n)}
-                previousLabel="<- "
-                nextLabel=" ->"
+                previousLabel="Anterior "
+                nextLabel=" Siguiente"
             />
         </div>
     );
