@@ -999,7 +999,7 @@ body {
 }
 
 .pagination {
-    padding-top: 3em;
+    padding: 3em;
     display: flex;
     background-color: #1E1E1E;
     justify-content: center;
