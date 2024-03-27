@@ -968,8 +968,11 @@ body {
     .labelNombre, .labelApellido{
         width: 100% !important;
     }
-    .contactForm{
+    #contactForm{
         padding: 5% !important;
+    }
+    .formContain{
+        width: 70% !important;
     }
 }
 
