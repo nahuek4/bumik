@@ -1037,6 +1037,7 @@ body {
     color: #FBFAF6;
     cursor: pointer;
     list-style: none;
+    margin-top: 1em;
 }
 
 .pagination li {
@@ -1060,6 +1061,7 @@ body {
 }
 
 .galleryText p {
+    margin-top: 1em;
     font-size: 1.5em;
 }
 
