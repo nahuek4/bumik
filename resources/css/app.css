@@ -67,6 +67,12 @@ body {
     color: #EAFC88 !important;
 }
 
+.navLink {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
 /* FOOTER */
 
 .footerContainer {
