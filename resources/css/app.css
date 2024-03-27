@@ -63,15 +63,15 @@ body {
     color: white;
 }
 
-.active {
-    color: #EAFC88 !important;
-}
-
 .navLink {
     color: #fff;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
+    transition: background-color 0.5s ease;
+}
+
+.navLink.active {
+    background-color: #EAFC88; /* Color que se deslizará */
+}
 
 /* FOOTER */
 
