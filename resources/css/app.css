@@ -963,8 +963,9 @@ body {
 @media screen and (max-width: 900px){
     .formNombreApellido{
         display: flex;
+        flex-direction: column;
     }
-    .formNombreApellido div{
+    .labelNombre, .labelApellido{
         width: 100%;
     }
     .contactForm{
