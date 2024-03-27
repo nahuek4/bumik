@@ -960,18 +960,22 @@ body {
     }
 }
 
-@media screen and (max-width: 900px){
-    .formNombreApellido{
+@media screen and (max-width: 900px) {
+    .formNombreApellido {
         display: flex !important;
         flex-direction: column !important;
     }
-    .labelNombre, .labelApellido{
+
+    .labelNombre,
+    .labelApellido {
         width: 100% !important;
     }
-    #contactForm{
+
+    #contactForm {
         padding: 5% !important;
     }
-    .formContain{
+
+    .formContain {
         width: 70% !important;
     }
 }
@@ -1035,7 +1039,7 @@ body {
     list-style: none;
 }
 
-.pagination li{
+.pagination li {
     margin-right: 5px;
     padding: 0.6em;
 }
@@ -1043,6 +1047,12 @@ body {
 .activePaginate {
     border: solid 1px #EDB5F7;
     border-radius: 30px;
+}
+
+.galleryTextContain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -1198,4 +1208,3 @@ body {
     font-size: 1.5em;
     margin-bottom: 1em;
 }
-
