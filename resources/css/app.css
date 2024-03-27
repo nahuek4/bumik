@@ -1023,12 +1023,15 @@ body {
     margin-top: 5em;
 }
 
+.galleryItem {
+    position: relative;
+    overflow: hidden;
+}
+
 .galleryItem img {
     width: 35em;
     border-radius: 35px;
     transition: all .5s;
-    position: relative;
-    overflow: hidden;
 }
 
 .galleryItem:hover img {
@@ -1037,6 +1040,8 @@ body {
 
 .galleryItem .content {
     position: absolute;
+    background-color: #1E1E1E;
+    opacity: .6;
     top: -100%;
     left: 0;
     text-align: justify;
