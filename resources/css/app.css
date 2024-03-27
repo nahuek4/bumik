@@ -755,7 +755,7 @@ body {
         color: #FBFAF6;
     }
 
-    .navLinks .active {
+    .navItem .navLinks .active {
         background: #2D2D2C;
         left: 0px;
         opacity: 1;
