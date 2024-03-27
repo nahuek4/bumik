@@ -63,7 +63,7 @@ body {
     color: white;
 }
 
-a .active {
+.activeLink{
     color: #EAFC88;
 }
 
