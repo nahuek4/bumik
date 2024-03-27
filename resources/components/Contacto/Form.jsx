@@ -5,14 +5,30 @@ import FAQ from './FAQ';
 const Form = () => {
     const { register, handleSubmit } = useForm();
 
+    const onSubmit = async (data) => {
+        // Aquí puedes hacer lo que necesites con los datos del formulario, como enviar una solicitud a tu backend de Laravel
+        console.log(data);
+        // Enviar solicitud POST a la ruta de Laravel utilizando Fetch
+        try {
+            const response = await fetch('/submitForm', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+            const responseData = await response.json();
+            console.log(responseData); // Manejar la respuesta del servidor
+        } catch (error) {
+            console.error('Error al enviar la solicitud:', error);
+        }
+    };
 
     return (
         <div>
             <div className="formContainer">
                 <div className="formContain">
-                    <form className="form" id='contactForm' onSubmit={handleSubmit((data) => {
-                        console.log(data);
-                    })}>
+                    <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
                         <div className="formNombreApellido">
                             {/* nombre */}
                             <div className="labelNombre">

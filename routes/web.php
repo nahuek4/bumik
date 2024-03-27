@@ -25,3 +25,4 @@ Route::get('/portfolio', function () {
 Route::get('/contacto', function () {
     return view('contacto');
 });
+Route::post('/submitForm', [ContactoController::class,'submitForm'])->name('contact.submit');
