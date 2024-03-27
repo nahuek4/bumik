@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactoController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +25,4 @@ Route::get('/portfolio', function () {
 Route::get('/contacto', function () {
     return view('contacto');
 });
+Route::post('/submitForm', [ContactoController::class,'submitForm'])->name('contact.submit');

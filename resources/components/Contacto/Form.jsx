@@ -4,15 +4,31 @@ import FAQ from './FAQ';
 
 const Form = () => {
     const { register, handleSubmit } = useForm();
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
+    const onSubmit = async (data) => {
+        console.log(data);
+        try {
+            const response = await fetch('/submitForm', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken
+                },
+                body: JSON.stringify(data)
+            });
+            const responseData = await response.json();
+            console.log(responseData);
+        } catch (error) {
+            console.error('Error al enviar la solicitud:', error);
+        }
+    };
 
     return (
         <div>
             <div className="formContainer">
                 <div className="formContain">
-                    <form className="form" id='contactForm' onSubmit={handleSubmit((data) => {
-                        console.log(data);
-                    })}>
+                    <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
                         <div className="formNombreApellido">
                             {/* nombre */}
                             <div className="labelNombre">
@@ -35,6 +51,7 @@ const Form = () => {
                         <label htmlFor="mensaje">Mensaje</label>
                         <textarea rows="8" type="text" {...register("mensaje")} />
                         <button className='buttonForm'>Enviar</button>
+                        <input type="hidden" name="_token" value={csrfToken} />
                     </form>
                 </div>
             </div>
