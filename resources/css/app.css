@@ -960,6 +960,18 @@ body {
     }
 }
 
+@media screen and (max-width: 900px){
+    .formNombreApellido{
+        display: flex;
+    }
+    .formNombreApellido div{
+        width: 100%;
+    }
+    .contactForm{
+        padding: 5%;
+    }
+}
+
 /* PROYECTOS HEADER */
 
 .headerProyectoContainer {
@@ -1073,7 +1085,7 @@ body {
 }
 
 .formContain {
-    width: 800px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1107,7 +1119,7 @@ body {
     background-color: #1E1E1E;
     color: #FBFAF6;
     font-size: 1.3em;
-    max-width: 800px;
+    max-width: 100%;
 }
 
 .formNombreApellido {

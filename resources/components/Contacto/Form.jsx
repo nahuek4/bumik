@@ -10,7 +10,7 @@ const Form = () => {
         <div>
             <div className="formContainer">
                 <div className="formContain">
-                    <form className="form" onSubmit={handleSubmit((data) => {
+                    <form className="form" id='contactForm' onSubmit={handleSubmit((data) => {
                         console.log(data);
                     })}>
                         <div className="formNombreApellido">
