@@ -63,6 +63,9 @@ body {
     color: white;
 }
 
+.active {
+    color: #EAFC88 !important;
+}
 
 /* FOOTER */
 
@@ -752,13 +755,13 @@ body {
         color: #FBFAF6;
     }
 
-    .navItem .navLinks .active {
-        background: #2D2D2C !important;
-        left: 0px !important;
-        opacity: 1 !important;
-        transition: all .5s ease !important;
-        z-index: 1 !important;
-        color: #FBFAF6 !important;
+    .navLinks.active {
+        background: #2D2D2C;
+        left: 0px;
+        opacity: 1;
+        transition: all .5s ease;
+        z-index: 1;
+        color: #FBFAF6;
     }
 
     .navLink {
