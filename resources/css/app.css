@@ -1024,14 +1024,11 @@ body {
 }
 
 .galleryItem img {
-    position: relative;
-    overflow: hidden;
-}
-
-.galleryItem img {
     width: 35em;
     border-radius: 35px;
     transition: all .5s;
+    position: relative;
+    overflow: hidden;
 }
 
 .galleryItem:hover img {
