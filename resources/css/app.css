@@ -63,6 +63,10 @@ body {
     color: white;
 }
 
+.activeLink {
+    color: #EAFC88;
+}
+
 /* FOOTER */
 
 .footerContainer {
