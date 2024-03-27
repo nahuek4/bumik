@@ -45,6 +45,16 @@ const Paginacion = () => {
                 previousLabel="Anterior "
                 nextLabel=" Siguiente"
             />
+            <div className="galleryTextContain">
+                <div className="galleryText">
+                    <p>¿Tenes alguna consulta de cómo podrías llevar Tu proyecto adelante</p>
+                    <p>Envíanos un mensaje a <span className='spanRosa'>estudiobumik@gmail.com</span> o completá el formulario</p>
+                    <p>y te responderemos a la brevedad.</p>
+                </div>
+                <div className="botonService">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZL63YOXJUQ2Ee7VYszlfoi8bPjeuZvujjGCmt-j_ewmTi5A/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button className='botonServicios'>¡Cotizá tu proyecto!</button></a>
+                </div>
+            </div>
         </div>
     );
 }

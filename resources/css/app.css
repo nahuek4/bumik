@@ -960,18 +960,22 @@ body {
     }
 }
 
-@media screen and (max-width: 900px){
-    .formNombreApellido{
+@media screen and (max-width: 900px) {
+    .formNombreApellido {
         display: flex !important;
         flex-direction: column !important;
     }
-    .labelNombre, .labelApellido{
+
+    .labelNombre,
+    .labelApellido {
         width: 100% !important;
     }
-    #contactForm{
+
+    #contactForm {
         padding: 5% !important;
     }
-    .formContain{
+
+    .formContain {
         width: 70% !important;
     }
 }
@@ -1033,9 +1037,10 @@ body {
     color: #FBFAF6;
     cursor: pointer;
     list-style: none;
+    padding-top: 5em;
 }
 
-.pagination li{
+.pagination li {
     margin-right: 5px;
     padding: 0.6em;
 }
@@ -1045,6 +1050,20 @@ body {
     border-radius: 30px;
 }
 
+.galleryTextContain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #1E1E1E;
+    color: #FBFAF6;
+    padding-top: 1em;
+}
+
+.galleryText p {
+    font-size: 1.5em;
+}
 
 
 /* CONTACTO HEADER */
@@ -1198,4 +1217,3 @@ body {
     font-size: 1.5em;
     margin-bottom: 1em;
 }
-
