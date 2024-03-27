@@ -1037,7 +1037,7 @@ body {
     color: #FBFAF6;
     cursor: pointer;
     list-style: none;
-    margin-top: 1em;
+    padding-top: 1em;
 }
 
 .pagination li {
@@ -1058,10 +1058,10 @@ body {
     text-align: center;
     background-color: #1E1E1E;
     color: #FBFAF6;
+    padding-top: 1em;
 }
 
 .galleryText p {
-    margin-top: 1em;
     font-size: 1.5em;
 }
 
