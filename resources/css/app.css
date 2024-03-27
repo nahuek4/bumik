@@ -1107,6 +1107,7 @@ body {
     background-color: #1E1E1E;
     color: #FBFAF6;
     font-size: 1.3em;
+    max-width: 800px;
 }
 
 .formNombreApellido {
