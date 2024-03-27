@@ -1065,6 +1065,31 @@ body {
     font-size: 1.5em;
 }
 
+.galleryContain .galleryItem .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E1E;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    color: #FBFAF6;
+}
+
+.galleryContain .galleryItem:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.galleryContain .galleryItem:hover>.capa h3 {
+    margin-top: 2em;
+}
+
+.galleryContain .galleryItem:hover>img {
+    transform: scale(1.3);
+}
 
 /* CONTACTO HEADER */
 
