@@ -4,21 +4,21 @@ import FAQ from './FAQ';
 
 const Form = () => {
     const { register, handleSubmit } = useForm();
+    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
     const onSubmit = async (data) => {
-        // Aquí puedes hacer lo que necesites con los datos del formulario, como enviar una solicitud a tu backend de Laravel
         console.log(data);
-        // Enviar solicitud POST a la ruta de Laravel utilizando Fetch
         try {
             const response = await fetch('/submitForm', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken
                 },
                 body: JSON.stringify(data)
             });
             const responseData = await response.json();
-            console.log(responseData); // Manejar la respuesta del servidor
+            console.log(responseData);
         } catch (error) {
             console.error('Error al enviar la solicitud:', error);
         }
@@ -51,6 +51,7 @@ const Form = () => {
                         <label htmlFor="mensaje">Mensaje</label>
                         <textarea rows="8" type="text" {...register("mensaje")} />
                         <button className='buttonForm'>Enviar</button>
+                        <input type="hidden" name="_token" value={csrfToken} />
                     </form>
                 </div>
             </div>
