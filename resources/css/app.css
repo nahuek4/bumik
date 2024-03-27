@@ -1054,9 +1054,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     background-color: #1E1E1E;
+    color: #FBFAF6;
 }
 
+.galleryText p {
+    font-size: 1.5em;
+}
 
 
 /* CONTACTO HEADER */
