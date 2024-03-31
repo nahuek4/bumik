@@ -1023,9 +1023,34 @@ body {
     margin-top: 5em;
 }
 
+.galleryItem {
+    position: relative;
+    overflow: hidden;
+}
+
 .galleryItem img {
     width: 35em;
     border-radius: 35px;
+    transition: all .5s;
+}
+
+.galleryItem:hover img {
+    transform: scale(1.09);
+}
+
+.galleryItem .content {
+    position: absolute;
+    background-color: #1E1E1E;
+    opacity: .6;
+    top: -100%;
+    left: 0;
+    text-align: justify;
+    height: 100%;
+    color: #FBFAF6;
+}
+
+.galleryItem:hover .content {
+    top: 0;
 }
 
 .pagination {

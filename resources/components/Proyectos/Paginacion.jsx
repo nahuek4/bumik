@@ -32,6 +32,9 @@ const Paginacion = () => {
                     {filterData.map((image, index) => (
                         <div key={index} className='galleryItem'>
                             <img src={`/assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
+                            <div className="content">
+                                <a href={image.href}><h3>Ver en Behance</h3></a>
+                            </div>
                         </div>
                     ))}
                 </div>
