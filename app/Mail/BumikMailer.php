@@ -4,15 +4,15 @@ namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class BumikMailer extends Mailable
+class BumikMailer extends Mailables
 {
     use Queueable, SerializesModels;
-
+    public $data;
     /**
      * Create a new message instance.
      *
@@ -32,6 +32,7 @@ class BumikMailer extends Mailable
     {
         return new Envelope(
             subject: 'Bumik Mailer',
+            from: new Address(env('MAIL_FROM'), 'Estudio Bumik'),
         );
     }
 
