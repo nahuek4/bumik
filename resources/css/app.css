@@ -1036,6 +1036,7 @@ body {
 
 .galleryItem:hover img {
     transform: scale(1.09);
+    border-radius: 35px;
 }
 
 .galleryItem .content {
