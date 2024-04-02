@@ -933,11 +933,11 @@ body {
 }
 
 @media screen and (max-width: 430px) {
-    .tituloContainerHeaderProyecto h1 {
+    .headerProyectoContainer .tituloContainerHeaderProyecto h1 {
         font-size: 2.5em;
     }
 
-    .tituloContainerHeaderProyecto p {
+    .headerProyectoContainer .tituloContainerHeaderProyecto p {
         font-size: 1.1em;
     }
 
@@ -1019,11 +1019,11 @@ body {
     padding-top: 5em;
 }
 
-.tituloContainerHeaderProyecto h1 {
+.headerProyectoContainer .tituloContainerHeaderProyecto h1 {
     font-size: 3em;
 }
 
-.tituloContainerHeaderProyecto p {
+.headerProyectoContainer .tituloContainerHeaderProyecto p {
     margin-top: 1em;
     font-size: 1.5em;
 }
