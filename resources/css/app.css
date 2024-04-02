@@ -881,7 +881,7 @@ body {
 }
 
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 500px) {
     .logo img {
         width: 24em;
     }
