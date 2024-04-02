@@ -927,7 +927,7 @@ body {
         font-size: 2.2em;
     }
 
-    .galleryItem img {
+    .galleryContain .galleryItem img {
         width: 25em;
     }
 }
@@ -941,7 +941,7 @@ body {
         font-size: 1.1em;
     }
 
-    .galleryItem img {
+    .galleryContain .galleryItem img {
         width: 20em;
     }
 
