@@ -875,9 +875,13 @@ body {
         font-size: 1.6em;
     }
 
+    .galleryItem img {
+        width: 30em;
+    }
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 530px) {
     .logo img {
         width: 24em;
     }
@@ -921,6 +925,28 @@ body {
 
     .tituloServicio h1 {
         font-size: 2.2em;
+    }
+
+    .galleryItem img {
+        width: 25em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .tituloContainerHeaderProyecto h1 {
+        font-size: 2.5em;
+    }
+
+    .tituloContainerHeaderProyecto p {
+        font-size: 1.1em;
+    }
+
+    .galleryItem img {
+        width: 20em;
+    }
+
+    .galleryText {
+        padding: 8%;
     }
 }
 

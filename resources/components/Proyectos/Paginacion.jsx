@@ -50,7 +50,7 @@ const Paginacion = () => {
             />
             <div className="galleryTextContain">
                 <div className="galleryText">
-                    <p>¿Tenes alguna consulta de cómo podrías llevar Tu proyecto adelante</p>
+                    <p>¿Tenes alguna consulta de cómo podrías llevar tu proyecto adelante?</p>
                     <p>Envíanos un mensaje a <span className='spanRosa'>estudiobumik@gmail.com</span> o completá el formulario</p>
                     <p>y te responderemos a la brevedad.</p>
                 </div>
