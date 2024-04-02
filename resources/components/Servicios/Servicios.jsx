@@ -42,7 +42,7 @@ const Servicios = () => {
             <div className="serviciosContain">
                 <div className="serviceServicio">
                     <div className="serviceServicioimg">
-                        <div className=""><img src="assets/img/fotos/innocenti.webp" alt="innocenti logo" /></div>
+                        <div className=""><img src="assets/img/fotos/brandingzhu.webp" alt="innocenti logo" /></div>
                     </div>
                     <div className="containerData">
                         <div className="tituloServicio">

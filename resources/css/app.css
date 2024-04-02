@@ -875,7 +875,11 @@ body {
         font-size: 1.6em;
     }
 
+    .galleryContain .galleryItem img {
+        width: 30em;
+    }
 }
+
 
 @media screen and (max-width: 500px) {
     .logo img {
@@ -921,6 +925,28 @@ body {
 
     .tituloServicio h1 {
         font-size: 2.2em;
+    }
+
+    .galleryItem img {
+        width: 25em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .tituloContainerHeaderProyecto h1 {
+        font-size: 2.5em;
+    }
+
+    .tituloContainerHeaderProyecto p {
+        font-size: 1.1em;
+    }
+
+    .galleryItem img {
+        width: 20em;
+    }
+
+    .galleryText {
+        padding: 8%;
     }
 }
 
@@ -1036,6 +1062,7 @@ body {
 
 .galleryItem:hover img {
     transform: scale(1.09);
+    border-radius: 35px;
 }
 
 .galleryItem .content {
