@@ -1,10 +1,17 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
+import React, { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
 import FAQ from './FAQ';
 
 const Form = () => {
     const { register, handleSubmit } = useForm();
-    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+    const [csrfToken, setCsrfToken] = useState('');
+
+    useEffect(() => {
+        const token = document.querySelector('meta[name="csrf-token"]');
+        if (token) {
+            setCsrfToken(token.getAttribute('content'));
+        }
+    }, []);
 
     const onSubmit = async (data) => {
         console.log(data);
@@ -65,7 +72,7 @@ const Form = () => {
             </div>
             <FAQ />
         </div>
-    )
-}
+    );
+};
 
-export default Form
+export default Form;
