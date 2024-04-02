@@ -875,7 +875,7 @@ body {
         font-size: 1.6em;
     }
 
-    .galleryItem img {
+    .galleryContain .galleryItem img {
         width: 30em;
     }
 }
