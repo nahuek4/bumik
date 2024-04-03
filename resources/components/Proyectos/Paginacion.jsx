@@ -39,15 +39,17 @@ const Paginacion = () => {
                     ))}
                 </div>
             </div>
-            <ReactPaginate
-                containerClassName={"pagination"}
-                activeClassName={"activePaginate"}
-                pageClassName={"page-item"}
-                onPageChange={(event) => setPage(event.selected)}
-                pageCount={Math.ceil(datos.length / n)}
-                previousLabel="Anterior "
-                nextLabel=" Siguiente"
-            />
+            <div className="paginateReact">
+                <ReactPaginate
+                    containerClassName={"pagination"}
+                    activeClassName={"activePaginate"}
+                    pageClassName={"page-item"}
+                    onPageChange={(event) => setPage(event.selected)}
+                    pageCount={Math.ceil(datos.length / n)}
+                    previousLabel="Anterior "
+                    nextLabel=" Siguiente"
+                />
+            </div>
             <div className="galleryTextContain">
                 <div className="galleryText">
                     <p>¿Tenes alguna consulta de cómo podrías llevar tu proyecto adelante?</p>
