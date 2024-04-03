@@ -1088,7 +1088,7 @@ body {
     text-decoration: none;
 }
 
-.galleryContain .galleryItem:hover>.capa a h3 {
+.galleryContain .galleryItem:hover>.capa h3 {
     margin-top: 6em;
 }
 
