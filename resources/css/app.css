@@ -878,11 +878,6 @@ body {
     .galleryContain .galleryItem img {
         width: 30em;
     }
-
-    .galleryContain .galleryItem:hover>.capa a h3 {
-        margin-top: 5em;
-        font-size: 1em;
-    }
 }
 
 
@@ -1054,8 +1049,6 @@ body {
     margin-top: 5em;
 }
 
-
-
 .galleryContain .galleryItem {
     position: relative;
     overflow: hidden;
@@ -1068,13 +1061,14 @@ body {
 }
 
 .galleryContain .galleryItem .capa {
-    text-align: center;
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(8, 8, 8, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     visibility: hidden;
+    text-align: center;
 }
 
 .galleryContain .galleryItem:hover>.capa {
@@ -1087,17 +1081,14 @@ body {
 }
 
 .galleryContain .galleryItem:hover>.capa a {
-    width: 100%;
-    height: 100%;
     color: #FBFAF6;
     font-size: 1.5em;
     text-decoration: none;
 }
 
 .galleryContain .galleryItem:hover>.capa a h3 {
-    margin-top: 6.5em;
+    margin-top: 5em;
 }
-
 
 .galleryItem img {
     width: 35em;
