@@ -1299,6 +1299,10 @@ body {
     padding-top: 1em;
 }
 
+.FAQS .item .tittle {
+    border: 1px solid #1E1E1E;
+}
+
 .FAQS .item .tittle h1 {
     color: #1E1E1E;
     font-weight: 400;
