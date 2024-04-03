@@ -27,7 +27,7 @@ class ContactoController extends Controller
         $contacto->mensaje = $request->mensaje;
         $contacto->save();*/
 
-        Mail::to('valeendiz@gmail.com')->send(new BumikMailer($validatedData));
+        Mail::to('estudiobumik@bumik.com')->send(new BumikMailer($validatedData));
 
         return response()->json(['message' => 'Formulario enviado correctamente'], 200);
     }
