@@ -32,11 +32,9 @@ const Paginacion = () => {
                     {filterData.map((image, index) => (
                         <div key={index} className='galleryItem'>
                             <img src={`/assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
-                            <a href={image.href}>
-                                <div className="capa">
-                                    <h3>Ver en Behance</h3>
-                                </div>
-                            </a>
+                            <div className="capa">
+                                <a href={image.href}><h3>Ver en Behance</h3></a>
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -62,7 +60,7 @@ const Paginacion = () => {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZL63YOXJUQ2Ee7VYszlfoi8bPjeuZvujjGCmt-j_ewmTi5A/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button className='botonServicios'>¡Cotizá tu proyecto!</button></a>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
