@@ -1292,11 +1292,16 @@ body {
 }
 
 .FAQS {
+    margin-top: 4em;
     background-color: #EDB5F7;
-    margin-bottom: -2em;
+}
+
+.FAQS .item {
+    margin-top: 2em;
 }
 
 .FAQS .item .tittle h1 {
     color: #1E1E1E;
     font-weight: 400;
+    font-size: .8em;
 }
