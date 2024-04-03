@@ -1308,3 +1308,9 @@ body {
     color: #1E1E1E;
     margin-bottom: .5em;
 }
+
+.FAQS .item .tittle span {
+    margin-right: 1.3em;
+    color: #1E1E1E;
+    font-size: 1.7em;
+}
