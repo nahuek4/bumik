@@ -31,7 +31,7 @@ const Paginacion = () => {
                 <div className="galleryContain">
                     {filterData.map((image, index) => (
                         <div key={index} className='galleryItem'>
-                            <img src={`/assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
+                            <div className="front"><img src={`/assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} /></div>
                             <div className="content">
                                 <h3>Ver en Behance</h3>
                             </div>
