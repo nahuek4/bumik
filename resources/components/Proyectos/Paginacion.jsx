@@ -33,7 +33,7 @@ const Paginacion = () => {
                         <div key={index} className='galleryItem'>
                             <img src={`/assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
                             <div className="capa">
-                                <a href={image.href}><h3>VER EN BEHANCE</h3></a>
+                                <a target="_blank" href={image.href}><h3>VER EN BEHANCE</h3></a>
                             </div>
                         </div>
                     ))}
