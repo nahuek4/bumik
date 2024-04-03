@@ -1054,8 +1054,6 @@ body {
     overflow: hidden;
     border-radius: 35px;
     cursor: pointer;
-    width: 35em;
-    height: auto;
 }
 
 .galleryContain .galleryItem img {
