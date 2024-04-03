@@ -19,13 +19,13 @@ class ContactoController extends Controller
             'mensaje' => 'required|string',
         ]);
 
-        $contacto = new Contacto();
+        /*$contacto = new Contacto();
         $contacto->nombre = $request->nombre;
         $contacto->apellido = $request->apellido;
         $contacto->email = $request->email;
         $contacto->telefono = $request->telefono;
         $contacto->mensaje = $request->mensaje;
-        $contacto->save();
+        $contacto->save();*/
 
         Mail::to('valeendiz@gmail.com')->send(new BumikMailer($contacto));
 
