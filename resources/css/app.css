@@ -1304,3 +1304,8 @@ body {
     color: #1E1E1E;
     font-weight: 400;
 }
+
+.FAQS .item .tittle .content {
+    color: #1E1E1E;
+    margin-bottom: .5em;
+}
