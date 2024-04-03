@@ -879,7 +879,8 @@ body {
         width: 30em;
     }
 
-    .capa h3 {
+    .galleryContain .galleryItem:hover>.capa a h3 {
+        margin-top: 5em;
         font-size: 1em;
     }
 }
@@ -1067,17 +1068,13 @@ body {
 }
 
 .galleryContain .galleryItem .capa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     position: absolute;
-    top: 0;
     width: 100%;
     height: 100%;
     background: rgba(8, 8, 8, 0.7);
     opacity: 0;
     visibility: hidden;
-    text-align: center;
 }
 
 .galleryContain .galleryItem:hover>.capa {
@@ -1095,6 +1092,10 @@ body {
     color: #FBFAF6;
     font-size: 1.5em;
     text-decoration: none;
+}
+
+.galleryContain .galleryItem:hover>.capa a h3 {
+    margin-top: 6.5em;
 }
 
 
