@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
                 <div className="whatsapp">
                     <p>Whatsapp:</p>
-                    <a href='https:/wa.me/+5491121878975' target="_blank" rel="noreferrer"><span>+54 9 1121878975</span></a>
+                    <a href="https:/wa.me/+5491121878975" target="_blank" rel="noreferrer"><span>+54 9 1121878975</span></a>
                 </div>
                 <div className="instagram">
                     <p>Instagram:</p>
