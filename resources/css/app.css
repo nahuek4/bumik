@@ -1293,4 +1293,10 @@ body {
 
 .FAQS {
     background-color: #EDB5F7;
+    margin-bottom: -2em;
+}
+
+.FAQS .item .tittle h1 {
+    color: #1E1E1E;
+    font-weight: 400;
 }
