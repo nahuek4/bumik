@@ -1080,7 +1080,7 @@ body {
     transform: scale(1.1);
 }
 
-.galleryContain .galleryItem:hover>.capa a {
+.galleryContain .galleryItem:hover>a {
     width: 100%;
     height: 100%;
     color: #FBFAF6;
