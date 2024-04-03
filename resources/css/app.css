@@ -696,7 +696,6 @@ body {
     font-size: 1em;
     border-bottom: 1px solid #F7F3ED;
     padding-bottom: .3em;
-    margin-bottom: .5em;
 }
 
 .tittle span {
@@ -1317,4 +1316,8 @@ body {
     margin-right: 1.3em;
     color: #1E1E1E;
     font-size: 1.7em;
+}
+
+.FAQS .item .tittle .content .show {
+    color: #1E1E1E;
 }
