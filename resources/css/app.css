@@ -696,6 +696,7 @@ body {
     font-size: 1em;
     border-bottom: 1px solid #F7F3ED;
     padding-bottom: .3em;
+    margin-bottom: .5em;
 }
 
 .tittle span {
@@ -712,10 +713,9 @@ body {
 }
 
 .content.show {
-    margin-top: 1em;
     height: auto;
     max-height: 9999px;
-    transition: all 0.7s cubic-bezier(1, 0, 1, 0);
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
 /* MEDIA QUERYS */
