@@ -40,5 +40,29 @@
         "titulo": "Portfolio",
         "descripcion": "Si lo que buscas es mostrar tus trabajos de manera profesional, ésta es la opción indicada. Puede incluir otras secciones como un home o página principal, Nosotros, Servicios y Contacto.Ideal para profesionales del diseño, arquitectura, fotografía e ilustración.Decide qué mostrar, cómo hacerlo y actualízalo siempre que lo necesites.",
         "tipo": "desarrollo"
+    },
+    {
+        "id": 8,
+        "titulo": "¿Puedo diseñar solo el logo de mi marca?",
+        "descripcion": "Al sitio institucional, se le suma la sección de venta.Es la opción indicada sobre todo si vendes productos físicos, aunque es igual de indispensable si ofreces servicios digitales.Es ideal para automatizar procesos de ventas sin dedicar tiempo ni esfuerzo de más, y ahorrando comisiones de plataformas de terceros. ",
+        "tipo": "FAQ"
+    },
+    {
+        "id": 9,
+        "titulo": "¿Cuáles son los métodos de pago de los servicios?",
+        "descripcion": "Al sitio institucional, se le suma la sección de venta.Es la opción indicada sobre todo si vendes productos físicos, aunque es igual de indispensable si ofreces servicios digitales.Es ideal para automatizar procesos de ventas sin dedicar tiempo ni esfuerzo de más, y ahorrando comisiones de plataformas de terceros. ",
+        "tipo": "FAQ"
+    },
+    {
+        "id": 10,
+        "titulo": "¿Cuánto demora del proceso de Branding?",
+        "descripcion": "Al sitio institucional, se le suma la sección de venta.Es la opción indicada sobre todo si vendes productos físicos, aunque es igual de indispensable si ofreces servicios digitales.Es ideal para automatizar procesos de ventas sin dedicar tiempo ni esfuerzo de más, y ahorrando comisiones de plataformas de terceros. ",
+        "tipo": "FAQ"
+    },
+    {
+        "id": 11,
+        "titulo": "¿En donde dan servicio?",
+        "descripcion": "Al sitio institucional, se le suma la sección de venta.Es la opción indicada sobre todo si vendes productos físicos, aunque es igual de indispensable si ofreces servicios digitales.Es ideal para automatizar procesos de ventas sin dedicar tiempo ni esfuerzo de más, y ahorrando comisiones de plataformas de terceros. ",
+        "tipo": "FAQ"
     }
 ]

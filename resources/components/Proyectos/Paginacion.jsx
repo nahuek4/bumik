@@ -32,22 +32,24 @@ const Paginacion = () => {
                     {filterData.map((image, index) => (
                         <div key={index} className='galleryItem'>
                             <img src={`/assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
-                            <div className="content">
-                                <a href={image.href}><h3>Ver en Behance</h3></a>
+                            <div className="capa">
+                                <a target="_blank" href={image.href}><h3>VER EN BEHANCE</h3></a>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-            <ReactPaginate
-                containerClassName={"pagination"}
-                activeClassName={"activePaginate"}
-                pageClassName={"page-item"}
-                onPageChange={(event) => setPage(event.selected)}
-                pageCount={Math.ceil(datos.length / n)}
-                previousLabel="Anterior "
-                nextLabel=" Siguiente"
-            />
+            <div className="paginateReact">
+                <ReactPaginate
+                    containerClassName={"pagination"}
+                    activeClassName={"activePaginate"}
+                    pageClassName={"page-item"}
+                    onPageChange={(event) => setPage(event.selected)}
+                    pageCount={Math.ceil(datos.length / n)}
+                    previousLabel="Anterior "
+                    nextLabel=" Siguiente"
+                />
+            </div>
             <div className="galleryTextContain">
                 <div className="galleryText">
                     <p>¿Tenes alguna consulta de cómo podrías llevar tu proyecto adelante?</p>
@@ -58,7 +60,7 @@ const Paginacion = () => {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZL63YOXJUQ2Ee7VYszlfoi8bPjeuZvujjGCmt-j_ewmTi5A/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button className='botonServicios'>¡Cotizá tu proyecto!</button></a>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
