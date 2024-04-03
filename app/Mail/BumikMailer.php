@@ -8,6 +8,7 @@ use Illuminate\Mail\Mailables;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Address;
 
 class BumikMailer extends Mailables
 {
@@ -18,9 +19,9 @@ class BumikMailer extends Mailables
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -35,6 +36,13 @@ class BumikMailer extends Mailables
             from: new Address(env('MAIL_FROM'), 'Estudio Bumik'),
         );
     }
+    public function build()
+    {
+        return $this->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))
+                    ->subject('Bumik Mailer')
+                    ->replyTo('taylor@example.com', 'Taylor Otwell')
+                    ->view('mail');
+    }
 
     /**
      * Get the message content definition.
@@ -44,7 +52,7 @@ class BumikMailer extends Mailables
     public function content()
     {
         return new Content(
-            view: 'view.name',
+            view: 'mail',
         );
     }
 

@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\BumikMailer;
+use App\Models\Contacto;
 
 class ContactoController extends Controller
 {
@@ -15,6 +18,16 @@ class ContactoController extends Controller
             'telefono' => 'nullable|string|max:255',
             'mensaje' => 'required|string',
         ]);
+
+        $contacto = new Contacto();
+        $contacto->nombre = $request->nombre;
+        $contacto->apellido = $request->apellido;
+        $contacto->email = $request->email;
+        $contacto->telefono = $request->telefono;
+        $contacto->mensaje = $request->mensaje;
+        $contacto->save();
+
+        Mail::to('valeendiz@gmail.com')->send(new BumikMailer($contacto));
 
         return response()->json(['message' => 'Formulario enviado correctamente'], 200);
     }
