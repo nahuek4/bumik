@@ -1062,7 +1062,7 @@ body {
     transition: all 500ms ease-out;
 }
 
-.galleryContain .galleryItem .content {
+.galleryContain .galleryItem .capa {
     position: absolute;
     top: 0;
     width: 100%;
@@ -1073,7 +1073,7 @@ body {
     text-align: center;
 }
 
-.galleryContain .galleryItem:hover>.content {
+.galleryContain .galleryItem:hover>.capa {
     opacity: 1;
     visibility: visible;
 }
@@ -1082,7 +1082,7 @@ body {
     transform: scale(1.3);
 }
 
-.galleryContain .galleryItem:hover>.content h3 {
+.galleryContain .galleryItem:hover>.capa h3 {
     margin-top: 70px;
 }
 
