@@ -33,7 +33,7 @@ class BumikMailer extends Mailable
     {
         return new Envelope(
             subject: 'Bumik Mailer',
-            from: new Address(env('MAIL_FROM'), 'Estudio Bumik'),
+            from: new Address('estudiobumik@gmail.com', 'Estudio Bumik'),
         );
     }
     public function build()
