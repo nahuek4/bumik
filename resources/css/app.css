@@ -1297,11 +1297,10 @@ body {
 }
 
 .FAQS .item {
-    margin-top: 2em;
+    padding-top: 1em;
 }
 
 .FAQS .item .tittle h1 {
     color: #1E1E1E;
     font-weight: 400;
-    font-size: .8em;
 }
