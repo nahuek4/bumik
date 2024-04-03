@@ -1300,7 +1300,7 @@ body {
 }
 
 .FAQS .item .tittle {
-    border: 1px solid #1E1E1E;
+    border-bottom: 1px solid #1E1E1E;
 }
 
 .FAQS .item .tittle h1 {
