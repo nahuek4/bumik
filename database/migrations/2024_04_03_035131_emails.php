@@ -13,7 +13,7 @@ class CreateEmailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('emails', function (Blueprint $table) {
+        Schema::create('contacto', function (Blueprint $table) {
             $table->id();
             $table->string('to_email');
             $table->string('subject');
