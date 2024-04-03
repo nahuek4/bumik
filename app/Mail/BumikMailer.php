@@ -40,7 +40,6 @@ class BumikMailer extends Mailables
     {
         return $this->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))
                     ->subject('Bumik Mailer')
-                    ->replyTo('taylor@example.com', 'Taylor Otwell')
                     ->view('mail');
     }
 
