@@ -1018,6 +1018,10 @@ body {
     .formContain {
         width: 70% !important;
     }
+
+    .logo img {
+        width: 17em;
+    }
 }
 
 /* PROYECTOS HEADER */
