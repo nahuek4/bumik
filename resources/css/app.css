@@ -984,6 +984,10 @@ body {
     .bannerText p {
         font-size: 1em;
     }
+
+    .logo img {
+        width: 17em;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -1019,9 +1023,7 @@ body {
         width: 70% !important;
     }
 
-    .logo img {
-        width: 17em;
-    }
+
 }
 
 /* PROYECTOS HEADER */
