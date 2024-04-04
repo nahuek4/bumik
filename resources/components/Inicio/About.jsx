@@ -28,9 +28,6 @@ const About = () => {
                     <div className="text">
                         <p> Somos Nahuel y Milagros, y Juntos formamos nuestro estudio de diseño con base en Buenos Aires <br />especializado en
                             diseño gráfico, branding, redes sociales y desarrollo web.</p>
-                        <br />
-                        <p className='pI'> Hi! We are Nahuel and Milagros, and together we found our creative studio in Buenos Aires <br /> specializing in
-                            graphic design branding, social media and web development.</p>
                     </div>
                 </div>
             </div>
