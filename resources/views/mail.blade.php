@@ -18,7 +18,5 @@
         <li><strong>Teléfono:</strong> {{ $data['telefono'] ?? 'No proporcionado' }}</li>
         <li><strong>Mensaje:</strong> {{ $data['mensaje'] }}</li>
     </ul>
-    
-    <p>Gracias.</p>
 </body>
 </html>
