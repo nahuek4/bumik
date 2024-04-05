@@ -340,7 +340,6 @@ body {
 
 .text p {
     font-size: 1.625em;
-    padding: .6em;
 }
 
 .pI {
@@ -951,7 +950,7 @@ body {
         padding: 8%;
     }
 
-    .text {
+    .text p {
         font-size: 1.4em;
     }
 
@@ -962,6 +961,7 @@ body {
     .logo img {
         width: 20em;
     }
+
 }
 
 @media screen and (max-width: 350px) {
@@ -988,6 +988,30 @@ body {
     .logo img {
         width: 17em;
     }
+
+    .about h1 {
+        font-size: 2em;
+    }
+
+    .about p {
+        font-size: 1.2em;
+    }
+
+    .perfiles>div>div>img {
+        width: 15em;
+    }
+
+    .perfiles>div h2 {
+        font-size: 1em;
+    }
+
+    .serviciosText {
+        font-size: 1em;
+    }
+
+    .serviciosText p {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -1001,6 +1025,10 @@ body {
 
     .tituloServicios h1 {
         font-size: 2em;
+    }
+
+    .text p {
+        font-size: 1.23em;
     }
 }
 
@@ -1022,8 +1050,6 @@ body {
     .formContain {
         width: 70% !important;
     }
-
-
 }
 
 /* PROYECTOS HEADER */
