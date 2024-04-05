@@ -51,7 +51,7 @@ class BumikIngresadoMailer extends Mailable
     public function content()
     {
         return new Content(
-            view: 'mail',
+            view: 'mailIngresado',
         );
     }
 
