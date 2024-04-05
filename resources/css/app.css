@@ -593,6 +593,7 @@ body {
 }
 
 .textServicios {
+    font-size: 1.2em;
     margin-top: 1em;
 }
 
@@ -724,6 +725,10 @@ body {
 
     .borderboxText {
         margin: 1.5em;
+    }
+
+    .textServicios {
+        padding: 0em 3em;
     }
 }
 
@@ -879,6 +884,14 @@ body {
     .galleryContain .galleryItem img {
         width: 30em;
     }
+
+    .textServicios p {
+        font-size: 1.3em;
+    }
+
+    .galleryContain .galleryItem:hover>.capa a h3 {
+        margin-top: 5.5em;
+    }
 }
 
 
@@ -935,6 +948,22 @@ body {
     .perfiles>div>div img {
         width: 20em;
     }
+
+    .headerProyectoContainer .tituloContainerHeaderProyecto h1 {
+        font-size: 2.5em;
+    }
+
+    .headerProyectoContainer .tituloContainerHeaderProyecto p {
+        font-size: 1.3em
+    }
+
+    .galleryText p {
+        font-size: 1.3em;
+    }
+
+    .galleryContain .galleryItem:hover>.capa a h3 {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -948,10 +977,6 @@ body {
 
     .galleryContain .galleryItem img {
         width: 20em;
-    }
-
-    .galleryText {
-        padding: 8%;
     }
 
     .text p {
@@ -977,6 +1002,32 @@ body {
 
     .perfiles>div>div img {
         width: 17em;
+    }
+
+    .tituloServicios h1,
+    .tituloServicio h1 {
+        font-size: 2em;
+    }
+
+    .textServicios p {
+        font-size: 1.1em;
+    }
+
+    .tituloServicios h1,
+    .tituloServicio h1 {
+        font-size: 1.8em;
+    }
+
+    .columns h2 {
+        font-size: 1.35em;
+    }
+
+    .botonServicios {
+        font-size: 1.1em;
+    }
+
+    .galleryContain .galleryItem:hover>.capa a h3 {
+        font-size: .8em;
     }
 }
 
@@ -1071,6 +1122,10 @@ body {
     align-items: center;
     color: #FBFAF6;
     padding-top: 5em;
+}
+
+.tituloContainerHeaderProyecto {
+    padding: 0em 3em
 }
 
 .headerProyectoContainer .tituloContainerHeaderProyecto h1 {
@@ -1186,6 +1241,10 @@ body {
     background-color: #1E1E1E;
     color: #FBFAF6;
     padding-top: 1em;
+}
+
+.galleryText {
+    padding: 0em 3em;
 }
 
 .galleryText p {
