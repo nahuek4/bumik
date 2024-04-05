@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import FAQ from './FAQ';
-import lottie from 'lottie-web';
+import lottie from 'lottie-react';
 import LottieSuccess from '../../assets/img/lottie/success.json';
 
 const Form = () => {
