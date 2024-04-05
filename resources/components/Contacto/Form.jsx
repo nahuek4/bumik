@@ -14,7 +14,6 @@ const Form = () => {
     }, []);
 
     const onSubmit = async (data) => {
-        console.log(data);
         try {
             const response = await fetch('/submitForm', {
                 method: 'POST',
@@ -25,7 +24,13 @@ const Form = () => {
                 body: JSON.stringify(data)
             });
             const responseData = await response.json();
-            console.log(responseData);
+            const animation = lottie.loadAnimation({
+                container: document.getElementById('contactForm'),
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: '../../assets/img/lottie/success.json'
+            });
         } catch (error) {
             console.error('Error al enviar la solicitud:', error);
         }
