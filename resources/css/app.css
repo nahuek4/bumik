@@ -722,6 +722,10 @@ body {
     .serviceServicioimg {
         display: none;
     }
+
+    .borderboxText {
+        margin: 1.5em;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -946,6 +950,18 @@ body {
     .galleryText {
         padding: 8%;
     }
+
+    .text {
+        font-size: 1.4em;
+    }
+
+    .about h1 {
+        font-size: 2.5em;
+    }
+
+    .logo img {
+        width: 20em;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -967,6 +983,10 @@ body {
 
     .bannerText p {
         font-size: 1em;
+    }
+
+    .logo img {
+        width: 17em;
     }
 }
 
@@ -1002,6 +1022,8 @@ body {
     .formContain {
         width: 70% !important;
     }
+
+
 }
 
 /* PROYECTOS HEADER */
