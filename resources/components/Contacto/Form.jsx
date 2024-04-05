@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import FAQ from './FAQ';
-import lottie from 'lottie-react';
+import Lottie from 'lottie-react';
 import LottieSuccess from '../../assets/img/lottie/success.json';
 
 const Form = () => {
     const { register, handleSubmit } = useForm();
     const [csrfToken, setCsrfToken] = useState('');
+    const [showAnimation, setShowAnimation] = useState(false);
 
     useEffect(() => {
         const token = document.querySelector('meta[name="csrf-token"]');
@@ -26,13 +27,7 @@ const Form = () => {
                 body: JSON.stringify(data)
             });
             const responseData = await response.json();
-            lottie.loadAnimation({
-                container: document.getElementById('contactForm'),
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-                path: LottieSuccess
-            });
+            setShowAnimation(true);
         } catch (error) {
             console.error('Error al enviar la solicitud:', error);
         }
@@ -77,6 +72,7 @@ const Form = () => {
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZL63YOXJUQ2Ee7VYszlfoi8bPjeuZvujjGCmt-j_ewmTi5A/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button className='botonServicios'>¡Cotizá tu proyecto!</button></a>
                 </div>
             </div>
+            {showAnimation && <Lottie animationData={LottieSuccess} />}
             <FAQ />
         </div>
     );
