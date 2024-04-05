@@ -26,7 +26,7 @@ const Form = () => {
                 body: JSON.stringify(data)
             });
             const responseData = await response.json();
-            const animation = lottie.loadAnimation({
+            lottie.loadAnimation({
                 container: document.getElementById('contactForm'),
                 renderer: 'svg',
                 loop: true,
