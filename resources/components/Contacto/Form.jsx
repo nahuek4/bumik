@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import FAQ from './FAQ';
+import LottieSuccess from '../../assets/img/lottie/success.json';
 
 const Form = () => {
     const { register, handleSubmit } = useForm();
@@ -29,7 +30,7 @@ const Form = () => {
                 renderer: 'svg',
                 loop: true,
                 autoplay: true,
-                path: '../../assets/img/lottie/success.json'
+                path: LottieSuccess
             });
         } catch (error) {
             console.error('Error al enviar la solicitud:', error);
