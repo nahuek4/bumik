@@ -713,7 +713,7 @@ body {
 
 .content.show {
     margin-top: 1em;
-    max-height: 9999px;
+    height: 10em;
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
@@ -1439,6 +1439,6 @@ body {
     color: #1E1E1E;
 }
 
-.FAQS .item .tittle .content.show {
+.FAQS .item .tittle .content.show p {
     color: #1e1e1e;
 }
