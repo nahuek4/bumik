@@ -962,14 +962,12 @@ body {
     }
 
     .galleryContain .galleryItem:hover>.capa a h3 {
+        margin-top: 5.5em;
         font-size: 1em;
     }
 }
 
 @media screen and (max-width: 430px) {
-    .headerProyectoContainer .tituloContainerHeaderProyecto h1 {
-        font-size: 2.5em;
-    }
 
     .headerProyectoContainer .tituloContainerHeaderProyecto p {
         font-size: 1.1em;
