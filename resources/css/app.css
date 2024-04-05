@@ -962,6 +962,14 @@ body {
         width: 20em;
     }
 
+    .serviciosText {
+        font-size: 1em;
+    }
+
+    .serviciosText p {
+        font-size: 1.2em;
+    }
+
 }
 
 @media screen and (max-width: 350px) {
@@ -997,20 +1005,12 @@ body {
         font-size: 1.2em;
     }
 
-    .perfiles>div>div>img {
+    .perfiles>div>div img {
         width: 15em;
     }
 
     .perfiles>div h2 {
         font-size: 1em;
-    }
-
-    .serviciosText {
-        font-size: 1em;
-    }
-
-    .serviciosText p {
-        font-size: 1.2em;
     }
 }
 
