@@ -712,7 +712,7 @@ body {
 }
 
 .content.show {
-    height: auto;
+    margin-top: 1em;
     max-height: 9999px;
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
@@ -1413,11 +1413,14 @@ body {
 
 .FAQS .item .tittle {
     border-bottom: 1px solid #1E1E1E;
+    padding: 1em;
 }
 
 .FAQS .item .tittle h1 {
     color: #1E1E1E;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 1.8em;
+    margin-left: 3em;
 }
 
 .FAQS .item .tittle .content {
@@ -1429,8 +1432,13 @@ body {
     margin-right: 1.3em;
     color: #1E1E1E;
     font-size: 1.7em;
+    font-weight: 600;
 }
 
 .FAQS .item .tittle .content {
     color: #1E1E1E;
+}
+
+.FAQS .item .tittle .content.show {
+    color: #1e1e1e;
 }

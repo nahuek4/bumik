@@ -68,8 +68,8 @@ const Form = () => {
             )}
             {showAnimation && <Lottie animationData={LottieSuccess} />}
             <div className="textButton">
-                <p>¿Tenes alguna consulta de cómo podrías llevar Tu proyecto adelante?</p>
-                <p>Envíanos un mensaje a estudiobumik@gmail.com o completá el formulario</p>
+                <p>¿Tenes alguna consulta de cómo podrías llevar tu proyecto adelante?</p>
+                <p>Envíanos un mensaje a <span className='spanRosa'>estudiobumik@gmail.com</span> o completá el formulario</p>
                 <p>y te responderemos a la brevedad.</p>
                 <div className="botonService">
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZL63YOXJUQ2Ee7VYszlfoi8bPjeuZvujjGCmt-j_ewmTi5A/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button className='botonServicios'>¡Cotizá tu proyecto!</button></a>
