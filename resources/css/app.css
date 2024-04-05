@@ -974,6 +974,10 @@ body {
         font-size: 1.2em;
     }
 
+
+    .perfiles>div>div img {
+        width: 17em;
+    }
 }
 
 @media screen and (max-width: 350px) {
