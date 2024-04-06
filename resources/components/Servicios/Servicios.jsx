@@ -4,12 +4,16 @@ import { getDesplegable } from '../../services/getServices';
 
 
 function datosTipo(datos, tipo, selected, toggle) {
+    console.log("datos:", datos); // Verificar que datos tenga contenido
     return datos
         .filter(item => item.tipo === tipo)
         .map((item, i) => {
+            console.log("item:", item); // Verificar la estructura de cada objeto en datos
             let descripcionItems = null;
 
+            // Verificar si la descripcion es una cadena de texto y dividirla si es necesario
             if (typeof item.descripcion === 'string') {
+                console.log("item.descripcion:", item.descripcion); // Verificar el contenido de la descripción
                 if (item.descripcion.includes('<br>')) {
                     descripcionItems = item.descripcion.split('<br>').map((punto, index) => (
                         <li key={index}>{punto.trim()}</li>
