@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { getDesplegable } from '../../services/getServices';
 
 
-function datosTipo(tipo) {
+function datosTipo(datos, tipo, selected, toggle) {
     return datos
         .filter(item => item.tipo === tipo)
         .map((item, i) => {
@@ -39,8 +39,8 @@ const Servicios = () => {
     }
 
     useEffect(() => {
-        const fetchData = () => {
-            const data = getDesplegable();
+        const fetchData = async () => {
+            const data = await getDesplegable();
             setDatos(data);
         };
 
