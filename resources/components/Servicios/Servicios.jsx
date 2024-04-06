@@ -7,12 +7,17 @@ function datosTipo(datos, tipo, selected, toggle) {
     return datos
         .filter(item => item.tipo === tipo)
         .map((item, i) => {
-            // Verificar si la descripcion es una cadena de texto antes de dividirla
-            const descripcionItems = typeof item.descripcion === 'string' ?
-                item.descripcion.split('<br>').map((punto, index) => (
-                    <li key={index}>{punto.trim()}</li>
-                )) :
-                null;
+            let descripcionItems = null;
+
+            if (typeof item.descripcion === 'string') {
+                if (item.descripcion.includes('<br>')) {
+                    descripcionItems = item.descripcion.split('<br>').map((punto, index) => (
+                        <li key={index}>{punto.trim()}</li>
+                    ));
+                } else {
+                    descripcionItems = <li>{item.descripcion}</li>;
+                }
+            }
 
             return (
                 <div className="item" key={i}>
@@ -22,6 +27,7 @@ function datosTipo(datos, tipo, selected, toggle) {
                         <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
                     </div>
                     <div className={selected === i ? "content show" : "content"}>
+                        {/* Renderizar la lista de descripción solo si es una cadena de texto */}
                         {descripcionItems && <ul>{descripcionItems}</ul>}
                     </div>
                 </div>
