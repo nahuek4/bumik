@@ -2,6 +2,30 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { getDesplegable } from '../../services/getServices';
 
+
+function datosTipo(tipo) {
+    return datos
+        .filter(item => item.tipo === tipo)
+        .map((item, i) => {
+            const descripcionItems = item.descripcion.split('<br>').map((punto, index) => (
+                <li key={index}>{punto.trim()}</li>
+            ));
+
+            return (
+                <div className="item" key={i}>
+                    <div className="tittle" onClick={() => toggle(i)}>
+                        <div className="vacio"></div>
+                        <h1>{item.titulo}</h1>
+                        <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
+                    </div>
+                    <div className={selected === i ? "content show" : "content"}>
+                        <ul>{descripcionItems}</ul>
+                    </div>
+                </div>
+            );
+        });
+}
+
 const Servicios = () => {
     const [datos, setDatos] = useState([]);
     const [selected, setSelected] = useState(null);
@@ -15,29 +39,6 @@ const Servicios = () => {
     }
 
     useEffect(() => {
-        function datosTipo(tipo) {
-            return datos
-                .filter(item => item.tipo === tipo)
-                .map((item, i) => {
-                    const descripcionItems = item.descripcion.split('<br>').map((punto, index) => (
-                        <li key={index}>{punto.trim()}</li>
-                    ));
-
-                    return (
-                        <div className="item" key={i}>
-                            <div className="tittle" onClick={() => toggle(i)}>
-                                <div className="vacio"></div>
-                                <h1>{item.titulo}</h1>
-                                <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
-                            </div>
-                            <div className={selected === i ? "content show" : "content"}>
-                                <ul>{descripcionItems}</ul>
-                            </div>
-                        </div>
-                    );
-                });
-        }
-
         const fetchData = () => {
             const data = getDesplegable();
             setDatos(data);
@@ -45,6 +46,7 @@ const Servicios = () => {
 
         fetchData();
     }, []);
+
     return (
         <div className='serviciosServComp'>
             <div className="serviciosContain">
