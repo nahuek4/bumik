@@ -64,7 +64,7 @@ const Servicios = () => {
                         </div>
                         <div className="mostrarMas">
                             <div className="column">
-                                {datosTipo("branding")}
+                                {datosTipo(datos, "branding", selected, toggle)}
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ const Servicios = () => {
                         </div>
                         <div className="mostrarMas">
                             <div className="column">
-                                {datosTipo("desarrollo")}
+                                {datosTipo(datos, "desarrollo", selected, toggle)}
                             </div>
                         </div>
                     </div>
