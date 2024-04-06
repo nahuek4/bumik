@@ -7,9 +7,12 @@ function datosTipo(datos, tipo, selected, toggle) {
     return datos
         .filter(item => item.tipo === tipo)
         .map((item, i) => {
-            const descripcionItems = item.descripcion.split('<br>').map((punto, index) => (
-                <li key={index}>{punto.trim()}</li>
-            ));
+            // Verificar si la descripcion es una cadena de texto antes de dividirla
+            const descripcionItems = typeof item.descripcion === 'string' ?
+                item.descripcion.split('<br>').map((punto, index) => (
+                    <li key={index}>{punto.trim()}</li>
+                )) :
+                null;
 
             return (
                 <div className="item" key={i}>
@@ -19,7 +22,7 @@ function datosTipo(datos, tipo, selected, toggle) {
                         <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
                     </div>
                     <div className={selected === i ? "content show" : "content"}>
-                        <ul>{descripcionItems}</ul>
+                        {descripcionItems && <ul>{descripcionItems}</ul>}
                     </div>
                 </div>
             );
