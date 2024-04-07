@@ -890,12 +890,12 @@ body {
 
 @media screen and (max-width: 500px) {
 
-    .FAQS>div>div span {
+    .FAQS .item .tittle span {
         margin-left: 0em;
         margin-right: .3em;
     }
 
-    .FAQS>div>div>h1 {
+    .FAQS .item .tittle h1 {
         margin-left: 0em;
         font-size: 1.2em;
     }
