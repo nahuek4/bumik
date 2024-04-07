@@ -840,10 +840,6 @@ body {
         padding: 0;
     }
 
-    .contacts>div {
-        margin-bottom: 1em;
-    }
-
     .business {
         display: flex;
         flex-direction: column;
@@ -919,11 +915,6 @@ body {
         font-size: 1.5em;
         margin-bottom: 1em;
         margin-top: 3em;
-    }
-
-    .contacts {
-        margin-top: 3em;
-        margin-bottom: 3em;
     }
 
     .textHeader {
