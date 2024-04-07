@@ -62,7 +62,7 @@ const Form = () => {
                             {/* Mensaje */}
                             <label htmlFor="mensaje">Mensaje</label>
                             <textarea rows="8" type="text" {...register("mensaje")} />
-                            <button type='submit' className='buttonForm'>Enviar</button>
+                            <button className='buttonForm'>Enviar</button>
                             <input type="hidden" name="_token" value={csrfToken} />
                         </form>
                     </div>
