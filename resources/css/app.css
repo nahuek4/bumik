@@ -1471,7 +1471,8 @@ body {
 }
 
 .divPDescripcion {
-    padding: 1%;
+    padding: .5em 3em;
+    font-size: 1.2em;
 }
 
 .divPDescripcion p {
