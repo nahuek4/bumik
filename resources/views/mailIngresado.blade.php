@@ -7,10 +7,6 @@
     <title>Bumik Mailer</title>
 </head>
 <body>
-    <h1>¡Hola!</h1>
-    
-    <p>Hemos recibido tus datos correctamente!</p>
-    
-    <p>Gracias.</p>
+    <img src="resources/assets/img/mail.webp">
 </body>
 </html>
