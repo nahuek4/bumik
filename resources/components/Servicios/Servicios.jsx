@@ -52,11 +52,10 @@ const Servicios = () => {
         });
     }
 
-    const renderColumns = (datos, tipo) => {
-        const filteredData = datos.filter(item => item.tipo === tipo);
-        const halfIndex = Math.ceil(filteredData.length / 2);
-        const firstHalf = filteredData.slice(0, halfIndex);
-        const secondHalf = filteredData.slice(halfIndex);
+    const renderColumns = (items) => {
+        const halfIndex = Math.ceil(items.length / 2);
+        const firstHalf = items.slice(0, halfIndex);
+        const secondHalf = items.slice(halfIndex);
 
         return (
             <div className="columns">
@@ -87,7 +86,7 @@ const Servicios = () => {
                         </div>
                         <div className="mostrarMas">
                             <div className="column">
-                                {datosTipo(datos, "branding", selected, toggle)}
+                                {renderColumns(datos.filter(item => item.tipo === "branding"))}
                             </div>
                         </div>
                     </div>
@@ -108,7 +107,7 @@ const Servicios = () => {
                         </div>
                         <div className="mostrarMas">
                             <div className="column">
-                                {datosTipo(datos, "desarrollo", selected, toggle)}
+                                {renderColumns(datos.filter(item => item.tipo === "desarrollo"))}
                             </div>
                         </div>
                     </div>
