@@ -1384,7 +1384,9 @@ body {
     text-align: center;
     color: white;
 }
-
+.buttonForm img{
+    width: 5%;
+}
 
 /* CONTACTO FAQ */
 
