@@ -7,10 +7,6 @@
     <title>Bumik Mailer</title>
 </head>
 <body>
-   1 <img src="{{ asset('img/mailing.png') }}">
-   2 <img src="{{ 'assets/img/mailing.png' }}">
-   3 <img src="{{ 'assets/img/mail.webp' }}">
-   4 <img src="assets/img/mailing.png">
-   5 <img src="../assets/img/mailing.png">
+    <img src="{{ asset('img/mailing.png') }}">
 </body>
 </html>
