@@ -1464,6 +1464,10 @@ body {
     margin-left: 3em;
 }
 
+.divPDescripcion {
+    padding: 1%;
+}
+
 .divPDescripcion p {
     color: #1E1E1E;
 }
