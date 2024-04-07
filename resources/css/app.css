@@ -978,7 +978,7 @@ body {
     text-align: center;
     color: #FBFAF6;
     background-color: #1E1E1E;
-    padding-top: 5em;
+    padding-top: 0 2em;
 }
 
 .textButton p {
@@ -1334,10 +1334,6 @@ body {
 
     .tittleFaq h1 {
         font-size: 2.5em;
-    }
-
-    .textButton {
-        padding: 0 2em;
     }
 
     .textButton p {
