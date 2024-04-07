@@ -1337,7 +1337,7 @@ body {
     }
 
     .textButton {
-        padding-top: 2em;
+        padding: 0 2em;
     }
 
     .textButton p {
@@ -1475,6 +1475,28 @@ body {
     .footerLinks {
         margin-bottom: 0em;
     }
+
+    .divPDescripcion {
+        font-size: .8em;
+        padding: .5em 1em;
+    }
+
+    .footerText {
+        font-size: 1.3em;
+    }
+
+    .footerLinks {
+        font-size: 1.4em;
+    }
+
+    .headerContactTitulo {
+        padding: 0 1em;
+    }
+
+    .tittleFaq h1,
+    .headerContactTitulo h1 {
+        font-size: 1.8em;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -1493,6 +1515,7 @@ body {
     .text p {
         font-size: 1.23em;
     }
+
 }
 
 @media screen and (max-width: 900px) {
