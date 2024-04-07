@@ -68,7 +68,9 @@ const Form = () => {
                     </div>
                 </div>
             )}
-            {showAnimation && <Lottie animationData={LottieSuccess} />}
+            <div className='lottieDiv'>
+                {showAnimation && <Lottie animationData={LottieSuccess} />}
+            </div>
             <div className="textButton">
                 <p>¿Tenes alguna consulta de cómo podrías llevar tu proyecto adelante?</p>
                 <p>Envíanos un mensaje a <span className='spanRosa'>estudiobumik@gmail.com</span> o completá el formulario</p>
