@@ -16,19 +16,20 @@ const Footer = () => {
                     <Link to="/servicios">SERVICIOS</Link>
                     <Link to="/portfolio">PROYECTOS</Link>
                     <Link to="/contacto">CONTACTO</Link>
+                    <div className="contacts">
+                        <div className="business">
+                            <a href="mailto:estudiobumik@gmail.com" target='_blank' rel="noreferrer"><img src="/public/assets/icons/email.webp" alt="email" /></a>
+                        </div>
+                        <div className="whatsapp">
+                            <a href="https://wa.me/+5491121878975" target="_blank" rel="noreferrer"><img src="/public/assets/icons/whatsapp.webp" alt="whatsapp" /></a>
+                        </div>
+                        <div className="instagram">
+                            <a href="https://www.instagram.com/estudiobumik/" target='_blank' rel="noreferrer"><img src="/public/assets/icons/instagram.webp" alt="instagram" /></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className="contacts">
-                <div className="business">
-                    <a href="mailto:estudiobumik@gmail.com" target='_blank' rel="noreferrer"><img src="/public/assets/icons/email.webp" alt="email" /></a>
-                </div>
-                <div className="whatsapp">
-                    <a href="https://wa.me/+5491121878975" target="_blank" rel="noreferrer"><img src="/public/assets/icons/whatsapp.webp" alt="whatsapp" /></a>
-                </div>
-                <div className="instagram">
-                    <a href="https://www.instagram.com/estudiobumik/" target='_blank' rel="noreferrer"><img src="/public/assets/icons/instagram.webp" alt="instagram" /></a>
-                </div>
-            </div>
+
             <div className="derechosbumik">
                 <p>&copy; {currentYear} Estudio Bumik</p>
             </div>
