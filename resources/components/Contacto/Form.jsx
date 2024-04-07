@@ -72,8 +72,8 @@ const Form = () => {
             </div>
             <div className='lottieDiv'>
                 {showAnimation && <Lottie animationData={LottieSuccess} loop='false'/>}
-                {showAnimation && (<p>Informacion enviada exitosamente!</p>)}
             </div>
+                {showAnimation && (<p className='pLottie'>Informacion enviada exitosamente!</p>)}
             <div className="textButton">
                 <p>¿Tenes alguna consulta de cómo podrías llevar tu proyecto adelante?</p>
                 <p>Envíanos un mensaje a <span className='spanRosa'>estudiobumik@gmail.com</span> o completá el formulario</p>
