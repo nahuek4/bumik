@@ -1379,6 +1379,11 @@ body {
     width: 25%;
     padding-top: 5em;
 }
+.lottieDiv p{
+    font-size: x-large;
+    text-align: center;
+    color: white;
+}
 
 /* CONTACTO FAQ */
 

@@ -71,12 +71,8 @@ const Form = () => {
             )}
             </div>
             <div className='lottieDiv'>
-                {showAnimation && <Lottie animationData={LottieSuccess} />}
-                <p style="
-    font-size: x-large;
-    text-align: center;
-    color: white;
-">Informacion enviada exitosamente!</p>
+                {showAnimation && <Lottie animationData={LottieSuccess} loop='false'/>}
+                {showAnimation && (<p>Informacion enviada exitosamente!</p>)}
             </div>
             <div className="textButton">
                 <p>¿Tenes alguna consulta de cómo podrías llevar tu proyecto adelante?</p>
