@@ -1343,6 +1343,11 @@ body {
     .textButton p {
         font-size: 1.2em;
     }
+
+    .divPDescripcion {
+        font-size: 1em;
+        padding: .5em 2em;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -1375,7 +1380,6 @@ body {
         font-size: 1.2em;
     }
 
-
     .perfiles>div>div img {
         width: 17em;
     }
@@ -1404,6 +1408,22 @@ body {
 
     .galleryContain .galleryItem:hover>.capa a h3 {
         font-size: .8em;
+    }
+
+    .tittleFaq h1 {
+        font-size: 2em;
+    }
+
+    .headerContactTitulo h1 {
+        font-size: 2em;
+    }
+
+    .buttonForm {
+        font-size: .9em;
+    }
+
+    .botonServicios {
+        font-size: 1em;
     }
 }
 
@@ -1446,6 +1466,14 @@ body {
 
     .perfiles>div h2 {
         font-size: 1em;
+    }
+
+    .FAQS .item .tittle span {
+        font-size: 1.1em;
+    }
+
+    .footerLinks {
+        margin-bottom: 0em;
     }
 }
 
