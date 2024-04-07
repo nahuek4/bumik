@@ -5,6 +5,8 @@ import Lottie from 'lottie-react';
 import LottieSuccess from '../../assets/img/lottie/success.json';
 
 const Form = () => {
+
+
     const { register, handleSubmit } = useForm();
     const [csrfToken, setCsrfToken] = useState('');
     const [showAnimation, setShowAnimation] = useState(false);
@@ -60,7 +62,7 @@ const Form = () => {
                             {/* Mensaje */}
                             <label htmlFor="mensaje">Mensaje</label>
                             <textarea rows="8" type="text" {...register("mensaje")} />
-                            <button className='buttonForm'>Enviar</button>
+                            <button type='submit' className='buttonForm'>Enviar</button>
                             <input type="hidden" name="_token" value={csrfToken} />
                         </form>
                     </div>
