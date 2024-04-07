@@ -720,419 +720,6 @@ body {
     transition: all 1s cubic-bezier(1, 0, 1, 0);
 }
 
-/* MEDIA QUERYS */
-@media screen and (max-width: 1400px) {
-    .serviceServicioimg {
-        display: none;
-    }
-
-    .borderboxText {
-        margin: 1.5em;
-    }
-
-    .textServicios {
-        padding: 0em 3em;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .bannerText {
-        font-size: 0.75em;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .bannerText {
-        flex-direction: column;
-    }
-
-    .bannerText>div {
-        margin-bottom: .5em;
-    }
-
-    .investigacion p,
-    .desarrollo p,
-    .resultado p {
-        font-size: 1.6em;
-    }
-}
-
-@media screen and (max-width: 1015px) {
-    .navLinks {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 4em;
-        left: -110%;
-        opacity: 1;
-        transition: all .5s ease-out;
-        color: #FBFAF6;
-    }
-
-    .navLinks.active {
-        background: #2D2D2C;
-        left: 0px;
-        opacity: 1;
-        transition: all .5s ease;
-        z-index: 1;
-        color: #FBFAF6;
-    }
-
-    .navLink {
-        padding: 1.5em;
-        width: 100%;
-        display: table;
-        color: #FBFAF6;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        text-transform: uppercase;
-        font-size: 1.1em;
-        color: #FBFAF6;
-    }
-
-    .navToggle {
-        display: block;
-        margin-right: 5%;
-        font-size: 1.7em;
-    }
-
-    .textServicios {
-        padding: 1em;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo {
-        margin-top: -10em;
-    }
-
-    .botonServicios {
-        margin-top: 3.5em;
-    }
-
-    .perfiles {
-        gap: 2em;
-    }
-
-    .footerText {
-        margin: 0;
-        align-items: center;
-    }
-
-    .footerLinks {
-        margin-top: 2em;
-        align-items: center;
-    }
-
-    .whatsapp {
-        padding: 0;
-    }
-
-    .business {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .serviceBox {
-        width: 20em;
-    }
-
-    .tituloServicios h1 {
-        font-size: 2.5em;
-    }
-
-    .tituloServicio h1 {
-        font-size: 2.5em;
-    }
-
-    .tituloServicio p {
-        font-size: 1.1em;
-    }
-
-    .headerServiceContain {
-        padding-bottom: 1.5em;
-    }
-
-    .tittle {
-        font-size: .8em;
-    }
-
-    .columns h2 {
-        font-size: 1.6em;
-    }
-
-    .galleryContain .galleryItem img {
-        width: 30em;
-    }
-
-    .textServicios p {
-        font-size: 1.3em;
-    }
-
-    .galleryContain .galleryItem:hover>.capa a h3 {
-        margin-top: 5.5em;
-    }
-}
-
-
-@media screen and (max-width: 500px) {
-
-
-    .headerContactTitulo h1 {
-        font-size: 2.5em;
-    }
-
-    .headerContactTitulo p {
-        font-size: 1.2em;
-    }
-
-    .logo img {
-        width: 24em;
-    }
-
-    .serviceBox {
-        width: 18em;
-    }
-
-    .serviceText {
-        font-size: 1em;
-    }
-
-    .investigacion p,
-    .desarrollo p,
-    .resultado p {
-        font-size: 1.2em;
-    }
-
-    .footerText {
-        font-size: 1.5em;
-    }
-
-    .footerLinks {
-        font-size: 1.5em;
-        margin-bottom: 1em;
-        margin-top: 3em;
-    }
-
-    .textHeader {
-        font-size: 1em;
-    }
-
-    .tituloServicios h1 {
-        font-size: 2.2em;
-    }
-
-    .tituloServicio h1 {
-        font-size: 2.2em;
-    }
-
-    .galleryContain .galleryItem img {
-        width: 25em;
-    }
-
-    .perfiles>div>div img {
-        width: 20em;
-    }
-
-    .headerProyectoContainer .tituloContainerHeaderProyecto h1 {
-        font-size: 2.5em;
-    }
-
-    .headerProyectoContainer .tituloContainerHeaderProyecto p {
-        font-size: 1.3em
-    }
-
-    .galleryText p {
-        font-size: 1.3em;
-    }
-
-    .galleryContain .galleryItem:hover>.capa a h3 {
-        margin-top: 5.5em;
-        font-size: 1em;
-    }
-
-    .FAQS .item .tittle span {
-        margin-left: 0em;
-        margin-right: .3em;
-    }
-
-    .FAQS .item .tittle h1 {
-        margin-left: 0em;
-        font-size: 1.2em;
-    }
-
-    .tittleFaq p {
-        font-size: 1.2em;
-
-    }
-
-    .tittleFaq h1 {
-        font-size: 2.5em;
-    }
-
-    .textButton {
-        padding-top: 2em;
-    }
-
-    .textButton p {
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (max-width: 430px) {
-
-    .headerProyectoContainer .tituloContainerHeaderProyecto p {
-        font-size: 1.1em;
-    }
-
-    .galleryContain .galleryItem img {
-        width: 20em;
-    }
-
-    .text p {
-        font-size: 1.4em;
-    }
-
-    .about h1 {
-        font-size: 2.5em;
-    }
-
-    .logo img {
-        width: 20em;
-    }
-
-    .serviciosText {
-        font-size: 1em;
-    }
-
-    .serviciosText p {
-        font-size: 1.2em;
-    }
-
-
-    .perfiles>div>div img {
-        width: 17em;
-    }
-
-    .tituloServicios h1,
-    .tituloServicio h1 {
-        font-size: 2em;
-    }
-
-    .textServicios p {
-        font-size: 1.1em;
-    }
-
-    .tituloServicios h1,
-    .tituloServicio h1 {
-        font-size: 1.8em;
-    }
-
-    .columns h2 {
-        font-size: 1.35em;
-    }
-
-    .botonServicios {
-        font-size: 1.1em;
-    }
-
-    .galleryContain .galleryItem:hover>.capa a h3 {
-        font-size: .8em;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .serviceBox {
-        width: 15em;
-    }
-
-    .investigacion h1,
-    .desarrollo h1,
-    .resultado h1 {
-        font-size: 4em;
-    }
-
-    .investigacion h2,
-    .desarrollo h2,
-    .resultado h2 {
-        font-size: 2.2em;
-    }
-
-    .bannerText p {
-        font-size: 1em;
-    }
-
-    .logo img {
-        width: 17em;
-    }
-
-    .about h1 {
-        font-size: 2em;
-    }
-
-    .about p {
-        font-size: 1.2em;
-    }
-
-    .perfiles>div>div img {
-        width: 15em;
-    }
-
-    .perfiles>div h2 {
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .serviceBox {
-        width: 14em;
-    }
-
-    .footerText {
-        font-size: 1.35em;
-    }
-
-    .tituloServicios h1 {
-        font-size: 2em;
-    }
-
-    .text p {
-        font-size: 1.23em;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .formNombreApellido {
-        display: flex !important;
-        flex-direction: column !important;
-    }
-
-    .labelNombre,
-    .labelApellido {
-        width: 100% !important;
-    }
-
-    #contactForm {
-        padding: 5% !important;
-    }
-
-    .formContain {
-        width: 70% !important;
-    }
-}
 
 /* PROYECTOS HEADER */
 
@@ -1486,4 +1073,416 @@ body {
     color: #1E1E1E;
     font-size: 1.7em;
     font-weight: 600;
+}
+
+/* MEDIA QUERYS */
+@media screen and (max-width: 1400px) {
+    .serviceServicioimg {
+        display: none;
+    }
+
+    .borderboxText {
+        margin: 1.5em;
+    }
+
+    .textServicios {
+        padding: 0em 3em;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .bannerText {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .bannerText {
+        flex-direction: column;
+    }
+
+    .bannerText>div {
+        margin-bottom: .5em;
+    }
+
+    .investigacion p,
+    .desarrollo p,
+    .resultado p {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 4em;
+        left: -110%;
+        opacity: 1;
+        transition: all .5s ease-out;
+        color: #FBFAF6;
+    }
+
+    .navLinks.active {
+        background: #2D2D2C;
+        left: 0px;
+        opacity: 1;
+        transition: all .5s ease;
+        z-index: 1;
+        color: #FBFAF6;
+    }
+
+    .navLink {
+        padding: 1.5em;
+        width: 100%;
+        display: table;
+        color: #FBFAF6;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        color: #FBFAF6;
+    }
+
+    .navToggle {
+        display: block;
+        margin-right: 5%;
+        font-size: 1.7em;
+    }
+
+    .textServicios {
+        padding: 1em;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: -10em;
+    }
+
+    .botonServicios {
+        margin-top: 3.5em;
+    }
+
+    .perfiles {
+        gap: 2em;
+    }
+
+    .footerText {
+        margin: 0;
+        align-items: center;
+    }
+
+    .footerLinks {
+        margin-top: 2em;
+        align-items: center;
+    }
+
+    .whatsapp {
+        padding: 0;
+    }
+
+    .business {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serviceBox {
+        width: 20em;
+    }
+
+    .tituloServicios h1 {
+        font-size: 2.5em;
+    }
+
+    .tituloServicio h1 {
+        font-size: 2.5em;
+    }
+
+    .tituloServicio p {
+        font-size: 1.1em;
+    }
+
+    .headerServiceContain {
+        padding-bottom: 1.5em;
+    }
+
+    .tittle {
+        font-size: .8em;
+    }
+
+    .columns h2 {
+        font-size: 1.6em;
+    }
+
+    .galleryContain .galleryItem img {
+        width: 30em;
+    }
+
+    .textServicios p {
+        font-size: 1.3em;
+    }
+
+    .galleryContain .galleryItem:hover>.capa a h3 {
+        margin-top: 5.5em;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .headerContactTitulo h1 {
+        font-size: 2.5em;
+    }
+
+    .headerContactTitulo p {
+        font-size: 1.2em;
+    }
+
+    .logo img {
+        width: 24em;
+    }
+
+    .serviceBox {
+        width: 18em;
+    }
+
+    .serviceText {
+        font-size: 1em;
+    }
+
+    .investigacion p,
+    .desarrollo p,
+    .resultado p {
+        font-size: 1.2em;
+    }
+
+    .footerText {
+        font-size: 1.5em;
+    }
+
+    .footerLinks {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        margin-top: 3em;
+    }
+
+    .textHeader {
+        font-size: 1em;
+    }
+
+    .tituloServicios h1 {
+        font-size: 2.2em;
+    }
+
+    .tituloServicio h1 {
+        font-size: 2.2em;
+    }
+
+    .galleryContain .galleryItem img {
+        width: 25em;
+    }
+
+    .perfiles>div>div img {
+        width: 20em;
+    }
+
+    .headerProyectoContainer .tituloContainerHeaderProyecto h1 {
+        font-size: 2.5em;
+    }
+
+    .headerProyectoContainer .tituloContainerHeaderProyecto p {
+        font-size: 1.3em
+    }
+
+    .galleryText p {
+        font-size: 1.3em;
+    }
+
+    .galleryContain .galleryItem:hover>.capa a h3 {
+        margin-top: 5.5em;
+        font-size: 1em;
+    }
+
+    .FAQS .item .tittle span {
+        margin-left: 0em;
+        margin-right: .3em;
+    }
+
+    .FAQS .item .tittle h1 {
+        margin-left: 0em;
+        font-size: 1.2em;
+    }
+
+    .tittleFaq p {
+        font-size: 1.2em;
+
+    }
+
+    .tittleFaq h1 {
+        font-size: 2.5em;
+    }
+
+    .textButton {
+        padding-top: 2em;
+    }
+
+    .textButton p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .headerProyectoContainer .tituloContainerHeaderProyecto p {
+        font-size: 1.1em;
+    }
+
+    .galleryContain .galleryItem img {
+        width: 20em;
+    }
+
+    .text p {
+        font-size: 1.4em;
+    }
+
+    .about h1 {
+        font-size: 2.5em;
+    }
+
+    .logo img {
+        width: 20em;
+    }
+
+    .serviciosText {
+        font-size: 1em;
+    }
+
+    .serviciosText p {
+        font-size: 1.2em;
+    }
+
+
+    .perfiles>div>div img {
+        width: 17em;
+    }
+
+    .tituloServicios h1,
+    .tituloServicio h1 {
+        font-size: 2em;
+    }
+
+    .textServicios p {
+        font-size: 1.1em;
+    }
+
+    .tituloServicios h1,
+    .tituloServicio h1 {
+        font-size: 1.8em;
+    }
+
+    .columns h2 {
+        font-size: 1.35em;
+    }
+
+    .botonServicios {
+        font-size: 1.1em;
+    }
+
+    .galleryContain .galleryItem:hover>.capa a h3 {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .serviceBox {
+        width: 15em;
+    }
+
+    .investigacion h1,
+    .desarrollo h1,
+    .resultado h1 {
+        font-size: 4em;
+    }
+
+    .investigacion h2,
+    .desarrollo h2,
+    .resultado h2 {
+        font-size: 2.2em;
+    }
+
+    .bannerText p {
+        font-size: 1em;
+    }
+
+    .logo img {
+        width: 17em;
+    }
+
+    .about h1 {
+        font-size: 2em;
+    }
+
+    .about p {
+        font-size: 1.2em;
+    }
+
+    .perfiles>div>div img {
+        width: 15em;
+    }
+
+    .perfiles>div h2 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .serviceBox {
+        width: 14em;
+    }
+
+    .footerText {
+        font-size: 1.35em;
+    }
+
+    .tituloServicios h1 {
+        font-size: 2em;
+    }
+
+    .text p {
+        font-size: 1.23em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .formNombreApellido {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .labelNombre,
+    .labelApellido {
+        width: 100% !important;
+    }
+
+    #contactForm {
+        padding: 5% !important;
+    }
+
+    .formContain {
+        width: 70% !important;
+    }
 }
