@@ -890,7 +890,13 @@ body {
 
 @media screen and (max-width: 500px) {
 
+    .FAQS .item .tittle span {
+        margin-left: 0em;
+        margin-right: .3em;
+    }
+
     .FAQS .item .tittle h1 {
+        margin-left: 0em;
         font-size: 1.2em;
     }
 
@@ -1470,6 +1476,7 @@ body {
 
 .divPDescripcion p {
     color: #1E1E1E;
+    font-weight: 500;
 }
 
 .FAQS .item .tittle span {
