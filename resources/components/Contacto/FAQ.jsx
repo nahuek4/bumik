@@ -24,7 +24,11 @@ const FAQ = () => {
                         <h1>{item.titulo}</h1>
                         <span>{selected === i ? '-' : '+'}</span>
                     </div>
-                    <div className={selected === i ? "content show" : "content"}><p>{item.descripcion}</p></div>
+                    <div className={selected === i ? "content show" : "content"}>
+                        <div className='divPDescripcion'>
+                            <p>{item.descripcion}</p>
+                        </div>
+                    </div>
                 </div>
             );
         });
