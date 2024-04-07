@@ -26,12 +26,7 @@ function datosTipo(datos, tipo, selected, toggle) {
                         <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
                     </div>
                     <div className={selected === i ? "content show" : "content"}>
-                        <div className="column">
-                            {descripcionItems && <ul>{descripcionItems.slice(0, Math.ceil(descripcionItems.length / 2))}</ul>}
-                        </div>
-                        <div className="column">
-                            {descripcionItems && <ul>{descripcionItems.slice(Math.ceil(descripcionItems.length / 2))}</ul>}
-                        </div>
+                        {descripcionItems && <ul>{descripcionItems}</ul>}
                     </div>
                 </div>
             );
