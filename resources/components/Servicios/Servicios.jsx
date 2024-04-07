@@ -26,7 +26,7 @@ function datosTipo(datos, tipo, selected, toggle) {
                         <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
                     </div>
                     <div className={selected === i ? "content show" : "content"}>
-                        {descripcionItems && <ul>{descripcionItems}</ul>}
+                        <div className="descripcionServics">{descripcionItems && <ul>{descripcionItems}</ul>}</div>
                     </div>
                 </div>
             );

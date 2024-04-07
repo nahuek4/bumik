@@ -434,7 +434,9 @@ body {
     margin-top: 1.6em;
 }
 
-
+.descripcionServics {
+    padding: 1%;
+}
 
 .serviciosText p {
     margin-top: 1em;
