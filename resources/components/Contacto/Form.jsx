@@ -36,7 +36,7 @@ const Form = () => {
     };
 
     return (
-        <div>
+        <div className="fondoLottie">
             {!showAnimation && (
                 <div className="formContainer">
                     <div className="formContain">

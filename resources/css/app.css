@@ -1366,6 +1366,11 @@ body {
     margin-top: -1em;
 }
 
+.fondoLottie{
+    background-color: #1E1E1E;
+    
+}
+
 /* CONTACTO FAQ */
 
 .faqContainerComp {
