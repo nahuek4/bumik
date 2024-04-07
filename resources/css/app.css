@@ -1368,7 +1368,15 @@ body {
 
 .fondoLottie{
     background-color: #1E1E1E;
-    
+}
+
+.lottieDiv{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.lottieDiv div{
+    width: 25%;
 }
 
 /* CONTACTO FAQ */
