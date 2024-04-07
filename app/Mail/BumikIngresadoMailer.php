@@ -32,14 +32,14 @@ class BumikIngresadoMailer extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Bumik Mailer',
+            subject: 'Estudio Bumik',
             from: new Address('estudiobumik@gmail.com', 'Estudio Bumik'),
         );
     }
     public function build()
     {
         return $this->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))
-                    ->subject('Bumik Mailer')
+                    ->subject('Estudio Bumik')
                     ->view('mailIngresado');
     }
 

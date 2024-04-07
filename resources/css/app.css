@@ -1397,6 +1397,28 @@ body {
     margin-top: -1em;
 }
 
+.fondoLottie{
+    background-color: #1E1E1E;
+}
+
+.lottieDiv{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 5em;
+}
+.lottieDiv div{
+    width: 25%;
+}
+.pLottie{
+    font-size: x-large;
+    text-align: center;
+    color: white;
+}
+.buttonForm img{
+    width: 4%;
+}
+
 /* CONTACTO FAQ */
 
 .faqContainerComp {
