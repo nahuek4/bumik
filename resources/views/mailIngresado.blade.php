@@ -7,6 +7,6 @@
     <title>Bumik Mailer</title>
 </head>
 <body>
-    <img src="../assets/img/mail.webp">
+    <img src="../assets/img/mailing.png">
 </body>
 </html>
