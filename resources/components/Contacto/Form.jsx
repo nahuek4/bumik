@@ -3,13 +3,14 @@ import { useForm } from 'react-hook-form';
 import FAQ from './FAQ';
 import Lottie from 'lottie-react';
 import LottieSuccess from '../../assets/img/lottie/success.json';
+import Loader from '../../assets/icons/ajax-loader.gif';
 
 const Form = () => {
-
 
     const { register, handleSubmit } = useForm();
     const [csrfToken, setCsrfToken] = useState('');
     const [showAnimation, setShowAnimation] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         const token = document.querySelector('meta[name="csrf-token"]');
@@ -20,6 +21,7 @@ const Form = () => {
 
     const onSubmit = async (data) => {
         try {
+            setIsLoading(true);
             const response = await fetch('/submitForm', {
                 method: 'POST',
                 headers: {
@@ -28,10 +30,13 @@ const Form = () => {
                 },
                 body: JSON.stringify(data)
             });
+
             const responseData = await response.json();
             setShowAnimation(true);
+            setIsLoading(false);
         } catch (error) {
             console.error('Error al enviar la solicitud:', error);
+            setIsLoading(false);
         }
     };
 
@@ -63,7 +68,9 @@ const Form = () => {
                             {/* Mensaje */}
                             <label htmlFor="mensaje">Mensaje</label>
                             <textarea rows="8" type="text" {...register("mensaje")} />
-                            <button className='buttonForm'>Enviar</button>
+                            <button className='buttonForm' id='buttonForm' disabled={isLoading} onClick={() => setIsLoading(true)}>
+                                {isLoading ? <img src={Loader} alt="Loading..." /> : 'Enviar'}
+                            </button>
                             <input type="hidden" name="_token" value={csrfToken} />
                         </form>
                     </div>
