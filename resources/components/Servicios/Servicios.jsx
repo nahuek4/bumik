@@ -3,6 +3,41 @@ import { useState, useEffect } from 'react';
 import { getDesplegable } from '../../services/getServices';
 
 
+function datosTipo(datos, tipo, selected, toggle) {
+    return datos
+        .filter(item => item.tipo === tipo)
+        .map((item, i) => {
+            let descripcionItems = null;
+            if (typeof item.descripcion === 'string') {
+                if (item.descripcion.includes('<br>')) {
+                    descripcionItems = item.descripcion.split('<br>').map((punto, index) => (
+                        <li key={index}>{punto.trim()}</li>
+                    ));
+                } else {
+                    descripcionItems = <li>{item.descripcion}</li>;
+                }
+            }
+
+            return (
+                <div className="item" key={i}>
+                    <div className="tittle" onClick={() => toggle(i)}>
+                        <div className="vacio"></div>
+                        <h1>{item.titulo}</h1>
+                        <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
+                    </div>
+                    <div className={selected === i ? "content show" : "content"}>
+                        <div className="column">
+                            {descripcionItems && <ul>{descripcionItems.slice(0, Math.ceil(descripcionItems.length / 2))}</ul>}
+                        </div>
+                        <div className="column">
+                            {descripcionItems && <ul>{descripcionItems.slice(Math.ceil(descripcionItems.length / 2))}</ul>}
+                        </div>
+                    </div>
+                </div>
+            );
+        });
+}
+
 const Servicios = () => {
     const [datos, setDatos] = useState([]);
     const [selected, setSelected] = useState(null);
@@ -24,51 +59,6 @@ const Servicios = () => {
         fetchData();
     }, []);
 
-    const renderColumn = (items) => {
-        return items.map((item, i) => {
-            let descripcionItems = null;
-            if (typeof item.descripcion === 'string') {
-                if (item.descripcion.includes('<br>')) {
-                    descripcionItems = item.descripcion.split('<br>').map((punto, index) => (
-                        <li key={index}>{punto.trim()}</li>
-                    ));
-                } else {
-                    descripcionItems = <li>{item.descripcion}</li>;
-                }
-            }
-
-            return (
-                <div className="item" key={i}>
-                    <div className="tittle" onClick={() => toggle(i)}>
-                        <div className="vacio"></div>
-                        <h1>{item.titulo}</h1>
-                        <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
-                    </div>
-                    <div className={selected === i ? "content show" : "content"}>
-                        {descripcionItems && <ul>{descripcionItems}</ul>}
-                    </div>
-                </div>
-            );
-        });
-    }
-
-    const renderColumns = (items) => {
-        const halfIndex = Math.ceil(items.length / 2);
-        const firstHalf = items.slice(0, halfIndex);
-        const secondHalf = items.slice(halfIndex);
-
-        return (
-            <div className="columns">
-                <div className="column">
-                    {renderColumn(firstHalf)}
-                </div>
-                <div className="column">
-                    {renderColumn(secondHalf)}
-                </div>
-            </div>
-        );
-    }
-
     return (
         <div className='serviciosServComp'>
             <div className="serviciosContain">
@@ -86,7 +76,7 @@ const Servicios = () => {
                         </div>
                         <div className="mostrarMas">
                             <div className="column">
-                                {renderColumns(datos.filter(item => item.tipo === "branding"))}
+                                {datosTipo(datos, "branding", selected, toggle)}
                             </div>
                         </div>
                     </div>
@@ -107,7 +97,7 @@ const Servicios = () => {
                         </div>
                         <div className="mostrarMas">
                             <div className="column">
-                                {renderColumns(datos.filter(item => item.tipo === "desarrollo"))}
+                                {datosTipo(datos, "desarrollo", selected, toggle)}
                             </div>
                         </div>
                     </div>

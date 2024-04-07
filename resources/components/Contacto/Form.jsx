@@ -5,6 +5,8 @@ import Lottie from 'lottie-react';
 import LottieSuccess from '../../assets/img/lottie/success.json';
 
 const Form = () => {
+
+
     const { register, handleSubmit } = useForm();
     const [csrfToken, setCsrfToken] = useState('');
     const [showAnimation, setShowAnimation] = useState(false);
