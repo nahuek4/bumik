@@ -890,32 +890,6 @@ body {
 
 @media screen and (max-width: 500px) {
 
-    .FAQS .item .tittle span {
-        margin-left: 0em;
-        margin-right: .3em;
-    }
-
-    .FAQS .item .tittle h1 {
-        margin-left: 0em;
-        font-size: 1.2em;
-    }
-
-    .tittleFaq p {
-        font-size: 1.2em;
-
-    }
-
-    .tittleFaq h1 {
-        font-size: 2.5em;
-    }
-
-    .textButton {
-        padding-top: 2em;
-    }
-
-    .textButton p {
-        font-size: 1.2em;
-    }
 
     .headerContactTitulo h1 {
         font-size: 2.5em;
@@ -988,6 +962,33 @@ body {
     .galleryContain .galleryItem:hover>.capa a h3 {
         margin-top: 5.5em;
         font-size: 1em;
+    }
+
+    .FAQS .item .tittle span {
+        margin-left: 0em;
+        margin-right: .3em;
+    }
+
+    .FAQS .item .tittle h1 {
+        margin-left: 0em;
+        font-size: 1.2em;
+    }
+
+    .tittleFaq p {
+        font-size: 1.2em;
+
+    }
+
+    .tittleFaq h1 {
+        font-size: 2.5em;
+    }
+
+    .textButton {
+        padding-top: 2em;
+    }
+
+    .textButton p {
+        font-size: 1.2em;
     }
 }
 
