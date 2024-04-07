@@ -37,6 +37,7 @@ const Form = () => {
 
     return (
         <div className="fondoLottie">
+            <div className='formularioContactoContainer'>
             {!showAnimation && (
                 <div className="formContainer">
                     <div className="formContain">
@@ -68,6 +69,7 @@ const Form = () => {
                     </div>
                 </div>
             )}
+            </div>
             <div className='lottieDiv'>
                 {showAnimation && <Lottie animationData={LottieSuccess} />}
             </div>
