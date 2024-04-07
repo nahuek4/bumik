@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import FAQ from './FAQ';
 import Lottie from 'lottie-react';
 import LottieSuccess from '../../assets/img/lottie/success.json';
-import Loader from '../../assets/img/loader.gif';
+import Loader from '../../assets/icons/ajax-loader.gif';
 
 const Form = () => {
 
