@@ -3,42 +3,6 @@ import { useState, useEffect } from 'react';
 import { getDesplegable } from '../../services/getServices';
 
 
-function datosTipo(datos, tipo, selected, toggle) {
-    console.log("datos:", datos); // Verificar que datos tenga contenido
-    return datos
-        .filter(item => item.tipo === tipo)
-        .map((item, i) => {
-            console.log("item:", item); // Verificar la estructura de cada objeto en datos
-            let descripcionItems = null;
-
-            // Verificar si la descripcion es una cadena de texto y dividirla si es necesario
-            if (typeof item.descripcion === 'string') {
-                console.log("item.descripcion:", item.descripcion); // Verificar el contenido de la descripción
-                if (item.descripcion.includes('<br>')) {
-                    descripcionItems = item.descripcion.split('<br>').map((punto, index) => (
-                        <li key={index}>{punto.trim()}</li>
-                    ));
-                } else {
-                    descripcionItems = <li>{item.descripcion}</li>;
-                }
-            }
-
-            return (
-                <div className="item" key={i}>
-                    <div className="tittle" onClick={() => toggle(i)}>
-                        <div className="vacio"></div>
-                        <h1>{item.titulo}</h1>
-                        <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
-                    </div>
-                    <div className={selected === i ? "content show" : "content"}>
-                        {/* Renderizar la lista de descripción solo si es una cadena de texto */}
-                        {descripcionItems && <ul>{descripcionItems}</ul>}
-                    </div>
-                </div>
-            );
-        });
-}
-
 const Servicios = () => {
     const [datos, setDatos] = useState([]);
     const [selected, setSelected] = useState(null);
@@ -59,6 +23,52 @@ const Servicios = () => {
 
         fetchData();
     }, []);
+
+    const renderColumn = (items) => {
+        return items.map((item, i) => {
+            let descripcionItems = null;
+            if (typeof item.descripcion === 'string') {
+                if (item.descripcion.includes('<br>')) {
+                    descripcionItems = item.descripcion.split('<br>').map((punto, index) => (
+                        <li key={index}>{punto.trim()}</li>
+                    ));
+                } else {
+                    descripcionItems = <li>{item.descripcion}</li>;
+                }
+            }
+
+            return (
+                <div className="item" key={i}>
+                    <div className="tittle" onClick={() => toggle(i)}>
+                        <div className="vacio"></div>
+                        <h1>{item.titulo}</h1>
+                        <span className='spanVerde'>{selected === i ? '-' : '+'}</span>
+                    </div>
+                    <div className={selected === i ? "content show" : "content"}>
+                        {descripcionItems && <ul>{descripcionItems}</ul>}
+                    </div>
+                </div>
+            );
+        });
+    }
+
+    const renderColumns = (datos, tipo) => {
+        const filteredData = datos.filter(item => item.tipo === tipo);
+        const halfIndex = Math.ceil(filteredData.length / 2);
+        const firstHalf = filteredData.slice(0, halfIndex);
+        const secondHalf = filteredData.slice(halfIndex);
+
+        return (
+            <div className="columns">
+                <div className="column">
+                    {renderColumn(firstHalf)}
+                </div>
+                <div className="column">
+                    {renderColumn(secondHalf)}
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className='serviciosServComp'>
