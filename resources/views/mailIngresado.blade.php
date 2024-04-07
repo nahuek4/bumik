@@ -7,6 +7,6 @@
     <title>Bumik Mailer</title>
 </head>
 <body>
-    <img src="{{ $message->embed(public_path().'/img/mailing.png') }}">
+    <img src="{{ $message->embed(public_path().'/assets/img/mailing.png') }}">
 </body>
 </html>
