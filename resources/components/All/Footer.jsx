@@ -20,16 +20,13 @@ const Footer = () => {
             </div>
             <div className="contacts">
                 <div className="business">
-                    <p>Email de contacto:</p>
-                    <a href="mailto:estudiobumik@gmail.com" target='_blank' rel="noreferrer"><span>estudiobumik@gmail.com</span></a>
+                    <a href="mailto:estudiobumik@gmail.com" target='_blank' rel="noreferrer"><img src="/public/assets/icons/email.webp" alt="email" /></a>
                 </div>
                 <div className="whatsapp">
-                    <p>Whatsapp:</p>
-                    <a href="https://wa.me/+5491121878975" target="_blank" rel="noreferrer"><span>+54 9 1121878975</span></a>
+                    <a href="https://wa.me/+5491121878975" target="_blank" rel="noreferrer"><img src="/public/assets/icons/whatsapp.webp" alt="whatsapp" /></a>
                 </div>
                 <div className="instagram">
-                    <p>Instagram:</p>
-                    <a href="https://www.instagram.com/estudiobumik/" target='_blank' rel="noreferrer"><span>@estudiobumik</span></a>
+                    <a href="https://www.instagram.com/estudiobumik/" target='_blank' rel="noreferrer"><img src="/public/assets/icons/instagram.webp" alt="instagram" /></a>
                 </div>
             </div>
             <div className="derechosbumik">
