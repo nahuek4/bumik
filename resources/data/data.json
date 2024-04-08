@@ -8,13 +8,13 @@
     {
         "id": 2,
         "titulo": "Pack Deluxe",
-        "descripcion": "Personalidad de la marca<br>Moodboard<br>Brandboard<br>Paleta de Colores<br>Tipografías<br>Diseño de Logo Principal<br>(3) Variaciones de Logos<br>(3) <br>Aplicaciones de Marca<br>Tarjeta de Presentación<br>Manual de Marca<br>Entrega de archivos finales",
+        "descripcion": "Personalidad de la marca<br>Moodboard<br>Brandboard<br>Paleta de Colores<br>Tipografías<br>Diseño de Logo Principal<br>(3) Variaciones de Logos<br>(3) Aplicaciones de Marca<br>Tarjeta de Presentación<br>Manual de Marca<br>Entrega de archivos finales",
         "tipo": "branding"
     },
     {
         "id": 3,
         "titulo": "Pack Premium",
-        "descripcion": "           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit similique inventore corrupti officiis quas consectetur quaerat excepturi delectus itaque unde dolore, commodi voluptates eos maiores ducimus mollitia, illo incidunt rem officia sit animi, obcaecati non saepe! Consectetur ipsa, quidem animi ratione praesentium a error aliquam maiores in totam! Ad eaque, itaque deserunt maiores ipsam dolorem dignissimos aliquid nihil. Necessitatibus laboriosam reiciendis, blanditiis molestiae distinctio cupiditate placeat perspiciatis, totam nulla voluptatum libero pariatur accusamus mollitia sequi et odio in aspernatur eligendi odit quaerat quo autem debitis cumque! Dolores reiciendis sunt nam tempore obcaecati consequuntur quia, sint aliquam numquam dolorum nobis.",
+        "descripcion": "Personalidad de la marca<br>Moodboard<br>Brandboard<br>Paleta de Colores<br>Tipografías<br>Diseño de Logo Principal<br>(5) Variaciones de Logos<br>(10) Aplicaciones de Marca<br>Tarjeta de Presentación<br>Diseño de Empaque (1)<br>Manual de Marca<br>Entrega de archivos finales",
         "tipo": "branding"
     },
     {
@@ -44,25 +44,25 @@
     {
         "id": 8,
         "titulo": "¿Puedo diseñar solo el logo de mi marca?",
-        "descripcion": "Al sitio institucional, se le suma la sección de venta.Es la opción indicada sobre todo si vendes productos físicos, aunque es igual de indispensable si ofreces servicios digitales.Es ideal para automatizar procesos de ventas sin dedicar tiempo ni esfuerzo de más, y ahorrando comisiones de plataformas de terceros. ",
+        "descripcion": "Tener solo un logo no es suficiente para poder transmitir tu historia y escencia de marca. Tener solo un logo, significa tener una marca incompleta , que no tendrá la capacidad de responder a todas las necesidades de tu negocio. En Estudio Bumik desarrollamos estrategias de Branding completas. Entendemos que el logo es solo una pequeña parte de la historia de tu marca y trabajar con el estudio significa sumergirte en una experiencia integral. Abarcaremos desde el desarrollo del concepto y personalidad de marca hasta la dirección creativa, paleta cromática, tipografías, recursos gráficos y un detallado manual de marca. Asegurándonos de que cada elemento contribuya a transmitir los valores de tu marca.",
         "tipo": "FAQ"
     },
     {
         "id": 9,
         "titulo": "¿Cuáles son los métodos de pago de los servicios?",
-        "descripcion": "Al sitio institucional, se le suma la sección de venta.Es la opción indicada sobre todo si vendes productos físicos, aunque es igual de indispensable si ofreces servicios digitales.Es ideal para automatizar procesos de ventas sin dedicar tiempo ni esfuerzo de más, y ahorrando comisiones de plataformas de terceros. ",
+        "descripcion": "Actualmente estamos aceptando como medio de pago: Paypal - Criptomonedas - Transferencia bancaria",
         "tipo": "FAQ"
     },
     {
         "id": 10,
         "titulo": "¿Cuánto demora del proceso de Branding?",
-        "descripcion": "Al sitio institucional, se le suma la sección de venta.Es la opción indicada sobre todo si vendes productos físicos, aunque es igual de indispensable si ofreces servicios digitales.Es ideal para automatizar procesos de ventas sin dedicar tiempo ni esfuerzo de más, y ahorrando comisiones de plataformas de terceros. ",
+        "descripcion": "El proceso de Branding se divide en 4 etapas: Envío de brief/formulario, concepto, estrategia de marca y diseño + feedback. Realizamos un trabajo muy detallado y personalizado, por lo que nos solemos tomar de 2 a 3 semanas (dependiendo de los servicios contratados). De esta forma, te aseguramos como resultado una marca llena de brillo y autenticidad.",
         "tipo": "FAQ"
     },
     {
         "id": 11,
         "titulo": "¿En donde dan servicio?",
-        "descripcion": "Al sitio institucional, se le suma la sección de venta.Es la opción indicada sobre todo si vendes productos físicos, aunque es igual de indispensable si ofreces servicios digitales.Es ideal para automatizar procesos de ventas sin dedicar tiempo ni esfuerzo de más, y ahorrando comisiones de plataformas de terceros. ",
+        "descripcion": "La distancia no es un problema para nosotros, trabajamos de forma remota, colaborando con personas de todo el mundo, sin importar dónde te encuentres",
         "tipo": "FAQ"
     }
 ]
