@@ -14,6 +14,6 @@ export default defineConfig({
         }),
     ],
     build: {
-        manifestFile: 'public/build/manifest.json',
+        manifestFile: 'build/manifest.json',
     },
 });
