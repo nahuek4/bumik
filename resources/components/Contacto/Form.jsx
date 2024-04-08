@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import FAQ from './FAQ';
 import Lottie from 'lottie-react';
+import LottieSuccess from '../../assets/img/lottie/success.json';
 import Loader from '../../assets/icons/ajax-loader.gif';
-import LottieSuccess from '../../assets/img/lottie/success.json'; // Importar LottieSuccess aquí
 
 const Form = () => {
 
@@ -41,7 +41,6 @@ const Form = () => {
             }
         }
     };
-
 
     return (
         <div className="fondoLottie">
@@ -86,7 +85,7 @@ const Form = () => {
                 )}
             </div>
             <div className='lottieDiv'>
-                {showAnimation && <Lottie animationData={LottieSuccess} loop={false} />}
+                {showAnimation && <Lottie animationData={LottieSuccess} loop='false' />}
             </div>
             {showAnimation && (<p className='pLottie'>Informacion enviada exitosamente!</p>)}
             <div className="textButton">
