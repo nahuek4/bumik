@@ -16,8 +16,8 @@ const Services = () => {
     }, []);
 
     return (
-        <div className="serviceComp">
-            <Slide direction='up' duration="1500" triggerOnce fraction="1">
+        <Slide direction='up' duration="1500" triggerOnce fraction="1">
+            <div className="serviceComp">
                 <div className="serviceBackground">
                     <div className='servicesContain'>
                         <div className="serviciosText">
@@ -50,10 +50,10 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-            </Slide>
+                <Works />
+            </div >
+        </Slide>
 
-            <Works />
-        </div>
     );
 };
 
