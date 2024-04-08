@@ -18,7 +18,7 @@ class ContactoController extends Controller
             'email' => 'required|email',
             'telefono' => 'nullable|string|max:255',
             'mensaje' => 'required|string',
-            '_token' => 'required|csrf',
+            '_token' => 'required',
         ]);
 
         /*$contacto = new Contacto();
