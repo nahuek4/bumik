@@ -16,9 +16,9 @@ const Services = () => {
     }, []);
 
     return (
-        <Slide direction='up' duration="1500">
-            <div className="serviceComp">
-                <div className="serviceBackground">
+        <div className="serviceComp">
+            <div className="serviceBackground">
+                <Slide direction='up' duration="1500" triggerOnce fraction={1}>
                     <div className='servicesContain'>
                         <div className="serviciosText">
                             <h1>Nuestros <span className='spanVerde'>Servicios</span></h1>
@@ -49,11 +49,10 @@ const Services = () => {
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZL63YOXJUQ2Ee7VYszlfoi8bPjeuZvujjGCmt-j_ewmTi5A/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button className='botonServicios'>¡Cotizá tu proyecto!</button></a>
                         </div>
                     </div>
-                </div>
-                <Works />
-            </div >
-        </Slide>
-
+                </Slide >
+            </div>
+            <Works />
+        </div >
     );
 };
 
