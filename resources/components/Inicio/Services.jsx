@@ -16,7 +16,7 @@ const Services = () => {
     }, []);
 
     return (
-        <Slide direction='up' duration="1500" triggerOnce fraction="1">
+        <Slide direction='up' duration="1500">
             <div className="serviceComp">
                 <div className="serviceBackground">
                     <div className='servicesContain'>
