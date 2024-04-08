@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import FAQ from './FAQ';
 import Lottie from 'lottie-react';
-import LottieSuccess from '../../assets/img/lottie/success.json';
 import Loader from '../../assets/icons/ajax-loader.gif';
+import LottieSuccess from '../../assets/img/lottie/success.json'; // Importar LottieSuccess aquí
 
 const Form = () => {
 
@@ -42,52 +42,53 @@ const Form = () => {
         }
     };
 
+
     return (
         <div className="fondoLottie">
             <div className='formularioContactoContainer'>
-            {!showAnimation && (
-                <div className="formContainer">
-                    <div className="formContain">
-                        <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
-                            <div className="formNombreApellido">
-                                {/* nombre */}
-                                <div className="labelNombre">
-                                    <label htmlFor="nombre">Nombre</label>
-                                    <input type="text" {...register("nombre", { required: true })} />
-                                    {errors.nombre && <span className="error">Este campo es requerido</span>}
+                {!showAnimation && (
+                    <div className="formContainer">
+                        <div className="formContain">
+                            <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
+                                <div className="formNombreApellido">
+                                    {/* nombre */}
+                                    <div className="labelNombre">
+                                        <label htmlFor="nombre">Nombre</label>
+                                        <input type="text" {...register("nombre", { required: true })} />
+                                        {errors.nombre && <span className="error">Este campo es requerido</span>}
+                                    </div>
+                                    {/* Apellido */}
+                                    <div className="labelApellido">
+                                        <label htmlFor="apellido">Apellido</label>
+                                        <input type="text" {...register("apellido", { required: true })} />
+                                        {errors.apellido && <span className="error">Este campo es requerido</span>}
+                                    </div>
                                 </div>
-                                {/* Apellido */}
-                                <div className="labelApellido">
-                                    <label htmlFor="apellido">Apellido</label>
-                                    <input type="text" {...register("apellido", { required: true })} />
-                                    {errors.apellido && <span className="error">Este campo es requerido</span>}
-                                </div>
-                            </div>
-                            {/* Email */}
-                            <label htmlFor="email">Correo electrónico</label>
-                            <input type="email" {...register("email", { required: true })} />
-                            {errors.email && <span className="error">Este campo es requerido</span>}
-                            {/* Telefono */}
-                            <label htmlFor="telefono">Telefono</label>
-                            <input type="tel" {...register("telefono", { required: true })} />
-                            {errors.telefono && <span className="error">Este campo es requerido</span>}
-                            {/* Mensaje */}
-                            <label htmlFor="mensaje">Mensaje</label>
-                            <textarea rows="8" type="text" {...register("mensaje", { required: true })} />
-                            {errors.mensaje && <span className="error">Este campo es requerido</span>}
-                            <button className='buttonForm' id='buttonForm' disabled={isLoading}>
-                                {isLoading ? <img src={Loader} alt="Loading..." /> : 'Enviar'}
-                            </button>
-                            <input type="hidden" name="_token" value={csrfToken} />
-                        </form>
+                                {/* Email */}
+                                <label htmlFor="email">Correo electrónico</label>
+                                <input type="email" {...register("email", { required: true })} />
+                                {errors.email && <span className="error">Este campo es requerido</span>}
+                                {/* Telefono */}
+                                <label htmlFor="telefono">Telefono</label>
+                                <input type="tel" {...register("telefono", { required: true })} />
+                                {errors.telefono && <span className="error">Este campo es requerido</span>}
+                                {/* Mensaje */}
+                                <label htmlFor="mensaje">Mensaje</label>
+                                <textarea rows="8" type="text" {...register("mensaje", { required: true })} />
+                                {errors.mensaje && <span className="error">Este campo es requerido</span>}
+                                <button className='buttonForm' id='buttonForm' disabled={isLoading}>
+                                    {isLoading ? <img src={Loader} alt="Loading..." /> : 'Enviar'}
+                                </button>
+                                <input type="hidden" name="_token" value={csrfToken} />
+                            </form>
+                        </div>
                     </div>
-                </div>
-            )}
+                )}
             </div>
             <div className='lottieDiv'>
-                {showAnimation && <Lottie animationData={LottieSuccess} loop='false'/>}
+                {showAnimation && <Lottie animationData={LottieSuccess} loop={false} />}
             </div>
-                {showAnimation && (<p className='pLottie'>Informacion enviada exitosamente!</p>)}
+            {showAnimation && (<p className='pLottie'>Informacion enviada exitosamente!</p>)}
             <div className="textButton">
                 <p>¿Tenes alguna consulta de cómo podrías llevar tu proyecto adelante?</p>
                 <p>Envíanos un mensaje a <span className='spanRosa'>estudiobumik@gmail.com</span> o completá el formulario</p>
