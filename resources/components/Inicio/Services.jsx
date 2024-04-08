@@ -17,7 +17,7 @@ const Services = () => {
 
     return (
         <div className="serviceComp">
-            <Slide direction='up' duration="1500" triggerOnce>
+            <Slide direction='up' duration="1500" triggerOnce fraction="1">
                 <div className="serviceBackground">
                     <div className='servicesContain'>
                         <div className="serviciosText">

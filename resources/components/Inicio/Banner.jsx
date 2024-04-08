@@ -7,7 +7,7 @@ const Banner = () => {
     return (
         <div className='bannerI'>
             <div className="bannerText">
-                <Fade duration="1500" triggerOnce casacade>
+                <Fade duration="1500" triggerOnce casacade fraction="1">
                     <div className="investigacion">
                         <h1>01</h1>
                         <h2>Investigación.</h2>
