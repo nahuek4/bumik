@@ -29,7 +29,7 @@ const Header = () => {
     return (
         <div>
             <div className='header'>
-                <Bounce delay="1" duration="1500" triggerOnce>
+                <Bounce delay="1s" duration="2000" triggerOnce>
                     <div className="logo">
                         <img className="logoBumik" src={imagenSrc} alt="logo bumik" />
                         <h1 className='textHeader'>Estudio de diseño gráfico & desarrollo web</h1>
