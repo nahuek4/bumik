@@ -5,8 +5,9 @@ import { Fade } from "react-awesome-reveal";
 
 const Banner = () => {
     return (
-        <Fade duration="1500" triggerOnce casacade>
-            <div className='bannerI'>
+        <div className='bannerI'>
+            <Fade duration="1500" triggerOnce casacade>
+
                 <div className="bannerText">
                     <div className="investigacion">
                         <h1>01</h1>
@@ -24,9 +25,9 @@ const Banner = () => {
                         <p>Desarrollamos el diseño final mediante la creación de maquetas y prototipos detallados para llevar a cabo pruebas de usuario para asegurar que el diseño cumpla con las necesidades y objetivos del proyecto.</p>
                     </div>
                 </div>
-                <Services />
-            </div>
-        </Fade>
+            </Fade >
+            <Services />
+        </div>
     )
 }
 
