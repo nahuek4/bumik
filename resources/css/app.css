@@ -999,7 +999,7 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding-top: 5em;
+    padding-top: 1em;
 }
 
 .lottieDiv div {
@@ -1010,6 +1010,7 @@ body {
     font-size: x-large;
     text-align: center;
     color: white;
+    margin-bottom: 1%;
 }
 
 .buttonForm img {
