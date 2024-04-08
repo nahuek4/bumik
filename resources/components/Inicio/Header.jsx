@@ -34,18 +34,18 @@ const Header = () => {
                         <img className="logoBumik" src={imagenSrc} alt="logo bumik" />
                         <h1 className='textHeader'>Estudio de diseño gráfico & desarrollo web</h1>
                     </div>
-                </Bounce>
 
-                <div className="buttonHeader">
-                    <Link to="/servicios">
-                        <button className="servicios">
-                            <span className="circle" aria-hidden="true">
-                                <span className="icon"></span>
-                            </span>
-                            <span className="serviceText">Servicios</span>
-                        </button>
-                    </Link>
-                </div>
+                    <div className="buttonHeader">
+                        <Link to="/servicios">
+                            <button className="servicios">
+                                <span className="circle" aria-hidden="true">
+                                    <span className="icon"></span>
+                                </span>
+                                <span className="serviceText">Servicios</span>
+                            </button>
+                        </Link>
+                    </div>
+                </Bounce>
             </div>
             <About />
         </div>
