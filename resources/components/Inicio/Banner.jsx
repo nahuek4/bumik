@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Banner = () => {
     return (
-        <Fade duration="1500" triggerOnce>
+        <Fade duration="1500" triggerOnce casacade>
             <div className='bannerI'>
                 <div className="bannerText">
                     <div className="investigacion">
