@@ -1,6 +1,4 @@
 import React from 'react'
-import Nahue from '../../assets/img/fotos/popOutNahue.webp'
-import Mili from '../../assets/img/fotos/popOutMili.webp'
 import Banner from './Banner'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
