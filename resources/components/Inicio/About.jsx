@@ -27,7 +27,7 @@ const About = () => {
                 </div>
                 <div className="perfiles">
                     <Swiper
-                        onSwiper={setSwiperRef}
+                        onSwiper={(swiper) => console.log(swiper)}
                         slidesPerView={3}
                         centeredSlides={true}
                         spaceBetween={30}
