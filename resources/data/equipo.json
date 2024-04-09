@@ -2,16 +2,19 @@
     {
         "id": 1,
         "nombre": "Nahuel Cañete",
-        "equipo": "Front End Developer"
+        "equipo": "Front End Developer",
+        "foto": "/imgnahue"
     },
     {
         "id": 2,
         "nombre": "Milagros Abreo",
-        "equipo": "Graphic Designer"
+        "equipo": "Graphic Designer",
+        "foto": "/imgmili"
     },
     {
         "id": 3,
         "nombre": "Valentin Diz",
-        "trabajo": "Back End Developer"
+        "trabajo": "Back End Developer",
+        "foto": "/imgvalen"
     }
 ]
