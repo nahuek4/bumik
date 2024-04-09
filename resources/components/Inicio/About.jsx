@@ -33,7 +33,7 @@ const About = () => {
                         {datos.map((equipo, index) => (
                             <SwiperSlide>
                                 <div className="perfil">
-                                    <div className="imgPerfil"><img src={`assets/img/fotos/${image.imagen}`} alt="Foto de perfil" /></div>
+                                    <div className="imgPerfil"><img src={`assets/img/fotos/${equipo.foto}`} alt="Foto de perfil" /></div>
                                     <h2>{equipo.nombre}</h2>
                                     <p>{equipo.trabajo}</p>
                                 </div>
