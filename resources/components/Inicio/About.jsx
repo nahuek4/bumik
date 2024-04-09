@@ -2,8 +2,22 @@ import React from 'react'
 import Nahue from '../../assets/img/fotos/popOutNahue.webp'
 import Mili from '../../assets/img/fotos/popOutMili.webp'
 import Banner from './Banner'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { getEquipo } from '../../services/getServices';
+import { useState, useEffect } from 'react';
 
 const About = () => {
+    const [datos, setDatos] = useState([]);
+
+    useEffect(() => {
+        const fetchData = () => {
+            const data = getEquipo();
+            setDatos(data);
+        };
+
+        fetchData();
+    }, []);
     return (
         <div className='nosotros'>
             <div className="nosotrosContain">
@@ -12,16 +26,23 @@ const About = () => {
                     <p>Who we are</p>
                 </div>
                 <div className="perfiles">
-                    <div className="perfilNahue">
-                        <div className="imgnahue"><img src={Nahue} alt="" /></div>
-                        <h2>Nahuel Cañete</h2>
-                        <p>Front End Developer</p>
-                    </div>
-                    <div className="perfilMili">
-                        <div className="imgmili"><img src={Mili} alt="" /></div>
-                        <h2>Milagros Abreo</h2>
-                        <p>Graphic Designer</p>
-                    </div>
+                    <Swiper
+                        spaceBetween={50}
+                        slidesPerView={2}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                    >
+                        {datos.map((equipo, index) => (
+                            <SwiperSlide>
+                                <div className="perfil">
+                                    <div className="imgPerfil"><img src={equipo.image} alt="" /></div>
+                                    <h2>{equipo.nombre}</h2>
+                                    <p>{equipo.trabajo}</p>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+
 
                 </div>
                 <div className="borderboxText">
@@ -32,7 +53,7 @@ const About = () => {
                 </div>
             </div>
             <Banner />
-        </div>
+        </div >
     )
 }
 

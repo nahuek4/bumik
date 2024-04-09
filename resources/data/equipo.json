@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "nombre": "Nahuel Cañete",
+        "equipo": "Front End Developer"
+    },
+    {
+        "id": 2,
+        "nombre": "Milagros Abreo",
+        "equipo": "Graphic Designer"
+    },
+    {
+        "id": 3,
+        "nombre": "Valentin Diz",
+        "trabajo": "Back End Developer"
+    }
+]

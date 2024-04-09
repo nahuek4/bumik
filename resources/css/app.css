@@ -303,25 +303,6 @@ body {
     font-size: 1.3em;
     margin-bottom: 1em;
     padding-bottom: 2em;
-    margin-top: 1em;
-    gap: 5em;
-    flex-wrap: wrap;
-}
-
-.perfiles>div>div>img {
-    border-radius: 50px;
-    margin-top: 3em;
-    margin-bottom: 1.5em;
-    max-width: 90%;
-    width: 23em;
-}
-
-.perfilNahue p {
-    color: #EDB5F7;
-}
-
-.perfilMili p {
-    color: #EDB5F7;
 }
 
 .borderboxText {
@@ -980,7 +961,7 @@ body {
     text-align: center;
     color: #FBFAF6;
     background-color: #1E1E1E;
-    padding-top: 2em;
+    padding: 1em 2em;
 }
 
 .textButton p {
@@ -1007,10 +988,10 @@ body {
 }
 
 .pLottie {
-    font-size: x-large;
+    font-size: 1.5em;
     text-align: center;
-    color: white;
-    margin-bottom: 1%;
+    color: #FBFAF6;
+    margin-bottom: 2%;
 }
 
 .buttonForm img {
@@ -1350,6 +1331,10 @@ body {
     .divPDescripcion {
         font-size: .75em;
         padding: .5em 2em;
+    }
+
+    .pLottie {
+        font-size: 1.2em;
     }
 }
 

@@ -1,4 +1,5 @@
 import datos from "../data/data.json"
+import equipo from "../data/equipo.json"
 
 export const getServices = async () => {
     const response = await fetch('/api/icons');
@@ -22,3 +23,7 @@ export const getProyectos = async () => {
 export const getDesplegable = () => {
     return datos;
 };
+
+export const getEquipo = () => {
+    return equipo;
+}
