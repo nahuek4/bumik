@@ -27,18 +27,20 @@ const About = () => {
                 </div>
                 <div className="perfiles">
                     <Swiper
-                        modules={[Navigation, Pagination, Scrollbar, A11y]}
-                        spaceBetween={50}
+                        onSwiper={setSwiperRef}
                         slidesPerView={3}
-                        navigation
-                        pagination={{ clickable: true }}
-                        scrollbar={{ draggable: true }}
-                        onSwiper={(swiper) => console.log(swiper)}
-                        onSlideChange={() => console.log('slide change')}
+                        centeredSlides={true}
+                        spaceBetween={30}
+                        pagination={{
+                            type: 'fraction',
+                        }}
+                        navigation={true}
+                        modules={[Pagination, Navigation]}
+                        className="mySwiper"
                     >
                         {datos.map((equipo, index) => (
                             <SwiperSlide>
-                                <div className="perfil">
+                                <div className="perfil" key={index}>
                                     <div className="imgPerfil"><img src={`assets/img/fotos${equipo.foto}.webp`} alt="Foto de perfil" /></div>
                                     <h2>{equipo.nombre}</h2>
                                     <p>{equipo.trabajo}</p>
