@@ -303,6 +303,7 @@ body {
     font-size: 1.3em;
     margin-bottom: 1em;
     padding-bottom: 2em;
+    max-width: 100vw;
 }
 
 .swiper {
