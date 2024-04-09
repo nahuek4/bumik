@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import FAQ from './FAQ';
 import Lottie from 'lottie-react';
 import LottieSuccess from '../../assets/img/lottie/success.json';
+import LottieFailed from '../../assets/img/lottie/failed.json';
 import Loader from '../../assets/icons/ajax-loader.gif';
 
 const Form = () => {
@@ -11,6 +12,7 @@ const Form = () => {
     const [csrfToken, setCsrfToken] = useState('');
     const [showAnimation, setShowAnimation] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
+    const [responseData, setResponseData] = useState(null);
 
     useEffect(() => {
         const token = document.querySelector('meta[name="csrf-token"]');
@@ -35,9 +37,12 @@ const Form = () => {
                 const responseData = await response.json();
                 setShowAnimation(true);
                 setIsLoading(false);
+                setResponseData(responseData);
             } catch (error) {
                 console.error('Error al enviar la solicitud:', error);
                 setIsLoading(false);
+                setShowAnimation(true);
+                setResponseData({ error: 'Ha ocurrido un error. Por favor, intenta nuevamente más tarde.' });
             }
         }
     };
@@ -84,10 +89,21 @@ const Form = () => {
                     </div>
                 )}
             </div>
-            <div className='lottieDiv'>
-                {showAnimation && <Lottie animationData={LottieSuccess} loop='false' />}
-            </div>
-            {showAnimation && (<p className='pLottie'>Informacion enviada exitosamente!</p>)}
+            {showAnimation && (
+                responseData && responseData.message ? 
+                    <div className='lottieDiv'>
+                        <Lottie animationData={LottieSuccess} loop='false' />
+                    </div>
+                :
+                    <div className='lottieDiv'>
+                        <Lottie animationData={LottieFailed} loop='false' />
+                    </div>
+            )}
+            {showAnimation && (responseData && responseData.message ? 
+                (<p className='pLottie'>Informacion enviada exitosamente!</p>)
+                :
+                (<p className='pLottie'>Ha ocurrido un error. Por favor, intenta nuevamente más tarde.</p>)
+            )}
             <div className="textButton">
                 <p>¿Tenes alguna consulta de cómo podrías llevar tu proyecto adelante?</p>
                 <p>Envíanos un mensaje a <span className='spanRosa'>estudiobumik@gmail.com</span> o completá el formulario</p>
