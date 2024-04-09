@@ -980,7 +980,7 @@ body {
     text-align: center;
     color: #FBFAF6;
     background-color: #1E1E1E;
-    padding-top: 0 2em;
+    padding-top: 2em;
 }
 
 .textButton p {
@@ -1367,7 +1367,7 @@ body {
     }
 
     .logo img {
-        width: 20em;
+        width: 18em;
     }
 
     .serviciosText {
