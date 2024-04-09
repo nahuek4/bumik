@@ -92,11 +92,11 @@ const Form = () => {
             {showAnimation && (
                 responseData && responseData.message ? 
                     <div className='lottieDiv'>
-                        <Lottie animationData={LottieSuccess} loop='false' />
+                        <Lottie animationData={LottieSuccess} speed={0.5} loop='false' />
                     </div>
                 :
                     <div className='lottieDiv'>
-                        <Lottie animationData={LottieFailed} loop='false' />
+                        <Lottie animationData={LottieFailed} speed={0.5} loop='false' />
                     </div>
             )}
             {showAnimation && (responseData && responseData.message ? 
