@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from './Banner'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 import { getEquipo } from '../../services/getServices';
 import { useState, useEffect } from 'react';
@@ -25,10 +26,14 @@ const About = () => {
                 </div>
                 <div className="perfiles">
                     <Swiper
+                        modules={[Navigation, Pagination, Scrollbar, A11y]}
                         spaceBetween={50}
-                        slidesPerView={2}
-                        onSlideChange={() => console.log('slide change')}
+                        slidesPerView={3}
+                        navigation
+                        pagination={{ clickable: true }}
+                        scrollbar={{ draggable: true }}
                         onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={() => console.log('slide change')}
                     >
                         {datos.map((equipo, index) => (
                             <SwiperSlide>
