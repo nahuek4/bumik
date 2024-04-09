@@ -3,6 +3,9 @@ import Banner from './Banner'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import { getEquipo } from '../../services/getServices';
 import { useState, useEffect } from 'react';
 
