@@ -1243,6 +1243,9 @@ body {
     .galleryContain .galleryItem:hover>.capa a h3 {
         margin-top: 5.5em;
     }
+    .lottieDiv div{
+        width: 50%;
+    }
 }
 
 
