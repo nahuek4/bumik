@@ -1243,7 +1243,8 @@ body {
     .galleryContain .galleryItem:hover>.capa a h3 {
         margin-top: 5.5em;
     }
-    .lottieDiv div{
+
+    .lottieDiv div {
         width: 50%;
     }
 }
@@ -1347,7 +1348,7 @@ body {
     }
 
     .divPDescripcion {
-        font-size: 1em;
+        font-size: .75em;
         padding: .5em 2em;
     }
 }
@@ -1426,6 +1427,11 @@ body {
 
     .botonServicios {
         font-size: 1em;
+    }
+
+    .divPDescripcion {
+        font-size: .6em;
+        padding: .5em 2em;
     }
 }
 
