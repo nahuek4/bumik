@@ -318,6 +318,7 @@ body {
     height: 70%;
     justify-content: center;
     gap: 3em;
+    border-radius: 50px;
 }
 
 .imgPerfil {
@@ -342,6 +343,8 @@ body {
     object-fit: cover;
     width: 7em;
     border-radius: 100px;
+    filter: gray;
+    filter: grayscale(1)
 }
 
 .borderboxText {
