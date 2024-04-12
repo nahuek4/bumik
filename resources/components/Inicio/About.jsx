@@ -37,6 +37,7 @@ const About = () => {
                             delay: 3000,
                             disableOnInteraction: false,
                         }}
+                        navigation={true}
                         rewind={true}
                         modules={[Pagination, Navigation, Autoplay]}
                         className="mySwiper"
