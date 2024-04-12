@@ -27,13 +27,10 @@ const About = () => {
                 </div>
                 <div className="perfiles">
                     <Swiper
-                        onSwiper={(swiper) => console.log(swiper)}
-                        slidesPerView={2}
+                        slidesPerView={3}
                         centeredSlides={true}
                         spaceBetween={30}
-                        pagination={{
-                            type: 'fraction',
-                        }}
+
                         navigation={true}
                         modules={[Pagination, Navigation]}
                         loop={true}
