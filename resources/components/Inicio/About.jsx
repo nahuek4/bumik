@@ -30,7 +30,9 @@ const About = () => {
                         slidesPerView={3}
                         centeredSlides={true}
                         spaceBetween={30}
-
+                        pagination={{
+                            type: 'fraction',
+                        }}
                         navigation={true}
                         modules={[Pagination, Navigation]}
                         loop={true}
