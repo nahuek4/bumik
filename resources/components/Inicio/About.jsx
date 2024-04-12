@@ -1,7 +1,7 @@
 import React from 'react'
 import Banner from './Banner'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Scrollbar, A11y } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/bundle';
 import { getEquipo } from '../../services/getServices';
@@ -28,12 +28,18 @@ const About = () => {
                 <div className="perfiles">
                     <Swiper
                         slidesPerView={3}
+                        centeredSlides={true}
                         spaceBetween={30}
                         pagination={{
                             type: 'fraction',
                         }}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        rewind={true}
                         navigation={true}
-                        modules={[Pagination, Navigation]}
+                        modules={[Pagination, Navigation, Autoplay]}
                         className="mySwiper"
                     >
                         {datos.map((equipo, index) => (
