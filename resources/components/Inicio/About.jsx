@@ -35,7 +35,6 @@ const About = () => {
                         }}
                         navigation={true}
                         modules={[Pagination, Navigation]}
-                        loop={true}
                         className="mySwiper"
                     >
                         {datos.map((equipo, index) => (
