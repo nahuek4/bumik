@@ -301,10 +301,8 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.3em;
-    margin-bottom: 1em;
-    padding-bottom: 2em;
     max-width: 100vw;
-    height: 30em;
+    height: 23em;
 }
 
 .perfil {
