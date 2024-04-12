@@ -311,6 +311,12 @@ body {
     width: 100%;
 }
 
+.fondoPerfil {
+    background-color: #F7F3ED;
+    display: flex;
+    align-items: center;
+}
+
 .swiper {
     width: 100%;
     height: 300px;
