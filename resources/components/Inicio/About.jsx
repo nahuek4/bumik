@@ -43,8 +43,10 @@ const About = () => {
                                 <div className="perfil" key={index}>
                                     <div className="fondoPerfil">
                                         <div className="imgPerfil"><img src={`assets/img/fotos${equipo.foto}.webp`} alt="Foto de perfil" /></div>
-                                        <h2>{equipo.nombre}</h2>
-                                        <p>{equipo.trabajo}</p>
+                                        <div className="descripcion">
+                                            <h2>{equipo.nombre}</h2>
+                                            <p>{equipo.trabajo}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </SwiperSlide>
