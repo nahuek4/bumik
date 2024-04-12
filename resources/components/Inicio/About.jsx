@@ -36,7 +36,6 @@ const About = () => {
                             delay: 3000,
                             disableOnInteraction: false,
                         }}
-                        loop={true}
                         rewind={true}
                         navigation={true}
                         modules={[Pagination, Navigation, Autoplay]}
