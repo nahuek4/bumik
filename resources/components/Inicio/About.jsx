@@ -36,7 +36,7 @@ const About = () => {
                         }}
                         navigation={true}
                         modules={[Pagination, Navigation]}
-                        loopAdditionalSlides
+                        loop={true}
                         className="mySwiper"
                     >
                         {datos.map((equipo, index) => (
