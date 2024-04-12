@@ -37,7 +37,6 @@ const About = () => {
                             disableOnInteraction: false,
                         }}
                         rewind={true}
-                        navigation={true}
                         modules={[Pagination, Navigation, Autoplay]}
                         className="mySwiper"
                     >
