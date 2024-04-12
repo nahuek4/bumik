@@ -34,11 +34,11 @@ const About = () => {
                             type: 'fraction',
                         }}
                         autoplay={{
-                            delay: 3000,
+                            delay: 2500,
                             disableOnInteraction: false,
                         }}
-                        navigation={true}
                         rewind={true}
+                        navigation={true}
                         modules={[Pagination, Navigation, Autoplay]}
                         className="mySwiper"
                     >
