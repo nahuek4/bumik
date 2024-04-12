@@ -28,7 +28,6 @@ const About = () => {
                 <div className="perfiles">
                     <Swiper
                         slidesPerView={3}
-                        centeredSlides={true}
                         spaceBetween={30}
                         pagination={{
                             type: 'fraction',
