@@ -459,6 +459,8 @@ body {
 
 .descripcionServics {
     padding: 1%;
+    font-size: 0.8em;
+    line-height: 1.3;
 }
 
 .serviciosText p {
@@ -1459,6 +1461,10 @@ body {
     .divPDescripcion {
         font-size: .6em;
         padding: .5em 2em;
+    }
+
+    .tittle {
+        font-size: 0.6em;
     }
 }
 
