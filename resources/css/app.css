@@ -145,7 +145,7 @@ body {
 
 .header {
     display: flex;
-    background-image: url("../assets/gifs/background.gif");
+    background-image: url("../assets/img/banners/bannerInicio.webp");
     background-color: #1E1E1E;
     background-position: center;
     background-size: cover;
