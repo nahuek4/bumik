@@ -1116,11 +1116,32 @@ body {
     .textServicios {
         padding: 0em 3em;
     }
+
+    .swiper-slide img {
+        width: 5em;
+    }
+
+    .fondoPerfil {
+        gap: 1.8em;
+    }
+
+    .swiper {
+        height: 13em;
+    }
+
 }
 
 @media screen and (max-width: 1300px) {
     .bannerText {
         font-size: 0.75em;
+    }
+
+    .fondoPerfil {
+        gap: 1.2em;
+    }
+
+    .descripcion {
+        font-size: .9em;
     }
 }
 
