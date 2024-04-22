@@ -147,7 +147,7 @@ body {
     display: flex;
     background-image: url("../assets/gifs/background.gif");
     background-color: #1E1E1E;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     height: 55.875em;
     align-items: center;
