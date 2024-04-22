@@ -1224,6 +1224,14 @@ body {
     .swiper-slide img {
         width: 4em;
     }
+
+    .imgPerfil {
+        margin-left: -2em;
+    }
+
+    .swiper {
+        height: 12em;
+    }
 }
 
 
