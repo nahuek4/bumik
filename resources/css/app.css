@@ -148,7 +148,7 @@ body {
     background-image: url("../assets/gifs/background.gif");
     background-color: #1E1E1E;
     background-position: top;
-    background-size: cover;
+    background-size: contain;
     height: 55.875em;
     align-items: center;
     justify-content: center;
