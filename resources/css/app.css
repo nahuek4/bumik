@@ -145,11 +145,11 @@ body {
 
 .header {
     display: flex;
-    background-image: url("../assets/gifs/background.gif");
+    background-image: url("../assets/img/banners/bannerInicio.webp");
     background-color: #1E1E1E;
-    background-position: top;
-    background-size: contain;
-    height: 55.875em;
+    background-position: center;
+    background-size: cover;
+    height: 53em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
