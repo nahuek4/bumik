@@ -1159,6 +1159,10 @@ body {
     .resultado p {
         font-size: 1.6em;
     }
+
+    .descripcion {
+        margin-right: -2.5em;
+    }
 }
 
 @media screen and (max-width: 1015px) {
@@ -1209,7 +1213,20 @@ body {
         padding: 1em;
     }
 
+    .descripcion {
+        font-size: .8em;
+    }
+
+    .perfiles {
+        height: 21em;
+    }
+
+    .swiper-slide img {
+        width: 4em;
+    }
 }
+
+
 
 @media screen and (max-width: 768px) {
     .footer {
