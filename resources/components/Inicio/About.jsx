@@ -29,6 +29,7 @@ const About = () => {
                 </div>
                 <div className="perfiles">
                     <Swiper
+                        effect='coverflow'
                         slidesPerView={3}
                         centeredSlides={true}
                         spaceBetween={30}
