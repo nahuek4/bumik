@@ -1,8 +1,8 @@
 import React from 'react'
 import Banner from './Banner'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation, Scrollbar, A11y } from 'swiper/modules';
-import { EffectFade } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
+import "swiper/components/effect-coverflow/effect-coverflow.scss";
 import 'swiper/css/effect-fade';
 import 'swiper/css';
 import 'swiper/css/bundle';
@@ -50,7 +50,7 @@ const About = () => {
                         rewind={true}
                         loop={true}
                         navigation={true}
-                        modules={[Pagination, Navigation, Autoplay, EffectFade]}
+                        modules={[Pagination, Navigation, Autoplay, EffectCoverflow]}
                         className="mySwiper"
                     >
                         {datos.map((equipo, index) => (
