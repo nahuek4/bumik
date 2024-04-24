@@ -2,7 +2,7 @@ import React from 'react'
 import Banner from './Banner'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
-import "swiper/components/effect-coverflow/effect-coverflow.css";
+import "swiper/css/effect-coverflow"
 import 'swiper/css';
 import 'swiper/css/bundle';
 import { getEquipo } from '../../services/getServices';
