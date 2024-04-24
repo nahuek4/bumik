@@ -57,12 +57,6 @@ const About = () => {
                         ))}
                     </Swiper>
                 </div>
-                <div className="borderboxText">
-                    <div className="text">
-                        <p> Somos Nahuel y Milagros, y Juntos formamos nuestro estudio de diseño con base en Buenos Aires <br />especializado en
-                            diseño gráfico, branding, redes sociales y desarrollo web.</p>
-                    </div>
-                </div>
             </div>
             <Banner />
         </div >

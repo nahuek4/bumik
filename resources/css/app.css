@@ -347,15 +347,6 @@ body {
     filter: grayscale(1)
 }
 
-.borderboxText {
-    display: flex;
-    align-items: center;
-    border: solid 2px #2D2D2C;
-    width: fit-content;
-    padding: 1.3em;
-}
-
-
 .text h2 {
     font-size: 3em;
 }
@@ -1107,10 +1098,6 @@ body {
 @media screen and (max-width: 1400px) {
     .serviceServicioimg {
         display: none;
-    }
-
-    .borderboxText {
-        margin: 1.5em;
     }
 
     .textServicios {
