@@ -2,6 +2,8 @@ import React from 'react'
 import Banner from './Banner'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation, Scrollbar, A11y } from 'swiper/modules';
+import { EffectFade } from 'swiper/modules';
+import 'swiper/css/effect-fade';
 import 'swiper/css';
 import 'swiper/css/bundle';
 import { getEquipo } from '../../services/getServices';
@@ -27,11 +29,12 @@ const About = () => {
                 </div>
                 <div className="perfiles">
                     <Swiper
+                        effect="fade"
                         slidesPerView={3}
                         centeredSlides={true}
                         spaceBetween={30}
                         pagination={{
-                            type: 'fraction',
+                            dynamicBullets: true,
                         }}
                         autoplay={{
                             delay: 4000,
@@ -40,7 +43,7 @@ const About = () => {
                         rewind={true}
                         loop={true}
                         navigation={true}
-                        modules={[Pagination, Navigation, Autoplay]}
+                        modules={[Pagination, Navigation, Autoplay, EffectFade]}
                         className="mySwiper"
                     >
                         {datos.map((equipo, index) => (
