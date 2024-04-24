@@ -29,7 +29,7 @@ const About = () => {
                 </div>
                 <div className="perfiles">
                     <Swiper
-                        effect='coverflow'
+                        effect={coverflow}
                         coverflowEffect={{
                             rotate: 0, // Slide rotate in degrees
                             stretch: 0, // Stretch space between slides (in px)
