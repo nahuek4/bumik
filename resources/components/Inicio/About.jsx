@@ -29,7 +29,6 @@ const About = () => {
                 </div>
                 <div className="perfiles">
                     <Swiper
-                        effect="fade"
                         slidesPerView={3}
                         centeredSlides={true}
                         spaceBetween={30}
