@@ -29,7 +29,14 @@ const About = () => {
                 </div>
                 <div className="perfiles">
                     <Swiper
-                        slideShadows={true}
+                        effect='coverflow'
+                        coverflowEffect={{
+                            rotate: 0, // Slide rotate in degrees
+                            stretch: 0, // Stretch space between slides (in px)
+                            depth: 585, // Depth offset in px (slides translate in Z axis)
+                            modifier: 1, // Effect multipler
+                            slideShadows: true, // Enables slides shadows
+                        }}
                         slidesPerView={3}
                         centeredSlides={true}
                         spaceBetween={30}
