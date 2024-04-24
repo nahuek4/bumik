@@ -31,11 +31,11 @@ const About = () => {
                     <Swiper
                         effect="coverflow"
                         coverflowEffect={{
-                            rotate: 0, // Slide rotate in degrees
-                            stretch: 0, // Stretch space between slides (in px)
-                            depth: 585, // Depth offset in px (slides translate in Z axis)
-                            modifier: 1, // Effect multipler
-                            slideShadows: true, // Enables slides shadows
+                            rotate: 0,
+                            stretch: 0,
+                            depth: 0,
+                            modifier: 1,
+                            slideShadows: true,
                         }}
                         slidesPerView={3}
                         centeredSlides={true}
