@@ -15,8 +15,8 @@ const About = () => {
         const fetchData = async () => {
             const data = await getEquipo();
             setDatos(data);
+            console.log(data);
         };
-
         fetchData();
 
     }, []);
@@ -27,7 +27,6 @@ const About = () => {
         slidesToScroll: 1,
         adaptiveHeight: true,
         adaptiveWidth: true,
-        focusOnSelect: true,
         responsive: [
             {
                 breakpoint: 1024,
