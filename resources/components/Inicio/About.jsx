@@ -12,8 +12,8 @@ const About = () => {
     const [datos, setDatos] = useState([]);
 
     useEffect(() => {
-        const fetchData = () => {
-            const data = getEquipo();
+        const fetchData = async () => {
+            const data = await getEquipo();
             setDatos(data);
         };
 
@@ -64,7 +64,7 @@ const About = () => {
                     <p>Who we are</p>
                 </div>
                 <div className="perfiles">
-                    <Slider {...settings} className='sliderSettings'>
+                    <Slider {...settings} className='sliderSettingsX'>
                         {datos.map((equipo, index) => (
                             <div className="perfil" key={index}>
                                 <div className="fondoPerfil">
