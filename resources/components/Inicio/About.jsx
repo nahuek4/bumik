@@ -64,7 +64,7 @@ const About = () => {
                 <div className="perfiles">
                     <Slider {...settings} className='sliderSettings'>
                         {datos.map((equipo, index) => (
-                            <div className="perfil" key={index}>
+                            <div className="imagenSliderItem" key={index}>
                                 <div className="fondoPerfil">
                                     <div className="imgPerfil"><img src={`assets/img/fotos${equipo.foto}.webp`} alt="Foto de perfil" /></div>
                                     <div className="descripcion">
