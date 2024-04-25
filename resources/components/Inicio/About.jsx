@@ -43,7 +43,7 @@ const About = () => {
                             dynamicBullets: true,
                         }}
                         autoplay={{
-                            delay: 4000,
+                            delay: 1000000,
                             disableOnInteraction: false,
                         }}
                         rewind={true}
