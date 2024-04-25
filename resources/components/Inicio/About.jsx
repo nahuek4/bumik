@@ -1,10 +1,10 @@
 import React from 'react'
 import Banner from './Banner'
-
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
+import "swiper/css/effect-coverflow";
+import 'swiper/css';
+import 'swiper/css/bundle';
 import { getEquipo } from '../../services/getServices';
 import { useState, useEffect } from 'react';
 
@@ -12,48 +12,13 @@ const About = () => {
     const [datos, setDatos] = useState([]);
 
     useEffect(() => {
-        const fetchData = async () => {
-            const data = await getEquipo();
+        const fetchData = () => {
+            const data = getEquipo();
             setDatos(data);
-            console.log(data);
         };
-        fetchData();
 
+        fetchData();
     }, []);
-    const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        adaptiveHeight: true,
-        adaptiveWidth: true,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    initialSlide: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
     return (
         <div className='nosotros'>
             <div className="nosotrosContain">
@@ -62,19 +27,45 @@ const About = () => {
                     <p>Who we are</p>
                 </div>
                 <div className="perfiles">
-                    <Slider {...settings} className='sliderSettings'>
+                    <Swiper
+                        effect="coverflow"
+                        coverflowEffect={{
+                            rotate: 0,
+                            stretch: 0,
+                            depth: 0,
+                            modifier: 1,
+                            slideShadows: true,
+                        }}
+                        slidesPerView={3}
+                        centeredSlides={true}
+                        spaceBetween={30}
+                        pagination={{
+                            dynamicBullets: true,
+                        }}
+                        autoplay={{
+                            delay: 4000,
+                            disableOnInteraction: false,
+                        }}
+                        rewind={true}
+                        loop={true}
+                        navigation={true}
+                        modules={[Pagination, Navigation, Autoplay, EffectCoverflow]}
+                        className="mySwiper"
+                    >
                         {datos.map((equipo, index) => (
-                            <div className="imagenSliderItem" key={index}>
-                                <div className="fondoPerfil">
-                                    <div className="imgPerfil"><img src={`assets/img/fotos${equipo.foto}.webp`} alt="Foto de perfil" /></div>
-                                    <div className="descripcion">
-                                        <h2>{equipo.nombre}</h2>
-                                        <p>{equipo.trabajo}</p>
+                            <SwiperSlide>
+                                <div className="perfil" key={index}>
+                                    <div className="fondoPerfil">
+                                        <div className="imgPerfil"><img src={`assets/img/fotos${equipo.foto}.webp`} alt="Foto de perfil" /></div>
+                                        <div className="descripcion">
+                                            <h2>{equipo.nombre}</h2>
+                                            <p>{equipo.trabajo}</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </SwiperSlide>
                         ))}
-                    </Slider>
+                    </Swiper>
                 </div>
             </div>
             <Banner />
