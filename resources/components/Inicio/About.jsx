@@ -21,7 +21,6 @@ const About = () => {
 
     }, []);
     const settings = {
-        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -64,7 +63,7 @@ const About = () => {
                     <p>Who we are</p>
                 </div>
                 <div className="perfiles">
-                    <Slider {...settings} className='sliderSettingsX'>
+                    <Slider {...settings} className='sliderSettings'>
                         {datos.map((equipo, index) => (
                             <div className="perfil" key={index}>
                                 <div className="fondoPerfil">
