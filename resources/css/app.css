@@ -333,7 +333,7 @@ body {
 
 .swiper-pagination {
     position: relative;
-    padding-top: 50px;
+    top: 50px;
 }
 
 .swiper-pagination-bullet-active-main {
