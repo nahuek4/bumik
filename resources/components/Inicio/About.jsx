@@ -48,7 +48,6 @@ const About = () => {
                         }}
                         rewind={true}
                         loop={true}
-                        navigation={true}
                         modules={[Pagination, Navigation, Autoplay, EffectCoverflow]}
                         className="mySwiper"
                     >
