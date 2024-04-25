@@ -64,33 +64,9 @@ const About = () => {
                     <p>Who we are</p>
                 </div>
                 <div className="perfiles">
-                    <Swiper
-                        effect="coverflow"
-                        coverflowEffect={{
-                            rotate: 0,
-                            stretch: 0,
-                            depth: 0,
-                            modifier: 1,
-                            slideShadows: true,
-                        }}
-                        slidesPerView={3}
-                        centeredSlides={true}
-                        spaceBetween={30}
-                        pagination={{
-                            dynamicBullets: true,
-                        }}
-                        autoplay={{
-                            delay: 1000000,
-                            disableOnInteraction: false,
-                        }}
-                        rewind={true}
-                        loop={true}
-                        navigation={true}
-                        modules={[Pagination, Navigation, Autoplay, EffectCoverflow]}
-                        className="mySwiper"
-                    >
-                        {datos.map((equipo, index) => (
-                            <Slider {...settings} className='sliderSettings'>                                <div className="perfil" key={index}>
+                    {datos.map((equipo, index) => (
+                        <Slider {...settings} className='sliderSettings'>
+                            <div className="perfil" key={index}>
                                 <div className="fondoPerfil">
                                     <div className="imgPerfil"><img src={`assets/img/fotos${equipo.foto}.webp`} alt="Foto de perfil" /></div>
                                     <div className="descripcion">
@@ -99,9 +75,8 @@ const About = () => {
                                     </div>
                                 </div>
                             </div>
-                            </Slider>
-                        ))}
-                    </Swiper>
+                        </Slider>
+                    ))}
                 </div>
             </div>
             <Banner />
