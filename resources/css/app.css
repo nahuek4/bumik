@@ -331,9 +331,13 @@ body {
     overflow: visible;
 }
 
-.swiper-pagination {
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
     position: relative;
     top: 50px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #FBFAF6;
 }
 
 .swiper-pagination-bullet-active-main {
