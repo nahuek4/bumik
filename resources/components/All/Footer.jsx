@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
-    scrollToTop = () => {
+    const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
