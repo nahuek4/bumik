@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
+
+    scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <footer className='footerContainer'>
             <div className="footer">
@@ -12,10 +20,10 @@ const Footer = () => {
                     <h1 className='spanRosa'>WORLDWIDE</h1>
                 </div>
                 <div className="footerLinks">
-                    <Link to="/" ><a href="#1">INICIO</a></Link>
-                    <Link to="/servicios">SERVICIOS</Link>
-                    <Link to="/portfolio">PROYECTOS</Link>
-                    <Link to="/contacto">CONTACTO</Link>
+                    <Link to="/" onClick={scrollToTop}>INICIO</Link>
+                    <Link to="/servicios" onClick={scrollToTop}>SERVICIOS</Link>
+                    <Link to="/portfolio" onClick={scrollToTop}>PROYECTOS</Link>
+                    <Link to="/contacto" onClick={scrollToTop}>CONTACTO</Link>
                     <div className="contacts">
                         <div className="business">
                             <a href="mailto:estudiobumik@gmail.com" target='_blank' rel="noreferrer"><img src="/public/assets/icons/email.webp" alt="email" /></a>
