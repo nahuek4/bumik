@@ -10,7 +10,7 @@ const Navbar = () => {
     const handleClick = () => setClick(!click);
 
     return (
-        <div className='navbar'>
+        <div className='navbar' id='1'>
             <div className="navMenu">
                 <ul className={click ? 'navLinks active' : 'navLinks'}>
                     <li className='navItem'><NavLink className="navLink" to="/" onClick={handleClick}>Inicio</NavLink></li>
@@ -21,7 +21,7 @@ const Navbar = () => {
             </div>
             <div className="navToggle" onClick={handleClick}>
                 <Fragment>
-                {click ? <FontAwesomeIcon icon={faXmark}/> : <FontAwesomeIcon icon={faBars} />} 
+                    {click ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
                 </Fragment>
             </div>
         </div>
