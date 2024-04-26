@@ -12,7 +12,7 @@ const Footer = () => {
                     <h1 className='spanRosa'>WORLDWIDE</h1>
                 </div>
                 <div className="footerLinks">
-                    <Link to="/">INICIO</Link>
+                    <Link to="/" ><a href="#1">INICIO</a></Link>
                     <Link to="/servicios">SERVICIOS</Link>
                     <Link to="/portfolio">PROYECTOS</Link>
                     <Link to="/contacto">CONTACTO</Link>

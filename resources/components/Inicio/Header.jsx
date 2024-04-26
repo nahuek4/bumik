@@ -28,7 +28,7 @@ const Header = () => {
     }, []);
     return (
         <div>
-            <div className='header'>
+            <div className='header' id='1'>
                 <Bounce duration="1800" triggerOnce>
                     <div className="logo">
                         <img className="logoBumik" src={imagenSrc} alt="logo bumik" />
