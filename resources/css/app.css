@@ -311,6 +311,7 @@ body {
 }
 
 .fondoPerfil {
+    opacity: .9;
     background-color: #FBFAF6;
     display: flex;
     align-items: center;
