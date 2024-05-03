@@ -482,7 +482,7 @@ body {
 }
 
 .serviceBox {
-    margin-top: 1.5em;
+    margin: 1em 0em;
     font-size: 1.2em;
     width: 25em;
 }
@@ -1515,9 +1515,9 @@ body {
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
     .serviceBox {
-        width: 15em;
+        width: 14em;
     }
 
     .investigacion h1,
@@ -1578,9 +1578,13 @@ body {
     .headerContactTitulo h1 {
         font-size: 1.8em;
     }
+
+    .serviceBox ul li {
+        padding: .6em;
+    }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 310px) {
     .serviceBox {
         width: 14em;
     }
@@ -1595,6 +1599,10 @@ body {
 
     .text p {
         font-size: 1.23em;
+    }
+
+    .serviceBox {
+        width: 13em;
     }
 
 }
