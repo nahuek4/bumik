@@ -1582,6 +1582,14 @@ body {
     .serviceBox ul li {
         padding: .6em;
     }
+
+    .liServices {
+        font-size: 1em;
+    }
+
+    .serviceBox ul li p {
+        font-size: .8em;
+    }
 }
 
 @media screen and (max-width: 310px) {

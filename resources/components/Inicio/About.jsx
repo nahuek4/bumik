@@ -49,10 +49,10 @@ const About = () => {
                         breakpoints={{
                             400: {
                                 slidesPerView: 3,
-                                spaceBetween: 20,
+                                spaceBetween: 30,
                             },
                             640: {
-                                slidesPerView: 2,
+                                slidesPerView: 3,
                                 spaceBetween: 30,
                             },
                             768: {
