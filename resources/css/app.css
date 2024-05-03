@@ -322,9 +322,6 @@ body {
     gap: 4em;
 }
 
-.imgPerfil {
-    margin-left: -3em;
-}
 
 .swiper {
     width: 98%;
@@ -1134,7 +1131,7 @@ body {
     }
 
     .swiper {
-        height: 13em;
+        height: 11em;
     }
 
 }
@@ -1150,6 +1147,10 @@ body {
 
     .descripcion {
         font-size: .9em;
+    }
+
+    .swiper {
+        height: 10em;
     }
 }
 
@@ -1231,10 +1232,6 @@ body {
 
     .swiper-slide img {
         width: 4em;
-    }
-
-    .imgPerfil {
-        margin-left: -2em;
     }
 
     .swiper {
