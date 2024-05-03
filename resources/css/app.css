@@ -1382,9 +1382,6 @@ body {
         width: 25em;
     }
 
-    .perfiles>div>div img {
-        width: 20em;
-    }
 
     .headerProyectoContainer .tituloContainerHeaderProyecto h1 {
         font-size: 2.5em;
@@ -1464,10 +1461,6 @@ body {
 
     .serviciosText p {
         font-size: 1.2em;
-    }
-
-    .perfiles>div>div img {
-        width: 17em;
     }
 
     .tituloServicios h1,
@@ -1555,13 +1548,6 @@ body {
         font-size: 1.2em;
     }
 
-    .perfiles>div>div img {
-        width: 15em;
-    }
-
-    .perfiles>div h2 {
-        font-size: 1em;
-    }
 
     .FAQS .item .tittle span {
         font-size: 1.1em;
