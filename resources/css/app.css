@@ -1168,14 +1168,6 @@ body {
     .resultado p {
         font-size: 1.6em;
     }
-
-    .descripcion {
-        margin-right: -2.5em;
-    }
-
-    .imgperfil {
-        margin-left: 2em;
-    }
 }
 
 @media screen and (max-width: 1015px) {
