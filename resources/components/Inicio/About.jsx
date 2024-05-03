@@ -59,7 +59,7 @@ const About = () => {
                                 slidesPerView: 2,
                                 spaceBetween: 30,
                             },
-                            768: {
+                            900: {
                                 slidesPerView: 3,
                                 spaceBetween: 30,
                             },
