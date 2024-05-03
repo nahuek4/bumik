@@ -1425,6 +1425,18 @@ body {
     .pLottie {
         font-size: 1.2em;
     }
+
+    .perfil {
+        padding: 1em 4em;
+    }
+
+    .descripcion {
+        font-size: .7em;
+    }
+
+    .perfiles {
+        height: 14em;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -1506,6 +1518,10 @@ body {
 
     .tittle {
         font-size: 0.6em;
+    }
+
+    .perfil {
+        padding: 1em 3em;
     }
 }
 
