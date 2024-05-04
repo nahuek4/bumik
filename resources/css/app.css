@@ -1331,6 +1331,14 @@ body {
     .swiper {
         height: 11em;
     }
+
+    .perfiles {
+        height: 17em;
+    }
+
+    .swiper-slide img {
+        width: 4.5em;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1438,10 +1446,6 @@ body {
 
     .perfil {
         padding: 1em 4em;
-    }
-
-    .descripcion {
-        font-size: .7em;
     }
 
     .perfiles {
