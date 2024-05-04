@@ -85,10 +85,9 @@ const Servicios = () => {
                     <div className="containerData">
                         <div className="tituloServicio">
                             <h1 className='spanVerde'>Diseño & Desarrollo web</h1>
-                            <p className='descripcionServicio'> No se trata solamente de tener un logo atractivo, sino de crear una identidad que te represente y te diferencie de la competenc</p>
-                            <p className='descripcionServicio'> Es por eso que ofrecemos servicios de Branding que van más allá de un simple diseño. Trabajamos contigo para crear una identidad sólida que refleje tus valores y personalidad, y que conecte con tu audiencia de manera efectiva.</p>
-                            <p className='descripcionServicio'>Nuestros paquetes están diseñados para ofrecerte opciones que se adapten a tus necesidades y presupuesto. Además, también podemos personalizar un paquete para ti si deseas incluir algo más específico.</p>
-                            <p className='descripcionServicio'>No subestimes el poder del branding en tu negocio. Una marca bien construida puede ser la clave para atraer y fidelizar a tus clientes, y estamos aquí para ayudarte en ese proceso.</p>
+                            <p className='descripcionServicio'> Te ofrecemos un servicio completo de diseño y desarrolllo web para ayudarte a crear una presencia online única y efectiva para tu marca o negocio. Trabajamos con vos para crear algo personalizado y profesional que refleje tu identidad y valores de marca.</p>
+                            <p className='descripcionServicio'> Además, nos aseguramos que la página web sea fácil de usar, rápida y segura para mejorar la experiencia del usuario y aumentar la conversión de clientes potenciales.</p>
+                            <p className='descripcionServicio'>Ya sea que necesites una página web institucional, un portfolio, una tienda online o una landing page, estamos para ayudarte a crear una presencia que destaque en un mercado competitivo.</p>
                         </div>
                         <div className="mostrarMas">
                             <div className="column">
