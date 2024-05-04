@@ -1448,9 +1448,6 @@ body {
         padding: 1em 4em;
     }
 
-    .perfiles {
-        height: 14em;
-    }
 }
 
 @media screen and (max-width: 430px) {
