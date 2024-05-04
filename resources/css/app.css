@@ -1339,6 +1339,10 @@ body {
     .swiper-slide img {
         width: 4.5em;
     }
+
+    .tituloCarousel {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1634,6 +1638,9 @@ body {
         width: 13em;
     }
 
+    .descripcion {
+        font-size: .7em;
+    }
 }
 
 @media screen and (max-width: 900px) {
