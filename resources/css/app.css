@@ -538,6 +538,11 @@ body {
     margin: 0 auto;
 }
 
+.imgItem {
+    display: flex;
+    justify-content: center;
+}
+
 /* Slick dots, moverlos para abajo*/
 
 .slick-dots {
@@ -1640,6 +1645,10 @@ body {
 
     .descripcion {
         font-size: .7em;
+    }
+
+    .footerText {
+        font-size: 1.25em;
     }
 }
 
