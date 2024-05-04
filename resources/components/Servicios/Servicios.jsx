@@ -64,8 +64,8 @@ const Servicios = () => {
                             <div className=""><img src="assets/img/fotos/brandingzhu.webp" alt="innocenti logo" /></div>
                         </div>
                     </Slide>
-                    <div className="containerData">
-                        <Slide duration="1800" triggerOnce direction='right' fraction="0">
+                    <Slide duration="1800" triggerOnce direction='right' fraction="0">
+                        <div className="containerData">
                             <div className="tituloServicio">
                                 <h1 className='spanVerde'>Branding</h1>
                                 <p className='descripcionServicio'> No se trata solamente de tener un logo atractivo, sino de crear una identidad que te represente y te diferencie de la competencia</p>
@@ -78,8 +78,8 @@ const Servicios = () => {
                                     {datosTipo(datos, "branding", selected, toggle)}
                                 </div>
                             </div>
-                        </Slide>
-                    </div>
+                        </div>
+                    </Slide>
                 </div>
             </div>
             <div className="serviciosContain">
