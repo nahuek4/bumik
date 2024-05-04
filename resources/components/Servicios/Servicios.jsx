@@ -59,13 +59,13 @@ const Servicios = () => {
         <div className='serviciosServComp'>
             <div className="serviciosContain">
                 <div className="serviceServicio">
-                    <Slide duration="1800" triggerOnce>
+                    <Slide duration="1800" triggerOnce fraction="0">
                         <div className="serviceServicioimg">
                             <div className=""><img src="assets/img/fotos/brandingzhu.webp" alt="innocenti logo" /></div>
                         </div>
                     </Slide>
                     <div className="containerData">
-                        <Slide duration="1800" triggerOnce direction='right'>
+                        <Slide duration="1800" triggerOnce direction='right' fraction="0">
                             <div className="tituloServicio">
                                 <h1 className='spanVerde'>Branding</h1>
                                 <p className='descripcionServicio'> No se trata solamente de tener un logo atractivo, sino de crear una identidad que te represente y te diferencie de la competencia</p>
