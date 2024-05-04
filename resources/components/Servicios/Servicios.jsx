@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { getDesplegable } from '../../services/getServices';
+import { Slide } from "react-awesome-reveal";
 
 
 function datosTipo(datos, tipo, selected, toggle) {
@@ -58,22 +59,26 @@ const Servicios = () => {
         <div className='serviciosServComp'>
             <div className="serviciosContain">
                 <div className="serviceServicio">
-                    <div className="serviceServicioimg">
-                        <div className=""><img src="assets/img/fotos/brandingzhu.webp" alt="innocenti logo" /></div>
-                    </div>
+                    <Slide duration="1800" triggerOnce>
+                        <div className="serviceServicioimg">
+                            <div className=""><img src="assets/img/fotos/brandingzhu.webp" alt="innocenti logo" /></div>
+                        </div>
+                    </Slide>
                     <div className="containerData">
-                        <div className="tituloServicio">
-                            <h1 className='spanVerde'>Branding</h1>
-                            <p className='descripcionServicio'> No se trata solamente de tener un logo atractivo, sino de crear una identidad que te represente y te diferencie de la competencia</p>
-                            <p className='descripcionServicio'> Es por eso que ofrecemos servicios de Branding que van más allá de un simple diseño. Trabajamos contigo para crear una identidad sólida que refleje tus valores y personalidad, y que conecte con tu audiencia de manera efectiva.</p>
-                            <p className='descripcionServicio'>Nuestros paquetes están diseñados para ofrecerte opciones que se adapten a tus necesidades y presupuesto. Además, también podemos personalizar un paquete para ti si deseas incluir algo más específico.</p>
-                            <p className='descripcionServicio'>No subestimes el poder del branding en tu negocio. Una marca bien construida puede ser la clave para atraer y fidelizar a tus clientes, y estamos aquí para ayudarte en ese proceso.</p>
-                        </div>
-                        <div className="mostrarMas">
-                            <div className="column">
-                                {datosTipo(datos, "branding", selected, toggle)}
+                        <Slide duration="1800" triggerOnce direction='right'>
+                            <div className="tituloServicio">
+                                <h1 className='spanVerde'>Branding</h1>
+                                <p className='descripcionServicio'> No se trata solamente de tener un logo atractivo, sino de crear una identidad que te represente y te diferencie de la competencia</p>
+                                <p className='descripcionServicio'> Es por eso que ofrecemos servicios de Branding que van más allá de un simple diseño. Trabajamos contigo para crear una identidad sólida que refleje tus valores y personalidad, y que conecte con tu audiencia de manera efectiva.</p>
+                                <p className='descripcionServicio'>Nuestros paquetes están diseñados para ofrecerte opciones que se adapten a tus necesidades y presupuesto. Además, también podemos personalizar un paquete para ti si deseas incluir algo más específico.</p>
+                                <p className='descripcionServicio'>No subestimes el poder del branding en tu negocio. Una marca bien construida puede ser la clave para atraer y fidelizar a tus clientes, y estamos aquí para ayudarte en ese proceso.</p>
                             </div>
-                        </div>
+                            <div className="mostrarMas">
+                                <div className="column">
+                                    {datosTipo(datos, "branding", selected, toggle)}
+                                </div>
+                            </div>
+                        </Slide>
                     </div>
                 </div>
             </div>
@@ -152,7 +157,7 @@ const Servicios = () => {
             <div className="botonService">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZL63YOXJUQ2Ee7VYszlfoi8bPjeuZvujjGCmt-j_ewmTi5A/viewform?usp=sf_link" target="_blank" rel="noreferrer"><button className='botonServicios'>¡Cotizá tu proyecto!</button></a>
             </div>
-        </div>
+        </div >
     )
 }
 
