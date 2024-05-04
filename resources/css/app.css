@@ -548,6 +548,7 @@ body {
 .slick-dots {
     transform: translateY(3.5em);
     color: #FBFAF6 !important;
+    max-height: 25px;
 }
 
 
