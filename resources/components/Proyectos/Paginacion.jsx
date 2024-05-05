@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactPaginate from 'react-paginate';
 import { getProyectos } from '../../services/getServices';
+import { Zoom } from "react-awesome-reveal";
 
 const Paginacion = () => {
     const [datos, setDatos] = useState([]);
@@ -28,16 +29,18 @@ const Paginacion = () => {
     return (
         <div>
             <div className="galleryContainComp">
-                <div className="galleryContain">
-                    {filterData.map((image, index) => (
-                        <div key={index} className='galleryItem'>
-                            <img src={`/assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
-                            <div className="capa">
-                                <a target="_blank" href={image.href}><h3>VER EN BEHANCE</h3></a>
+                <Zoom>
+                    <div className="galleryContain">
+                        {filterData.map((image, index) => (
+                            <div key={index} className='galleryItem'>
+                                <img src={`/assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
+                                <div className="capa">
+                                    <a target="_blank" href={image.href}><h3>VER EN BEHANCE</h3></a>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
+                </Zoom>
             </div>
             <div className="paginateReact">
                 <ReactPaginate
