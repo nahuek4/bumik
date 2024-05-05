@@ -29,18 +29,19 @@ const Paginacion = () => {
     return (
         <div>
             <div className="galleryContainComp">
-                <Zoom triggerOnce duration={1500}>
-                    <div className="galleryContain">
-                        {filterData.map((image, index) => (
+
+                <div className="galleryContain">
+                    {filterData.map((image, index) => (
+                        <Zoom triggerOnce duration={1500}>
                             <div key={index} className='galleryItem'>
                                 <img src={`/assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
                                 <div className="capa">
                                     <a target="_blank" href={image.href}><h3>VER EN BEHANCE</h3></a>
                                 </div>
                             </div>
-                        ))}
-                    </div>
-                </Zoom>
+                        </Zoom>
+                    ))}
+                </div>
             </div>
             <div className="paginateReact">
                 <ReactPaginate
