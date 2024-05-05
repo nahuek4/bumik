@@ -56,7 +56,7 @@ const Form = () => {
                         <div className="formContain">
 
                             <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
-                                <Slide cascade damping={0.1}>
+                                <Slide cascade damping={0.1} direction='up'>
                                     <div className="formNombreApellido">
                                         {/* nombre */}
                                         <div className="labelNombre">
