@@ -5,7 +5,7 @@ import Lottie from 'lottie-react';
 import LottieSuccess from '../../assets/img/lottie/success.json';
 import LottieFailed from '../../assets/img/lottie/failed.json';
 import Loader from '../../assets/icons/ajax-loader.gif';
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Form = () => {
 
@@ -55,36 +55,38 @@ const Form = () => {
                     <div className="formContainer">
                         <div className="formContain">
                             <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
-                                <div className="formNombreApellido">
-                                    {/* nombre */}
-                                    <div className="labelNombre">
-                                        <label htmlFor="nombre">Nombre</label>
-                                        <input type="text" {...register("nombre", { required: true })} />
-                                        {errors.nombre && <span className="error">Este campo es requerido</span>}
+                                <Fade cascade triggerOnce >
+                                    <div className="formNombreApellido">
+                                        {/* nombre */}
+                                        <div className="labelNombre">
+                                            <label htmlFor="nombre">Nombre</label>
+                                            <input type="text" {...register("nombre", { required: true })} />
+                                            {errors.nombre && <span className="error">Este campo es requerido</span>}
+                                        </div>
+                                        {/* Apellido */}
+                                        <div className="labelApellido">
+                                            <label htmlFor="apellido">Apellido</label>
+                                            <input type="text" {...register("apellido", { required: true })} />
+                                            {errors.apellido && <span className="error">Este campo es requerido</span>}
+                                        </div>
                                     </div>
-                                    {/* Apellido */}
-                                    <div className="labelApellido">
-                                        <label htmlFor="apellido">Apellido</label>
-                                        <input type="text" {...register("apellido", { required: true })} />
-                                        {errors.apellido && <span className="error">Este campo es requerido</span>}
-                                    </div>
-                                </div>
-                                {/* Email */}
-                                <label htmlFor="email">Correo electrónico</label>
-                                <input type="email" {...register("email", { required: true })} />
-                                {errors.email && <span className="error">Este campo es requerido</span>}
-                                {/* Telefono */}
-                                <label htmlFor="telefono">Telefono</label>
-                                <input type="tel" {...register("telefono", { required: true })} />
-                                {errors.telefono && <span className="error">Este campo es requerido</span>}
-                                {/* Mensaje */}
-                                <label htmlFor="mensaje">Mensaje</label>
-                                <textarea rows="8" type="text" {...register("mensaje", { required: true })} />
-                                {errors.mensaje && <span className="error">Este campo es requerido</span>}
-                                <button className='buttonForm' id='buttonForm' disabled={isLoading}>
-                                    {isLoading ? <img src={Loader} alt="Loading..." /> : 'Enviar'}
-                                </button>
-                                <input type="hidden" name="_token" value={csrfToken} />
+                                    {/* Email */}
+                                    <label htmlFor="email">Correo electrónico</label>
+                                    <input type="email" {...register("email", { required: true })} />
+                                    {errors.email && <span className="error">Este campo es requerido</span>}
+                                    {/* Telefono */}
+                                    <label htmlFor="telefono">Telefono</label>
+                                    <input type="tel" {...register("telefono", { required: true })} />
+                                    {errors.telefono && <span className="error">Este campo es requerido</span>}
+                                    {/* Mensaje */}
+                                    <label htmlFor="mensaje">Mensaje</label>
+                                    <textarea rows="8" type="text" {...register("mensaje", { required: true })} />
+                                    {errors.mensaje && <span className="error">Este campo es requerido</span>}
+                                    <button className='buttonForm' id='buttonForm' disabled={isLoading}>
+                                        {isLoading ? <img src={Loader} alt="Loading..." /> : 'Enviar'}
+                                    </button>
+                                    <input type="hidden" name="_token" value={csrfToken} />
+                                </Fade>
                             </form>
                         </div>
                     </div>
