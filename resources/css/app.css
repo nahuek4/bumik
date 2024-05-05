@@ -282,7 +282,7 @@ body {
 .about {
     padding-top: 2em;
     font-weight: 500;
-    margin-bottom: -2em;
+    margin: 3.5em 1em
 }
 
 .about h1 {
