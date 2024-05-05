@@ -32,7 +32,7 @@ const Paginacion = () => {
 
                 <div className="galleryContain">
                     {filterData.map((image, index) => (
-                        <Fade triggerOnce duration={1500}>
+                        <Fade triggerOnce duration={2500}>
                             <div key={index} className='galleryItem'>
                                 <img src={`/assets/img/sliders/proyectos/${image.imagen}`} alt={image.alt} />
                                 <div className="capa">
