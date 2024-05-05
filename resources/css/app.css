@@ -1559,7 +1559,7 @@ body {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
     .serviceBox {
         width: 14em;
     }
