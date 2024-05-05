@@ -56,7 +56,7 @@ const Form = () => {
                         <div className="formContain">
 
                             <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
-                                <Slide cascade damping={0.1} direction='up'>
+                                <Slide cascade damping={0.1} direction='up' triggerOnce>
                                     <div className="formNombreApellido">
                                         {/* nombre */}
                                         <div className="labelNombre">
@@ -73,24 +73,24 @@ const Form = () => {
                                     </div>
                                 </Slide>
                                 {/* Email */}
-                                <Slide cascade damping={0.2}>
+                                <Slide cascade damping={0.2} direction='up' triggerOnce>
                                     <label htmlFor="email">Correo electrónico</label>
                                     <input type="email" {...register("email", { required: true })} />
                                     {errors.email && <span className="error">Este campo es requerido</span>}
                                 </Slide>
                                 {/* Telefono */}
-                                <Slide cascade damping={0.3}>
+                                <Slide cascade damping={0.3} direction='up' triggerOnce>
                                     <label htmlFor="telefono">Telefono</label>
                                     <input type="tel" {...register("telefono", { required: true })} />
                                     {errors.telefono && <span className="error">Este campo es requerido</span>}
                                 </Slide>
                                 {/* Mensaje */}
-                                <Slide cascade damping={0.4}>
+                                <Slide cascade damping={0.4} direction='up' triggerOnce>
                                     <label htmlFor="mensaje">Mensaje</label>
                                     <textarea rows="8" type="text" {...register("mensaje", { required: true })} />
                                     {errors.mensaje && <span className="error">Este campo es requerido</span>}
                                 </Slide>
-                                <Slide cascade damping={0.5}>
+                                <Slide cascade damping={0.5} direction='up' triggerOnce>
                                     <button className='buttonForm' id='buttonForm' disabled={isLoading}>
                                         {isLoading ? <img src={Loader} alt="Loading..." /> : 'Enviar'}
                                     </button>
