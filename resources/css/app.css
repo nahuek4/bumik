@@ -9,11 +9,6 @@
     font-family: 'gilroy';
 }
 
-.css-lehpq2 {
-    max-width: 100vw;
-    overflow: hidden;
-}
-
 body {
     width: 100vw;
     overflow-x: hidden;
@@ -653,7 +648,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1E1E1E;
-    overflow: hidd;
+    overflow-x: hidden;
 }
 
 .serviceServicio {
