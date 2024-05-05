@@ -54,8 +54,9 @@ const Form = () => {
                 {!showAnimation && (
                     <div className="formContainer">
                         <div className="formContain">
-                            <Fade cascade damping={1}>
-                                <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
+
+                            <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
+                                <Fade cascade damping={0.1}>
                                     <div className="formNombreApellido">
                                         {/* nombre */}
                                         <div className="labelNombre">
@@ -70,24 +71,32 @@ const Form = () => {
                                             {errors.apellido && <span className="error">Este campo es requerido</span>}
                                         </div>
                                     </div>
-                                    {/* Email */}
+                                </Fade>
+                                {/* Email */}
+                                <Fade cascade damping={0.2}>
                                     <label htmlFor="email">Correo electrónico</label>
                                     <input type="email" {...register("email", { required: true })} />
                                     {errors.email && <span className="error">Este campo es requerido</span>}
-                                    {/* Telefono */}
+                                </Fade>
+                                {/* Telefono */}
+                                <Fade cascade damping={0.3}>
                                     <label htmlFor="telefono">Telefono</label>
                                     <input type="tel" {...register("telefono", { required: true })} />
                                     {errors.telefono && <span className="error">Este campo es requerido</span>}
-                                    {/* Mensaje */}
+                                </Fade>
+                                {/* Mensaje */}
+                                <Fade cascade damping={0.4}>
                                     <label htmlFor="mensaje">Mensaje</label>
                                     <textarea rows="8" type="text" {...register("mensaje", { required: true })} />
                                     {errors.mensaje && <span className="error">Este campo es requerido</span>}
+                                </Fade>
+                                <Fade cascade damping={0.5}>
                                     <button className='buttonForm' id='buttonForm' disabled={isLoading}>
                                         {isLoading ? <img src={Loader} alt="Loading..." /> : 'Enviar'}
                                     </button>
                                     <input type="hidden" name="_token" value={csrfToken} />
-                                </form>
-                            </Fade>
+                                </Fade>
+                            </form>
                         </div>
                     </div>
                 )}
