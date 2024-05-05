@@ -55,7 +55,7 @@ const Form = () => {
                     <div className="formContainer">
                         <div className="formContain">
                             <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
-                                <Fade cascade triggerOnce >
+                                <Fade cascade triggerOnce duration={2000}>
                                     <div className="formNombreApellido">
                                         {/* nombre */}
                                         <div className="labelNombre">
@@ -92,21 +92,25 @@ const Form = () => {
                     </div>
                 )}
             </div>
-            {showAnimation && (
-                responseData && responseData.message ?
-                    <div className='lottieDiv'>
-                        <Lottie animationData={LottieSuccess} speed={0.5} loop='false' />
-                    </div>
+            {
+                showAnimation && (
+                    responseData && responseData.message ?
+                        <div className='lottieDiv'>
+                            <Lottie animationData={LottieSuccess} speed={0.5} loop='false' />
+                        </div>
+                        :
+                        <div className='lottieDiv'>
+                            <Lottie animationData={LottieFailed} speed={0.5} loop='false' />
+                        </div>
+                )
+            }
+            {
+                showAnimation && (responseData && responseData.message ?
+                    (<p className='pLottie'>Informacion enviada exitosamente!</p>)
                     :
-                    <div className='lottieDiv'>
-                        <Lottie animationData={LottieFailed} speed={0.5} loop='false' />
-                    </div>
-            )}
-            {showAnimation && (responseData && responseData.message ?
-                (<p className='pLottie'>Informacion enviada exitosamente!</p>)
-                :
-                (<p className='pLottie'>Ha ocurrido un error. Por favor, intenta nuevamente más tarde.</p>)
-            )}
+                    (<p className='pLottie'>Ha ocurrido un error. Por favor, intenta nuevamente más tarde.</p>)
+                )
+            }
             <div className="textButton">
                 <p>¿Tenes alguna consulta de cómo podrías llevar tu proyecto adelante?</p>
                 <p>Envíanos un mensaje a <span className='spanRosa'>estudiobumik@gmail.com</span> o completá el formulario</p>
@@ -116,7 +120,7 @@ const Form = () => {
                 </div>
             </div>
             <FAQ />
-        </div>
+        </div >
     );
 };
 
