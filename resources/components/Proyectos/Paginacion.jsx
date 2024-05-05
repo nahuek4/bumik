@@ -29,7 +29,7 @@ const Paginacion = () => {
     return (
         <div>
             <div className="galleryContainComp">
-                <Zoom>
+                <Zoom triggerOnce duration={2000}>
                     <div className="galleryContain">
                         {filterData.map((image, index) => (
                             <div key={index} className='galleryItem'>
