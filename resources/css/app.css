@@ -454,13 +454,12 @@ body {
     justify-content: center;
     flex-direction: column;
     max-width: 1400px;
-    padding-top: 2.5em;
     margin-bottom: 10em;
 }
 
 .serviciosText {
     font-size: 1.5em;
-    margin-top: 1.6em;
+    margin-top: 3.5em 1em;
 }
 
 .descripcionServics {
@@ -503,7 +502,7 @@ body {
 }
 
 .serviceBox ul li {
-    padding: .3em;
+    padding: .8em;
 }
 
 .serviceBox ul li p {
@@ -1554,6 +1553,10 @@ body {
     .resultado h1 {
         font-size: 4em;
     }
+
+    .serviceBox ul li {
+        padding: .6em;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1621,7 +1624,7 @@ body {
     }
 
     .serviceBox ul li {
-        padding: .6em;
+        padding: .3em;
     }
 
     .liServices {
