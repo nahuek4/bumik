@@ -14,8 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 .app {
     min-height: 100vh;
     display: flex;
@@ -657,7 +655,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 
 .serviceServicioimg img {
     border-radius: 25px;

@@ -5,6 +5,7 @@ import Lottie from 'lottie-react';
 import LottieSuccess from '../../assets/img/lottie/success.json';
 import LottieFailed from '../../assets/img/lottie/failed.json';
 import Loader from '../../assets/icons/ajax-loader.gif';
+import { Slide } from "react-awesome-reveal";
 
 const Form = () => {
 
@@ -90,16 +91,16 @@ const Form = () => {
                 )}
             </div>
             {showAnimation && (
-                responseData && responseData.message ? 
+                responseData && responseData.message ?
                     <div className='lottieDiv'>
                         <Lottie animationData={LottieSuccess} speed={0.5} loop='false' />
                     </div>
-                :
+                    :
                     <div className='lottieDiv'>
                         <Lottie animationData={LottieFailed} speed={0.5} loop='false' />
                     </div>
             )}
-            {showAnimation && (responseData && responseData.message ? 
+            {showAnimation && (responseData && responseData.message ?
                 (<p className='pLottie'>Informacion enviada exitosamente!</p>)
                 :
                 (<p className='pLottie'>Ha ocurrido un error. Por favor, intenta nuevamente más tarde.</p>)
