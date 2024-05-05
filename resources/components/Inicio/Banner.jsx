@@ -16,7 +16,7 @@ const Banner = () => {
                     <div className="desarrollo">
                         <h1>02</h1>
                         <h2>Desarrollo.</h2>
-                        <p>Generáramos ideas y conceptos para la solución a través de bocetos, diagramas y prototipos básicos para probar diferentes enfoques. Priorizamos en todo momento que el cliente forme 100% parte del proceso.</p>
+                        <p>Generamos ideas y conceptos para la solución a través de bocetos, diagramas y prototipos básicos para probar diferentes enfoques. Priorizamos en todo momento que el cliente forme 100% parte del proceso.</p>
                     </div>
                     <div className="resultado">
                         <h1>03</h1>

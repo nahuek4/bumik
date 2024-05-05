@@ -486,7 +486,7 @@ body {
 }
 
 .serviceBox img {
-    width: 6.25em;
+    width: 3em;
 }
 
 .liServices {
@@ -503,7 +503,7 @@ body {
 }
 
 .serviceBox ul li {
-    padding: 0.8em;
+    padding: .3em;
 }
 
 .serviceBox ul li p {

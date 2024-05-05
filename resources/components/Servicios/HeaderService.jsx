@@ -7,7 +7,6 @@ const HeaderService = () => {
             <div className="headerServiceContain">
                 <div className="tituloServicios">
                     <h1>Nuestros <span className='spanVerde'>Servicios</span></h1>
-                    <p>What we do</p>
                 </div>
                 <div className="textServicios">
                     <p>Trabajamos de forma remota, colaborando con <span className='spanVerde'>personas de todo el mundo</span>, <span className='spanRosa'>sin importar dónde te encuentres.</span></p>
