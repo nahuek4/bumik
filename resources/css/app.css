@@ -9,6 +9,10 @@
     font-family: 'gilroy';
 }
 
+.css-lehpq2 {
+    max-width: 100vw;
+}
+
 body {
     width: 100vw;
     overflow-x: hidden;
