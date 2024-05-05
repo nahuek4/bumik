@@ -5,7 +5,7 @@ import Lottie from 'lottie-react';
 import LottieSuccess from '../../assets/img/lottie/success.json';
 import LottieFailed from '../../assets/img/lottie/failed.json';
 import Loader from '../../assets/icons/ajax-loader.gif';
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Form = () => {
 
@@ -56,7 +56,7 @@ const Form = () => {
                         <div className="formContain">
 
                             <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
-                                <Fade cascade damping={0.1}>
+                                <Slide cascade damping={0.1}>
                                     <div className="formNombreApellido">
                                         {/* nombre */}
                                         <div className="labelNombre">
@@ -71,31 +71,31 @@ const Form = () => {
                                             {errors.apellido && <span className="error">Este campo es requerido</span>}
                                         </div>
                                     </div>
-                                </Fade>
+                                </Slide>
                                 {/* Email */}
-                                <Fade cascade damping={0.2}>
+                                <Slide cascade damping={0.2}>
                                     <label htmlFor="email">Correo electrónico</label>
                                     <input type="email" {...register("email", { required: true })} />
                                     {errors.email && <span className="error">Este campo es requerido</span>}
-                                </Fade>
+                                </Slide>
                                 {/* Telefono */}
-                                <Fade cascade damping={0.3}>
+                                <Slide cascade damping={0.3}>
                                     <label htmlFor="telefono">Telefono</label>
                                     <input type="tel" {...register("telefono", { required: true })} />
                                     {errors.telefono && <span className="error">Este campo es requerido</span>}
-                                </Fade>
+                                </Slide>
                                 {/* Mensaje */}
-                                <Fade cascade damping={0.4}>
+                                <Slide cascade damping={0.4}>
                                     <label htmlFor="mensaje">Mensaje</label>
                                     <textarea rows="8" type="text" {...register("mensaje", { required: true })} />
                                     {errors.mensaje && <span className="error">Este campo es requerido</span>}
-                                </Fade>
-                                <Fade cascade damping={0.5}>
+                                </Slide>
+                                <Slide cascade damping={0.5}>
                                     <button className='buttonForm' id='buttonForm' disabled={isLoading}>
                                         {isLoading ? <img src={Loader} alt="Loading..." /> : 'Enviar'}
                                     </button>
                                     <input type="hidden" name="_token" value={csrfToken} />
-                                </Fade>
+                                </Slide>
                             </form>
                         </div>
                     </div>
