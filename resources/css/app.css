@@ -330,7 +330,7 @@ body {
 
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
     position: relative;
-    top: 10px;
+    top: 20px;
 }
 
 .swiper-pagination-bullet {
