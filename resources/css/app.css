@@ -1462,7 +1462,7 @@ body {
     }
 
     .about {
-        margin: 0.5em 1em;
+        margin: -1em 1em;
     }
 
     .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
