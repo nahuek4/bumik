@@ -54,7 +54,7 @@ const Form = () => {
                 {!showAnimation && (
                     <div className="formContainer">
                         <div className="formContain">
-                            <Fade cascade damping={0.1}>
+                            <Fade cascade>
                                 <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
                                     <div className="formNombreApellido">
                                         {/* nombre */}
