@@ -1300,6 +1300,7 @@ body {
 
     .tituloServicio p {
         font-size: 1.1em;
+        margin-top: 1.8em;
     }
 
     .headerServiceContain {
@@ -1467,6 +1468,10 @@ body {
 
     .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
         top: 20px;
+    }
+
+    .tituloServicio p {
+        margin-top: 1.5em;
     }
 }
 
