@@ -404,9 +404,7 @@ body {
     /* Aumentado el espacio lateral */
 }
 
-.investigacion {
-    margin-top: -3em;
-}
+
 
 .investigacion h1,
 .desarrollo h1,
@@ -655,7 +653,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1E1E1E;
-    overflow: hidden;
+    overflow: hidd;
 }
 
 .serviceServicio {
@@ -1183,6 +1181,10 @@ body {
     .bannerText>div {
         margin-top: 3em;
     }
+
+    .investigacion {
+        margin-top: -3em;
+    }
 }
 
 @media screen and (max-width: 1015px) {
@@ -1258,7 +1260,6 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
 
     .header {
         height: 38em;
