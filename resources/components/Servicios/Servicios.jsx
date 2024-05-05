@@ -59,12 +59,12 @@ const Servicios = () => {
         <div className='serviciosServComp'>
             <div className="serviciosContain">
                 <div className="serviceServicio">
-                    <Slide duration="1800" triggerOnce fraction="0">
+                    <Slide duration="2000" triggerOnce fraction="0">
                         <div className="serviceServicioimg">
                             <div className=""><img src="assets/img/fotos/brandingzhu.webp" alt="innocenti logo" /></div>
                         </div>
                     </Slide>
-                    <Slide duration="1800" triggerOnce direction='right' fraction="0">
+                    <Slide duration="2000" triggerOnce direction='right' fraction="0">
                         <div className="containerData">
                             <div className="tituloServicio">
                                 <h1 className='spanVerde'>Branding</h1>
@@ -84,12 +84,12 @@ const Servicios = () => {
             </div>
             <div className="serviciosContain">
                 <div className="serviceServicio">
-                    <Slide duration="2500" triggerOnce fraction="0">
+                    <Slide duration="3000" triggerOnce fraction="0">
                         <div className="serviceServicioimg">
                             <div className=""><img src="/assets/img/fotos/pcmuestra.webp" alt="pc muestra" /></div>
                         </div>
                     </Slide>
-                    <Slide duration="2500" triggerOnce direction='right' fraction="0">
+                    <Slide duration="3000" triggerOnce direction='right' fraction="0">
                         <div className="containerData">
                             <div className="tituloServicio">
                                 <h1 className='spanVerde'>Diseño & Desarrollo web</h1>
@@ -108,12 +108,12 @@ const Servicios = () => {
             </div>
             <div className="serviciosContain">
                 <div className="serviceServicio">
-                    <Slide duration="2500" triggerOnce fraction="0">
+                    <Slide duration="3000" triggerOnce fraction="0">
                         <div className="serviceServicioimg">
                             <div className=""><img src="/assets/img/fotos/celulares.webp" alt="celulares muestra" /></div>
                         </div>
                     </Slide>
-                    <Slide duration="2500" triggerOnce direction='right' fraction="0">
+                    <Slide duration="3000" triggerOnce direction='right' fraction="0">
                         <div className="containerData">
                             <div className="tituloServicio">
                                 <h1 className='spanVerde'>Social Media</h1>
@@ -137,12 +137,12 @@ const Servicios = () => {
             </div>
             <div className="serviciosContain">
                 <div className="serviceServicio">
-                    <Slide duration="2500" triggerOnce fraction="0">
+                    <Slide duration="3000" triggerOnce fraction="0">
                         <div className="serviceServicioimg">
                             <div className=""><img src="/assets/img/fotos/mateq.webp" alt="mateq packaging" /></div>
                         </div>
                     </Slide>
-                    <Slide duration="2500" triggerOnce direction='right' fraction="0">
+                    <Slide duration="3000" triggerOnce direction='right' fraction="0">
                         <div className="containerData">
                             <div className="tituloServicio">
                                 <h1 className='spanVerde'>Packaging & Papelería</h1>
