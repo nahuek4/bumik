@@ -1541,6 +1541,12 @@ body {
     .perfil {
         padding: 1em 3em;
     }
+
+    .investigacion h1,
+    .desarrollo h1,
+    .resultado h1 {
+        font-size: 4em;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -1551,7 +1557,7 @@ body {
     .investigacion h1,
     .desarrollo h1,
     .resultado h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .investigacion h2,
