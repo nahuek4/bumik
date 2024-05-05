@@ -1330,6 +1330,10 @@ body {
     .lottieDiv div {
         width: 50%;
     }
+
+    .tituloServicios {
+        margin-bottom: 1em;
+    }
 }
 
 
@@ -1471,7 +1475,11 @@ body {
     }
 
     .tituloServicio p {
-        margin-top: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    .tituloServicios {
+        margin-bottom: 0em;
     }
 }
 
