@@ -53,8 +53,8 @@ const Form = () => {
             <div className='formularioContactoContainer'>
                 {!showAnimation && (
                     <div className="formContainer">
-                        <Fade cascade damping={0.1}>
-                            <div className="formContain">
+                        <div className="formContain">
+                            <Fade cascade damping={0.1}>
                                 <form className="form" id='contactForm' onSubmit={handleSubmit(onSubmit)}>
                                     <div className="formNombreApellido">
                                         {/* nombre */}
@@ -87,8 +87,8 @@ const Form = () => {
                                     </button>
                                     <input type="hidden" name="_token" value={csrfToken} />
                                 </form>
-                            </div>
-                        </Fade>
+                            </Fade>
+                        </div>
                     </div>
                 )}
             </div>
