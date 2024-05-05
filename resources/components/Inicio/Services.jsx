@@ -18,7 +18,7 @@ const Services = () => {
     return (
         <div className="serviceComp">
             <div className="serviceBackground">
-                <Slide direction='up' duration="2000" triggerOnce fraction={0}>
+                <Slide direction='up' duration="2000" triggerOnce fraction={0} cascade>
                     <div className='servicesContain'>
                         <div className="serviciosText">
                             <h1>Nuestros <span className='spanVerde'>Servicios</span></h1>
