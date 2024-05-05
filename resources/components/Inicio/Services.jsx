@@ -22,7 +22,6 @@ const Services = () => {
                     <div className='servicesContain'>
                         <div className="serviciosText">
                             <h1>Nuestros <span className='spanVerde'>Servicios</span></h1>
-                            <p>What we do</p>
                         </div>
                         <div className='serviciosGen'>
                             <div className="serviceContainer">
