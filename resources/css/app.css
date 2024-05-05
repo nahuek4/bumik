@@ -282,7 +282,7 @@ body {
 .about {
     padding-top: 2em;
     font-weight: 500;
-    margin: 2.5em 1em
+    margin: -1.5em 1em;
 }
 
 .about h1 {
@@ -330,7 +330,7 @@ body {
 
 .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal.swiper-pagination-bullets-dynamic {
     position: relative;
-    top: 20px;
+    top: 50px;
 }
 
 .swiper-pagination-bullet {
