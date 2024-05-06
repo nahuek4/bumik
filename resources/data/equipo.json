@@ -16,23 +16,5 @@
         "nombre": "Valentin Diz",
         "trabajo": "Back End Developer",
         "foto": "/imgvalenn"
-    },
-    {
-        "id": 4,
-        "nombre": "Nahuel Cañete",
-        "trabajo": "Front End Developer",
-        "foto": "/imgnahue"
-    },
-    {
-        "id": 5,
-        "nombre": "Milagros Abreo",
-        "trabajo": "Graphic Designer",
-        "foto": "/imgmili"
-    },
-    {
-        "id": 6,
-        "nombre": "Valentin Diz",
-        "trabajo": "Back End Developer",
-        "foto": "/imgvalenn"
     }
 ]
