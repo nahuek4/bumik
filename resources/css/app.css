@@ -11,7 +11,7 @@
 
 body {
     width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .app {
@@ -953,7 +953,7 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
 }
 
 .form label {
@@ -975,7 +975,7 @@ body {
     background-color: #1E1E1E;
     color: #FBFAF6;
     font-size: 1.3em;
-    max-width: 100%;
+    max-width: 694px;
 }
 
 .formNombreApellido {
