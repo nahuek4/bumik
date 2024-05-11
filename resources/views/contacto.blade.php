@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Bumik | Estudio de diseño y desarrollo web</title>
+    <title>Estudio Bumik | Estudio de diseño y desarrollo web</title>
 </head>
 <body>
     
 
-    @viteReactRefresh
+    @viteReactRefresh 
     @vite('resources/js/App.jsx')
     <div id="app"></div>
 
