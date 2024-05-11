@@ -648,6 +648,7 @@ body {
     align-items: center;
     background-color: #1E1E1E;
     overflow: hidden;
+    padding-bottom: 1.5em;
 }
 
 .serviceServicio {
