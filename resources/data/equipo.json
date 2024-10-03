@@ -2,13 +2,13 @@
     {
         "id": 1,
         "nombre": "Nahuel Cañete",
-        "trabajo": "CEO, Desarrollador Front-End",
+        "trabajo": "Desarrollador Front-End",
         "foto": "/imgnahue"
     },
     {
         "id": 2,
         "nombre": "Milagros Abreo",
-        "trabajo": "CEO, Diseñadora grafica",
+        "trabajo": "Diseñadora grafica",
         "foto": "/imgmili"
     },
     {
