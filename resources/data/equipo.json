@@ -2,37 +2,31 @@
     {
         "id": 1,
         "nombre": "Nahuel Cañete",
-        "trabajo": "Front End Developer",
+        "trabajo": "CEO, Desarrollador Front-End",
         "foto": "/imgnahue"
     },
     {
         "id": 2,
         "nombre": "Milagros Abreo",
-        "trabajo": "Graphic Designer",
+        "trabajo": "CEO, Diseñadora grafica",
         "foto": "/imgmili"
     },
     {
         "id": 3,
         "nombre": "Valentin Diz",
-        "trabajo": "Back End Developer",
+        "trabajo": "Desarrollador Back-End",
         "foto": "/imgvalenn"
     },
     {
-        "id": 1,
-        "nombre": "Nahuel Cañete",
-        "trabajo": "Front End Developer",
-        "foto": "/imgnahue"
+        "id": 4,
+        "nombre": "Santiago Brown",
+        "trabajo": "Lic. en Marketing",
+        "foto": "/imgsanti"
     },
     {
-        "id": 2,
-        "nombre": "Milagros Abreo",
-        "trabajo": "Graphic Designer",
-        "foto": "/imgmili"
-    },
-    {
-        "id": 3,
-        "nombre": "Valentin Diz",
-        "trabajo": "Back End Developer",
-        "foto": "/imgvalenn"
+        "id": 5,
+        "nombre": "Camila Romito",
+        "trabajo": "Diseñadora Grafica",
+        "foto": "/imgcami"
     }
 ]
