@@ -9,7 +9,7 @@ const Banner = () => {
             <div className="bannerText">
                 <Fade duration="1500" triggerOnce casacade fraction="1">
                     <div className="investigacion">
-                        <h1>01</h1>
+                        <h1>01</h1> 
                         <h2>Investigación.</h2>
                         <p>Realizamos una investigación exhaustiva sobre el problema o necesidad que se quiere resolver para entender las necesidades del usuario el contexto en el que se utilizará el diseño y los objetivos específicos del proyecto.</p>
                     </div>
