@@ -32,6 +32,7 @@ const Header = () => {
                 <Bounce duration="1800" triggerOnce>
                     <div className="logo">
                         <img className="logoBumik" src={imagenSrc} alt="logo bumik" />
+                        <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/W0VaYyKTaT03PDF5lc" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/W0VaYyKTaT03PDF5lc">via GIPHY</a></p>
                         <h1 className='textHeader'>Estudio de diseño gráfico & desarrollo web</h1>
                     </div>
 
